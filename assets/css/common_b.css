@@ -1,0 +1,26 @@
+@charset "UTF-8";
+html { -webkit-tap-highlight-color: transparent;  }
+body { width: 100%; font-family: "Arial","微软雅黑"; font-size: 12px;  }
+input,button,select,textarea { outline:none; }
+body, p, h1, h2, h3, ul, dl, dt, dd, input, select ,textarea { margin: 0; padding: 0; }
+li { list-style: none; }
+img { border: none; vertical-align: top; }
+a:link, a:visited { text-decoration: none; }
+a:hover, a:focus, a:active { text-decoration: none; }
+.hide {	display: none; }
+.clearfix { zoom: 1; }
+.clearfix:after { display: block; content: ''; clear: both; }
+
+header { position: relative; height: 28px; padding: 4px 0 8px 24px; background: #fff; }
+header img { width: 76px; height: 28px; }
+header a { position: absolute; top: 4px; right: 24px; width: 15%; text-align: center; }
+header a img { width: 20px; height: 20px; }
+header a span { display: block; line-height: 18px; color: #0055a2; }
+
+.content{ width: 100%; }
+.content img { width: 100%; }
+
+footer { padding: 6px 0 2px; text-align: center; background: #fff; }
+footer img { width: 20%; }
+footer p { font-weight: normal; color: #0055a2; }
+footer p.phone{ line-height: 18px; font-size: 18px; }
