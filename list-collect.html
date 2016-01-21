@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的收藏</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="assets/css/normalize.css">
+		<link rel="stylesheet" href="assets/css/common.css?v=12543353">
+		<link rel="stylesheet" href="assets/css/list-collect.css">
+	</head>
+
+	<body>
+		<div class="mask opacity hide"></div>
+		<div class="container column-2 cake-list clearfix">
+			<div class="flex-item inner-box clearfix">
+				<a href="javascript:;" class="link">
+					<img src="assets/imgs/list/cake01@2x.png" />					
+				</a>
+				<div class="text">
+					<span class="t1">童趣</span>
+					<span class="t2">Children's Interest Ice Cream Cake</span>
+					<span class="t3">1.5磅/<span class="t4">￥169</span></span>
+				</div>
+				<a href="javascript:void(0);" onclick="pageAdd();"><img class="img-add" src="assets/imgs/list/btn-add.png"></a>
+			</div>
+			<div class="flex-item inner-box no-product clearfix">
+				<a href="javascript:;" class="link">
+					<img src="assets/imgs/list/cake02@2x.png" />					
+				</a>
+				<div class="text">
+					<span class="t1">童趣</span>
+					<span class="t2">Children's Interest Ice Cream Cake</span>
+					<span class="t3">1.5磅/<span class="t4">￥169</span></span>
+				</div>
+				<a href="javascript:void(0);" onclick="pageAdd();"><img class="img-add" src="assets/imgs/list/btn-add.png"></a>
+			</div>
+			<div class="flex-item inner-box clearfix">
+				<a href="javascript:;" class="link">
+					<img src="assets/imgs/list/cake01@2x.png" />					
+				</a>
+				<div class="text">
+					<span class="t1">童趣</span>
+					<span class="t2">Children's Interest Ice Cream Cake</span>
+					<span class="t3">1.5磅/<span class="t4">￥169</span></span>
+				</div>
+				<a href="javascript:void(0);" onclick="pageAdd();"><img class="img-add" src="assets/imgs/list/btn-add.png"></a>
+			</div>
+			<div class="flex-item inner-box clearfix">
+				<a href="javascript:;" class="link">
+					<img src="assets/imgs/list/cake02@2x.png" />					
+				</a>
+				<div class="text">
+					<span class="t1">童趣</span>
+					<span class="t2">Children's Interest Ice Cream Cake</span>
+					<span class="t3">1.5磅/<span class="t4">￥169</span></span>
+				</div>
+				<a href="javascript:void(0);" onclick="pageAdd();"><img class="img-add" src="assets/imgs/list/btn-add.png"></a>
+			</div>
+			<div class="flex-item inner-box clearfix">
+				<a href="javascript:;" class="link">
+					<img src="assets/imgs/list/cake01@2x.png" />					
+				</a>
+				<div class="text">
+					<span class="t1">童趣</span>
+					<span class="t2">Children's Interest Ice Cream Cake</span>
+					<span class="t3">1.5磅/<span class="t4">￥169</span></span>
+				</div>
+				<a href="javascript:void(0);" onclick="pageAdd();"><img class="img-add" src="assets/imgs/list/btn-add.png"></a>
+			</div>
+			<div class="flex-item inner-box clearfix">
+				<a href="javascript:;" class="link">
+					<img src="assets/imgs/list/cake02@2x.png" />					
+				</a>
+				<div class="text">
+					<span class="t1">童趣</span>
+					<span class="t2">Children's Interest Ice Cream Cake</span>
+					<span class="t3">1.5磅/<span class="t4">￥169</span></span>
+				</div>
+				<a href="javascript:void(0);" onclick="pageAdd();"><img class="img-add" src="assets/imgs/list/btn-add.png"></a>
+			</div>
+		</div>
+		<div class="buy-hide hide">
+			<div class="buyTop">
+				<img class="buy-img" src="assets/imgs/list/cake01.jpg" />
+				<div class="text">
+					<span class="buy-txtC">狮心王国</span>
+					<span class="buy-txtE">The Lion-heart King</span>
+					<br />
+					<span class="buy-txtI">适合生日派对、4-7人食用</span>
+					<img class="close" src="assets/imgs/list/close.jpg" />
+				</div>
+				<p class="price"><span>￥<span id="price">169</span>&nbsp;</span>/1.5磅</p>
+			</div>
+			<div class="buyMde">
+				<p class="spec">规格：</p>
+				<div class="buyMde-list">
+					<a class="type cur" href="javascript:void(0);" onclick="introduce();">1.5磅</a>
+					<a class="type" href="javascript:void(0);" onclick="introduce();">2.5磅</a>
+					<a class="type" href="javascript:void(0);" onclick="introduce();">3.5磅</a>
+					<a class="type" href="javascript:void(0);" onclick="introduce();">5.5磅</a>
+				</div>
+			</div>
+			<div class="buyBtm">
+				<span class="count">数量：</span>
+				<span class="countR">
+					<button class="subtract">－</button>
+					<input class="number" type="text" value="1" />
+					<button class="add">＋</button>
+				</span>
+			</div>
+			<div class="buyBtn">
+				<ul>
+					<li class="buyNow"><a href="javascript:void(0);" id="btnBuyNow">立刻购买</a></li>
+					<li class="addCart"><a href="javascript:void(0);" id="btnAddCart">加入购物车</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- 加入购物车模态框 begin -->
+		<div id="mask-cart" class="hide">
+			<!-- 城市选择 begin -->
+			<div class="cart">
+				<div class="cart-title">
+					<span>购物提示</span>
+				</div>
+				<div class="cart-content">
+					<div class="desc">
+						<p>已成功加入购物车，是否去结算？</p>
+					</div>
+					<div class="btn clearfix">
+						<a href="javascript:;" id="btnGoPay">去结算</a>
+						<a href="javascript:;" id="btnContinue">继续购物</a>
+					</div>
+				</div>
+			</div>
+			<!-- 城市选择 end -->
+		</div>
+		<!-- 加入购物车模态框 end -->
+		
+		<!-- 引入js -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+		<script src="assets/js/clientDetection.js"></script>
+		<script src="assets/js/list-collect.js"></script>	
+	</body>
+
+</html>

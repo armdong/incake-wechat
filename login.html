@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="assets/css/normalize.css">
+		<link rel="stylesheet" href="assets/css/common.css">
+		<link rel="stylesheet" href="assets/css/login.css">
+	</head>
+
+	<body>
+		<header class="clearfix">
+			<span class="login-title login-fast check">
+				快速登录/注册
+			</span>
+			<span class="login-title">
+				普通登录
+			</span>
+		</header>
+		
+		<div class="container">
+			<div class="inner-box">
+				<div class="box-login">
+					<p class="phone">
+						<input type="text" placeholder="手机号"/>
+						<a class="get-code">获得验证码</a>
+					</p>
+					<p class="verification">
+						<input type="text" placeholder="验证码"/>
+					</p>
+					<p class="prompt">收不到短信验证码？试试使用<a href="javascript:;">语音验证码</a></p>
+					<p class="p-btn"><a href="javascript:;">登录</a></p>
+					<p class="attention">新用户可直接完成注册</p>
+					<p class="forgot-pwd hide"><a href="javascript:;">忘记密码？</a></p>
+				</div>
+				<div class="box-other">
+					<p class="p-line">
+						<span>快速登录</span>
+					</p>
+					<a href="javascript:;" class="wechat-img"><img src="assets/imgs/login/wechat-img.png" /></a>
+					<p>微信</p>
+				</div>
+			</div>
+			
+		</div>
+		
+		<section id="status-bar" class="clearfix">
+			<p>
+				<a href="login.html">登录</a>
+				<em>|</em>
+				<a href="register.html">注册</a>
+			</p>
+			<a href="javascript:;" class="backTop">返回顶部<i></i></a>
+		</section>
+
+		<footer id="footer">
+			<div class="text">
+				<p>（周一至周日）8:30~21:00</p>
+				<p>
+					客服热线:
+					<a href="tel:400-921-5757">
+						<i></i>400-921-5757
+					</a>
+				</p>
+			</div>
+			<div class="link">
+				<a href="javascript:;">配送服务</a>
+				<a href="javascript:;">关于我们</a>
+				<a href="javascript:;">购买流程</a>
+			</div>
+			<div class="addr">
+				<p>沪ICP备 12045835 号</p>
+				<p>Copyright &copy; 2014 INCAKE Company All Right Reserved</p>
+			</div>
+		</footer>
+
+		<div id="mask-cart" class="hide">
+			<div class="cart">
+				<div class="cart-title">
+					<span>INCAKE</span>
+				</div>
+				<div class="cart-content">
+					<div class="desc">
+						<p class="clearfix"><span>请输入验证码:</span><input type="text" /></p>
+						<p class="reg clearfix"><img src="assets/imgs/login/reg.png" /><span>看不清？换一张</span></p>
+					</div>
+					<div class="btn clearfix">
+						<a href="javascript:;" id="btnGoPay">取消</a>
+						<a href="javascript:;" id="btnContinue">确定</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- javascript begin -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+		<script src="assets/js/login.js"></script>
+		<!-- javascript end -->
+	</body>
+
+</html>

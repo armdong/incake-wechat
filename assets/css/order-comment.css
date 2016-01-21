@@ -1,0 +1,35 @@
+body { font: 12px "微软雅黑",arial; background: #f5f5f5; color: #505050; }
+
+.container-wrapper { width: 100%; }
+.content { width: 96%; margin: 10px auto 0; padding: 10px 0 0 0; border-radius: 10px; box-shadow: 1px 1px 1px 0 #ddd; overflow: hidden; background: #fff; }
+.comment-header, .comment-content, .comment-footer { width: 94%; margin: 0 auto; }
+.comment-header { height: 38px; line-height: 38px; background: #fff; border-bottom: 1px solid #e6e6e6; }
+.comment-header .order-no { float: left; color: #0055a2; }
+.comment-header .order-time { float: right; }
+
+.comment-content { padding: 10px 0; }
+.comment-content .img { width: 20%; float: left; display: block; border-radius: 5px; overflow: hidden; border: 1px solid #e6e6e6; }
+.comment-content .img img { width: 100%; }
+.comment-content .comment-list { width: 77%; float: right; }
+.comment-content .comment-item { width: 100%; line-height: 20px; height: 26px; }
+.comment-content .comment-summary { height: 80px; }
+.comment-content .item-title { width: 20%; float: left; }
+.comment-content .item-content { width: 80%; float: right; }
+.comment-content .item-content li { width: 20px; height: 20px; float: left; margin-right: 10px; }
+.comment-content .all-comment li { background: url(../imgs/smile-01.png) no-repeat; background-position: 0 -26px; background-size: 20px; }
+.comment-content .all-comment li.active { background-position: 0 0px; }
+.comment-content .tast-comment li,
+.comment-content .service-comment li { background: url(../imgs/smile-01.png) no-repeat; background-position: 0 -72px; background-size: 20px; }
+.comment-content .tast-comment li.active,
+.comment-content .service-comment li.active { background-position: 0 -50px; }
+.comment-item textarea { width: 96%; height: 80%; margin: 10px 0; border: transparent; border: 1px solid #e6e6e6; border-radius: 5px; background: none; outline: none; padding: 2%; }
+
+.comment-footer { width: 100%; height: 38px; line-height: 38px; background: #fafafa; }
+.comment-footer .inner { width: 94%; margin: 0 auto; }
+.comment-footer .chk-comment { float: left; }
+.comment-footer .chk-comment span { display: inline-block; }
+.comment-footer .chk-comment .circle { display: inline-block; width: 18px; height: 18px; margin-right: 5px; position: relative; top: 4px; }
+.comment-footer .chk-comment .unchecked {  background: url(../imgs/unchecked.png) no-repeat center left; background-size: 18px 18px; }
+.comment-footer .chk-comment .checked { background: url(../imgs/checked.png) no-repeat center left; background-size: 18px 18px; }
+.comment-footer p.active .circle { width: 8px; height: 8px; border: 4px solid rgba(255,255,255,.8); border-radius: 50%; background: #aaa; }
+.comment-footer .btn-comment { float: right; line-height: 18px; display: block; padding: 5px 15px; color: #fff; background: #4694d1; border-radius: 5px; position: relative; top: 4px; }

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>订单提交</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="assets/css/normalize.css" />
+		<link rel="stylesheet" href="assets/css/common.css?v=222" />
+		<link rel="stylesheet" href="assets/css/order.css?v=222333" />
+	</head>
+
+	<body>
+
+		<div class="container-wrapper">
+
+			<!-- 收货信息 begin -->
+			<div class="receive-info">
+				<a href="javascript:;">
+					<p>收货信息：<span class="receive-info-name">张三 （13700000000）</span></p>
+					<p>收货地址：<span class="receive-info-addr">上海市XXXX有限公司</span></p>
+					<span class="arrow-next"></span>
+				</a>
+			</div>
+			<!-- 收货信息 end -->
+			
+			<!-- 收货地址弹出层 begin -->
+			<div class="receiver-address-wrapper">
+				<ul class="address-tab">
+					<li class="active">收货地址列表</li>
+					<li>新增收货地址</li>
+				</ul>
+				<ul class="address-content">
+					<li class="active">
+						<ul class="address-list">
+							<li class="address-item active">
+								<div class="item-content clearfix">
+									<a href="javascript:;" class="item-text clearfix">
+										<span class="btn-check"></span>
+										<div class="text-content">
+											<p class="name">张三（13700000000）</p>
+											<p class="address">[默认]上海市XXXX有限公司</p>
+										</div>
+									</a>
+									<a href="javascript:;" class="item-edit"></a>
+								</div>
+							</li>
+							<li class="address-item">
+								<div class="item-content clearfix">
+									<a href="javascript:;" class="item-text clearfix">
+										<span class="btn-check"></span>
+										<div class="text-content">
+											<p class="name">李四（13700000000）</p>
+											<p class="address">北京市XXXX有限公司</p>
+										</div>
+									</a>
+									<a href="javascript:;" class="item-edit"></a>
+								</div>
+							</li>
+							<li class="address-item">
+								<div class="item-content clearfix">
+									<a href="javascript:;" class="item-text clearfix">
+										<span class="btn-check"></span>
+										<div class="text-content">
+											<p class="name">王五（13700000000）</p>
+											<p class="address">苏州市XXXX有限公司</p>
+										</div>
+									</a>
+									<a href="javascript:;" class="item-edit"></a>
+								</div>
+							</li>
+							<li class="address-item">
+								<div class="item-content clearfix">
+									<a href="javascript:;" class="item-text clearfix">
+										<span class="btn-check"></span>
+										<div class="text-content">
+											<p class="name">赵六（13700000000）</p>
+											<p class="address">昆山市XXXX有限公司</p>
+										</div>
+									</a>
+									<a href="javascript:;" class="item-edit"></a>
+								</div>
+							</li>
+						</ul>
+						<div class="address-btns">
+							<a href="javascript:;" class="btn-address-list-cancel">取 消</a>
+						</div>						
+					</li>
+					<li>
+						<ul class="addr-list">
+							<li class="addr-item">
+								<div class="item-content">
+									<input type="text" placeholder="收货人" />
+								</div>
+							</li>
+							<li class="addr-item">
+								<div class="item-content clearfix">
+									<input type="tel" placeholder="移动电话" />
+								</div>
+							</li>
+							<li class="addr-item">
+								<div class="item-content">
+									<input type="text" placeholder="固定电话" />
+								</div>
+							</li>
+							<li class="addr-item">
+								<div class="item-content clearfix">
+									<span class="span-select">
+										<select name="txt-addr-city" class="txt-addr-city">
+											<option value="0">城市</option>
+											<option value="1">上海市</option>
+											<option value="2">福州市</option>
+											<option value="3">苏州市</option>
+											<option value="4">昆山市</option>
+											<option value="5">厦门市</option>
+										</select>
+									</span>
+									<span class="span-select">
+										<select name="txt-addr-area" class="txt-addr-area">
+											<option value="0">城区</option>
+											<option value="1">闸北区</option>
+											<option value="2">宝山区</option>
+											<option value="3">普陀区</option>
+											<option value="4">黄浦区</option>
+											<option value="5">静安区</option>
+											<option value="6">长宁区</option>
+										</select>
+									</span>
+								</div>
+							</li>
+							<li class="addr-item">
+								<div class="item-content">
+									<span class="span-select full-width">
+										<select name="txt-addr-option" class="txt-addr-option">
+											<option value="0">请选择</option>
+											<option value="1">闸北区</option>
+											<option value="2">宝山区</option>
+											<option value="3">普陀区</option>
+											<option value="4">黄浦区</option>
+											<option value="5">静安区</option>
+											<option value="6">长宁区</option>
+										</select>
+									</span>
+								</div>
+							</li>
+							<li class="addr-item">
+								<div class="item-content">
+									<input type="text" placeholder="街道地址" />
+								</div>
+							</li>
+							<li class="addr-item">
+								<div class="item-content">
+									<ul class="addr-setting clearfix">
+										<li>
+											<a href="javascript:;">查看配送范围</a>
+										</li>
+										<li class="set-default">
+											<span><i class="check-box unchecked"></i>设为默认地址</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<div class="address-btns clearfix">
+							<a href="javascript:;" class="btn-addr-list-cancel">取 消</a>
+							<a href="javascript:;" class="btn-addr-list-submit">提 交</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- 收货地址弹出层 end -->
+
+			<!-- 收货时间 begin -->
+			<div class="receive-time">
+				<div class="content">
+					<p>收货时间：您的商品预计于<span class="time">2015-09-02</span>开始配送</p>
+					<div class="send-date clearfix">
+						<input type="date" name="date-input" id="date-input" value="2015-09-02" />
+						<span class="span-select">
+							<select name="ap-input" id="ap-input">
+								<option value="am">上午</option>
+								<option value="pm">下午</option>
+							</select>
+						</span>
+						<span class="span-select">
+							<select name="hour-input" id="hour-input">
+								<option value="9">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>
+						</span>
+						<span class="slipt">:</span>
+						<span class="span-select">
+							<select name="minute-input" id="minute-input">
+								<option value="00">00</option>
+								<option value="30">30</option>
+							</select>
+						</span>
+						<span> - 13:30</span>
+					</div>
+					<p class="notice">由于蛋糕、甜品需要冷藏保存，请合理选择配送时间。</p>
+				</div>
+			</div>
+			<!-- 收货时间 end -->
+
+			<!-- 配送方式 begin -->
+			<div class="transport-type">
+				<h2>配送方式</h2>
+				<p class="transport-title">
+					<span>配送范围</span>
+					<span>备注</span>
+					<span>运费</span>
+					<span>优惠信息</span>
+				</p>
+				<p class="transport-content">
+					<span>外环以内</span>
+					<span>INCAKE<br />冷链配送</span>
+					<span>￥0.00</span>
+					<span>无</span>
+				</p>
+			</div>
+			<!-- 配送方式 end -->
+
+			<!-- 商品清单 begin -->
+			<div class="product-list">
+				<h2 class="list-title">商品清单</h2>
+				<div class="list-item clearfix">
+					<a href="javascript:;" class="img">
+						<img src="assets/imgs/products/01.jpg" alt="" />
+					</a>
+					<dl>
+						<dt>爱丁堡之恋</dt>
+						<dd>规格：￥169\1.2磅</dd>
+						<dd>数量：1</dd>
+					</dl>
+					<span class="total">小计：<strong>￥169.00</strong></span>
+				</div>
+				<div class="list-item clearfix">
+					<a href="javascript:;" class="img">
+						<img src="assets/imgs/products/01.jpg" alt="" />
+					</a>
+					<dl>
+						<dt>爱丁堡之恋</dt>
+						<dd>规格：￥169\1.2磅</dd>
+						<dd>数量：1</dd>
+					</dl>
+					<span class="total">小计：<strong>￥169.00</strong></span>
+				</div>
+			</div>
+			<!-- 商品清单 end -->
+
+			<!-- 配置信息 begin -->
+			<ul class="setting-list">
+				<li class="setting-item clearfix">
+					<div class="item-header clearfix">
+						<p class="item-title">支付方式</p>
+						<p class="item-result">微信支付</p>
+						<span href="javascript:;" class="icon icon-close"></span>
+					</div>
+					<ul class="item-content payment-list clearfix">
+						<li class="fl">货到付款-现金</li>
+						<li class="fr">招商银行</li>
+						<li class="fl">货到付款-POS</li>
+						<li class="fr active">微信支付</li>
+					</ul>
+				</li>
+				<li class="setting-item clearfix">
+					<div class="item-header clearfix">
+						<p class="item-title">优惠信息</p>
+						<p class="item-result">暂无</p>
+						<span href="javascript:;" class="icon icon-close"></span>
+					</div>
+					<div class="item-content discount-list clearfix">
+						<ul class="discount-title clearfix">
+							<li class="active">优惠券 \ 团购券</li>
+							<li>我的优惠券</li>
+						</ul>
+						<ul class="discount-content clearfix">
+							<li class="active">
+								<ul class="discount-ticket-list">
+									<!--<li>优惠券 13189230194 <i class="icon-close"></i></li>-->
+								</ul>
+								<div class="inputs">
+									<input type="text" placeholder="请输入优惠券 \ 团购券密码" id="txtTicket" />
+									<input type="button" value="兑换" id="btnAddTicket" />
+								</div>
+							</li>
+							<li>
+								<div class="my-discount">
+									<span class="span-select">
+										<select name="my-discount-list" class="my-discount-list">
+											<option value="0">选择优惠券</option>
+											<option value="1">优惠券 13189230194</option>
+										</select>
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="setting-item clearfix">
+					<div class="item-header clearfix">
+						<p class="item-title">代金卡券</p>
+						<p class="item-result">暂无</p>
+						<span href="javascript:;" class="icon icon-close"></span>
+					</div>
+					<div class="item-content coupon-list clearfix">
+						<ul class="coupon-title clearfix">
+							<li class="active">蛋糕卡</li>
+							<li>现金券</li>
+						</ul>
+						<ul class="coupon-content clearfix">
+							<li class="active">
+								<ul class="ticket-coupon-list clearfix">
+									<!--<li>蛋糕卡 卡号后5位11111 <i class="icon-close"></i></li>
+									<li>蛋糕卡 卡号后5位56565 <i class="icon-close"></i></li>-->
+								</ul>
+								<div class="inputs">
+									<input type="text" placeholder="请输入卡号后5位" id="txtTicketCard" />
+									<input type="text" placeholder="请输入蛋糕卡密码" id="txtTicketCardPwd" />
+									<p>温馨提示：针对持有面值为129元、149元、239元、359元的蛋糕卡用户，可以在企业客户兑换专区使用可享受免差价，去“<a href="javascript:;">企业客户兑换专区</a>”。</p>
+									<input type="button" value="兑换" id="btnCouponTicket" />
+								</div>
+								<p class="notice">您已明确知晓蛋糕卡的使用规则。抵扣完成如有未支付金额，请选择以下支付方式。</p>
+							</li>
+							<li>
+								<ul class="cash-coupon-list clearfix">
+									<!--<li>现金券 卡号后5位22222 <i class="icon-close"></i></li>
+									<li>现金券 卡号后5位33333 <i class="icon-close"></i></li>-->
+								</ul>
+								<div class="inputs">
+									<input type="text" placeholder="请输入卡号后5位" id="txtCashCard" />
+									<input type="text" placeholder="请输入现金券密码" id="txtCashCardPwd" />
+									<input type="button" value="兑换" id="btnCouponCash" />
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="setting-item clearfix">
+					<div class="item-header clearfix">
+						<p class="item-title">生日牌</p>
+						<p class="item-result">暂无</p>
+						<span href="javascript:;" class="icon icon-close"></span>
+					</div>
+					<div class="item-content birth-list clearfix">
+						<div class="birth-content">
+							<span class="span-select">
+								<select name="birth-sel" class="birth-sel">
+									<option value="0">不需要生日牌</option>
+									<option value="1">中文（生日快乐）</option>
+									<option value="2">英文（Happy Birthday）</option>
+									<option value="3">自定义</option>
+								</select>
+							</span>
+							<input type="text" placeholder="请输入7个以内中文字或14个以内英文字母" />
+						</div>
+					</div>
+				</li>
+				<li class="setting-item clearfix">
+					<div class="item-header clearfix">
+						<p class="item-title">贺卡</p>
+						<p class="item-result">暂无</p>
+						<span href="javascript:;" class="icon icon-close"></span>
+					</div>
+					<div class="item-content card-list clearfix">
+						<div class="card-content">
+							<span class="span-select">
+								<select name="card-sel" class="card-sel">
+									<option value="0">不需要贺卡</option>
+									<option value="1">生日</option>
+									<option value="2">商务</option>
+								</select>
+							</span>
+							<textarea name="txt-content" class="txt-content" placeholder="请输入贺卡内容"></textarea>
+							<p>还可输入<span>50</span>个字</p>
+						</div>
+					</div>
+				</li>
+				<li class="setting-item clearfix">
+					<div class="item-header clearfix">
+						<p class="item-title">订单备注</p>
+						<p class="item-result">暂无</p>
+						<span href="javascript:;" class="icon icon-close"></span>
+					</div>
+					<div class="item-content summary-list clearfix">
+						<div class="summary-content">
+							<textarea name="txt-content" class="txt-content" placeholder="给INCAKE留言"></textarea>
+							<p>还可输入<span>100</span>个字</p>
+						</div>
+					</div>
+				</li>
+				<li class="setting-item clearfix">
+					<div class="item-header clearfix">
+						<p class="item-title">发票信息</p>
+						<p class="item-result">暂无</p>
+						<span href="javascript:;" class="icon icon-close"></span>
+					</div>
+					<div class="item-content invoice-list clearfix">
+						<div class="invoice-content">
+							<span class="span-select">
+								<select name="invoice-sel-1" class="invoice-sel-1">
+									<option value="0">不开发票</option>
+									<option value="1">个人</option>
+									<option value="2">公司</option>
+								</select>
+							</span>
+							<input type="text" placeholder="请输入公司名称" />
+							<span class="span-select">
+								<select name="invoice-sel-2" class="invoice-sel-2">
+									<option value="0">普通发票</option>
+								</select>
+							</span>
+							<span class="span-select">
+								<select name="invoice-sel-3" class="invoice-sel-3">
+									<option value="0">蛋糕</option>
+									<option value="1">食品</option>
+								</select>
+							</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- 配置信息 end -->
+			
+			<!-- 商品价格明细 begin -->
+			<div class="price-detail">
+				<p class="total clearfix">
+					<span class="title">商品总金额</span>
+					<span class="content">￥169.00</span>
+				</p>
+				<p class="clearfix">
+					<span class="title">优惠券</span>
+					<span class="content">￥0.00</span>
+				</p>
+				<p class="clearfix">
+					<span class="title">促销</span>
+					<span class="content">￥0.00</span>
+				</p>
+				<p class="clearfix">
+					<span class="title">活动优惠</span>
+					<span class="content">￥0.00</span>
+				</p>
+				<p class="clearfix">
+					<span class="title">蛋糕卡</span>
+					<span class="content">￥0.00</span>
+				</p>
+				<p class="clearfix">
+					<span class="title">优惠/团购券</span>
+					<span class="content">￥0.00</span>
+				</p>
+				<p class="clearfix">
+					<span class="title">补差价</span>
+					<span class="content">￥0.00</span>
+				</p>
+				<p class="clearfix">
+					<span class="title">运费</span>
+					<span class="content">￥0.00</span>
+				</p>
+			</div>
+			<!-- 商品价格明细 end -->
+
+			<!-- 提交订单 begin -->
+			<div class="order-submit fixed clearfix">
+				<p class="total">合计：<span>￥169.00</span></p>
+				<a href="javascript:;">提交订单</a>
+			</div>
+			<!-- 提交订单 end -->
+
+		</div>
+
+		<!-- javascript begin -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+		<script src="assets/js/dateFormat.js"></script>
+		<script src="assets/js/order.js?v=222"></script>
+		<!-- javascript end -->
+	</body>
+
+</html>

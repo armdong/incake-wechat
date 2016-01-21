@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>新增收件人信息</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="assets/css/normalize.css" />
+		<link rel="stylesheet" href="assets/css/common.css" />
+		<link rel="stylesheet" href="assets/css/receive-address-add.css?v=12" />
+	</head>
+
+	<body>
+
+		<div class="container-wrapper">
+
+			<ul class="addr-list">
+				<li class="addr-item">
+					<div class="item-content">
+						<input type="text" placeholder="收货人" />
+					</div>
+				</li>
+				<li class="addr-item">
+					<div class="item-content clearfix">
+						<input type="tel" placeholder="移动电话" />
+					</div>
+				</li>
+				<li class="addr-item">
+					<div class="item-content">
+						<input type="text" placeholder="固定电话" />
+					</div>
+				</li>
+				<li class="addr-item">
+					<div class="item-content clearfix">
+						<span class="span-select">
+							<select name="txt-addr-city" class="txt-addr-city">
+								<option value="0">城市</option>
+								<option value="1">上海市</option>
+								<option value="2">福州市</option>
+								<option value="3">苏州市</option>
+								<option value="4">昆山市</option>
+								<option value="5">厦门市</option>
+							</select>
+						</span>
+						<span class="span-select">
+							<select name="txt-addr-area" class="txt-addr-area">
+								<option value="0">城区</option>
+								<option value="1">闸北区</option>
+								<option value="2">宝山区</option>
+								<option value="3">普陀区</option>
+								<option value="4">黄浦区</option>
+								<option value="5">静安区</option>
+								<option value="6">长宁区</option>
+							</select>
+						</span>
+					</div>
+				</li>
+				<li class="addr-item">
+					<div class="item-content">
+						<span class="span-select full-width">
+							<select name="txt-addr-option" class="txt-addr-option">
+								<option value="0">请选择</option>
+								<option value="1">闸北区</option>
+								<option value="2">宝山区</option>
+								<option value="3">普陀区</option>
+								<option value="4">黄浦区</option>
+								<option value="5">静安区</option>
+								<option value="6">长宁区</option>
+							</select>
+						</span>
+					</div>
+				</li>
+				<li class="addr-item">
+					<div class="item-content">
+						<input type="text" placeholder="街道地址" />
+					</div>
+				</li>
+				<li class="addr-item">
+					<div class="item-content">
+						<ul class="addr-setting clearfix">
+							<li>
+								<a href="javascript:;">查看配送范围</a>
+							</li>
+							<li>
+								<span><i class="check-box unchecked"></i>设为默认地址</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+
+			<div class="btn-submit fixed">
+				<a href="javascript:;">提交</a>
+			</div>
+
+		</div>
+
+		<!-- javascript begin -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+		<script src="assets/js/receive-address-add.js"></script>
+		<!-- javascript end -->
+	</body>
+
+</html>

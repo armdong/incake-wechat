@@ -1,0 +1,43 @@
+.container-wrapper { width: 100%; background: #fff; font: 12px "微软雅黑",arial; color: #505050; }
+.container-wrapper input, .container-wrapper select { overflow: hidden; }
+
+/* order-info begin */
+.order-info { width: 100%; padding: 10px 0; border-bottom: 1px solid #e6e6e6; }
+.order-info p { width: 94%; margin: 0 auto; line-height: 22px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* order-info end */
+
+/* product-list begin */
+.product-list { width: 100%; padding: 10px 0 0 0; border-bottom: 1px solid #e6e6e6; }
+.product-list .list-title { width: 94%; margin: 0 auto; text-align: center; font: 12px/26px "微软雅黑",arial; color: #0055A2; }
+.product-list .list-item { width: 100%; border-top: 1px solid #e6e6e6; position: relative; }
+.product-list .list-item .img { width: 20%; display: block; border-radius: 5px; border: 1px solid #b4b4b4; overflow: hidden; margin: 3%; float: left; }
+.product-list .list-item .img img { width: 100%; }
+.product-list .list-item dl { width: 70%; float: right; margin-top: 3%; }
+.product-list .list-item dt { color: #737373; line-height: 28px; }
+.product-list .list-item dd { color: #b5b5b5; line-height: 18px; }
+.product-list .list-item .total { position: absolute; bottom: 12%; right: 5%; line-height: 18px; color: #b5b5b5; }
+.product-list .list-item .total a { color: #0055a2; border: 1px solid #0055a2; border-radius: 5px; padding: 4px 10px; }
+/* product-list end */
+
+/* setting-list begin */
+.setting-list { width: 100%; margin-bottom: 50px; }
+.setting-list .setting-item { width: 100%; border-bottom: 1px solid #e6e6e6; }
+.setting-list .item-header { width: 90%; height: 50px; margin: 0 auto; position: relative; }
+.setting-list .item-title, .setting-list .item-result { width: 45%; line-height: 50px; height: 50px; }
+.setting-list .item-title { float: left; color: #b4b4b4; }
+.setting-list .item-result { float: right; text-align: right; }
+.setting-list .money { color: #0055a2; }
+.setting-list .item-header .icon { display: block; position: absolute; width: 10px; height: 10px; right: 0; top: 50%; margin-top: -5px; background: url(../imgs/icons_setting.png) no-repeat 0 0; }
+.setting-list .item-header .icon-open { background-position: 0 -10px; }
+.setting-list .item-header .icon-close { background-position: 0 0; }
+.setting-list .item-content { display: none;/*TODO 设为display:none*/ width: 90%; margin: 0 auto; padding: 10px 0 14px 0; transition: .5s; }
+/* setting-list end */
+
+/* btns begin */
+.btns { width: 100%; height: 48px; position: fixed; left: 0; bottom: 0; }
+.btns ul { width: 100%; height: 100%; }
+.btns li { width: 50%; height: 100%; line-height: 48px; float: left; }
+.btns li a { color: #fff; display: block; text-align: center; font-size: 14px; }
+.btns li.btn-buy { background: #4694d1; }
+.btns li.btn-ta { background: #0055a2; }
+/* btns end */

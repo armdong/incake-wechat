@@ -1,0 +1,8 @@
+body { background-color: #fff; }
+.container-wrapper { width: 100%; background: #fff; }
+.container-wrapper .section { width: 90%; margin: 0 auto; }
+.section .title { width: 100%; }
+.section .title i { width: 6px; height: 18px; float: left; background-color: #fb2c4d; }
+.section .title h2 { font-size: 16px; line-height: 20px; text-indent: 8px; color: #444; margin: 15px 0; }
+.section .content { padding: 0 10px 10px; border-bottom: 1px solid #eee; }
+.section .content p { line-height: 24px; font-size: 14px; color: #999; text-align: justify; }

@@ -1,0 +1,70 @@
+/* reset begin */
+body, p, h1, h2, h3, ul, ol, dl, dd, input, textarea, select { margin: 0; padding: 0; }
+li { list-style: none; }
+h1, h2, h3 { color: #666; }
+a { text-decoration: none; color: #666; }
+a:hover { text-decoration: none; }
+a:link, a:visited, a:hover, a:active { color: #666; }
+img { border: none; vertical-align: top; }
+input, textarea { -webkit-appearance: none; }
+/* reset end */
+
+/* public begin */
+body, html { width: 100%; }
+body { font: 14px '微软雅黑','Arial'; background: #f5f5f5; }
+@keyframes move-out{
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(-100%);
+	}
+}
+@keyframes move-in{
+	0%{
+		transform: translateX(100%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+/* public end */
+
+/* common begin */
+.clearfix { zoom: 1; }
+.clearfix:after { display: block; content: ''; clear: both; }
+.flex-container {	
+	margin : 0 auto;
+	display: -webkit-flex;
+	display: flex; 
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content:space-around;
+	justify-content: space-around;
+}
+.hide { display: none; }
+/* common end */
+
+/* nav begin */
+#nav { width: 100%; height: 50px; position: fixed; left: 0; bottom: 0; background: #fff; border-top: 1px solid #e6e6e6; z-index: 999; opacity: 0; }
+#nav .nav-list { width: 100%; height: 100%; margin: 0 auto; }
+#nav .nav-list li {  width: 18%; height: 100%; outline: none; float: left; }
+#nav .nav-list li a { width: 100%; height: 100%; display: block; position: relative; }
+#nav .nav-list li .img { width: 20px; height: 20px; position: absolute; left: 50%; margin-left: -10px; top: 5px; background-size: 20px 20px; }
+#nav .nav-list li p { width: 100%; position: absolute; bottom: 0px; font: 14px/28px "微软雅黑",arial; text-align: center; }
+#nav .nav-list li.active p { color: #0055a2; }
+#nav .nav-list li .img { z-index: 9999; }
+#nav .nav-list li .icon-home { background: url(../imgs/icons/icon-home.png) no-repeat; background-size: cover; }
+#nav .nav-list li .icon-cake { background: url(../imgs/icons/icon-cake.png) no-repeat; background-size: cover; }
+#nav .nav-list li .icon-tea { background: url(../imgs/icons/icon-tea.png) no-repeat; background-size: cover; }
+#nav .nav-list li .icon-cart { background: url(../imgs/icons/icon-cart.png) no-repeat; background-size: cover; position: relative; }
+#nav .nav-list li .icon-cart span { display: block; width: 18px; height: 18px; background: #E74566; border-radius: 50%; line-height: 18px; text-align: center; position: absolute; top: -4px; right: -8px; color: #fff; font-size: 10px; }
+#nav .nav-list li .icon-me { background: url(../imgs/icons/icon-me.png) no-repeat; background-size: cover; }
+#nav .nav-list li.active .icon-home { background: url(../imgs/icons/icon-home-hover.png) no-repeat; background-size: cover; }
+#nav .nav-list li.active .icon-cake { background: url(../imgs/icons/icon-cake-hover.png) no-repeat; background-size: cover; }
+#nav .nav-list li.active .icon-tea { background: url(../imgs/icons/icon-tea-hover.png) no-repeat; background-size: cover; }
+#nav .nav-list li.active .icon-cart { background: url(../imgs/icons/icon-cart-hover.png) no-repeat; background-size: cover; }
+#nav .nav-list li.active .icon-me { background: url(../imgs/icons/icon-me-hover.png) no-repeat; background-size: cover; }
+/* nav end */

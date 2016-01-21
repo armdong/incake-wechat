@@ -1,0 +1,386 @@
+﻿html {
+	-webkit-tap-highlight-color: transparent
+}
+input,
+button,
+select,
+textarea {
+	outline: none
+}
+img {
+	width: 100%;
+	vertical-align: middle
+}
+body {
+	font-size: 12px
+}
+header {
+	width: 100%;
+	background-color: #fff;
+	color: #969696
+}
+header span {
+	position: relative;
+	width: 50%;
+	height: 38px;
+	line-height: 38px;
+	float: left;
+	text-align: center;
+	border-left: 1px solid #dcdcdc;
+	border-bottom: 2px solid #dcdcdc;
+	margin-left: -1px
+}
+header span:after {
+	display: block;
+	content: '';
+	clear: both
+}
+header .check {
+	color: #0055a2;
+	border-bottom: 2px solid #0055a2
+}
+header .check:after {
+	width: 0;
+	height: 0;
+	content: '';
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -2px;
+	margin-bottom: -6px;
+	bottom: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #0055a2
+}
+.container {
+	width: 100%;
+	color: #505050;
+}
+.container .inner-box {
+	width: 80%;
+	margin: 25px auto;
+	text-align: center
+}
+.container .inner-box p {
+	width: 100%;
+	margin-bottom: 15px
+}
+.container .inner-box p input {
+	width: 90%;
+	height: 30px;
+	padding: 5px 0;
+	border: 0
+}
+.container .inner-box .phone,
+.container .inner-box .verification {
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	background-color: #fff
+}
+.container .inner-box .phone {
+	position: relative
+}
+.container .inner-box .phone a {
+	position: absolute;
+	top: -1px;
+	right: 0;
+	width: 35%;
+	line-height: 42px;
+	background-color: #88afcd;
+	color: #fff;
+	text-align: center;
+	border-radius: 0 5px 5px 0
+}
+.container .inner-box .prompt a,
+.container .inner-box .forgot-pwd a {
+	color: #4694d1;
+	text-decoration: underline
+}
+.container .inner-box .p-btn a {
+	display: block;
+	margin-top: 30px;
+	background-color: #0055a2;
+	color: #fff;
+	line-height: 35px;
+	border-radius: 5px
+}
+.container .inner-box .attention {
+	color: #ea545d
+}
+.container .inner-box .forgot-pwd {
+	text-align: left;
+	margin-bottom: 65px
+}
+.container .inner-box .box-other .p-line {
+	position: relative;
+	margin-top: 35px;
+	border-bottom: 1px solid #0055a2
+}
+.container .inner-box .box-other .p-line span {
+	position: absolute;
+	top: -8px;
+	left: 40%;
+	width: 20%;
+	line-height: 16px;
+	background-color: #f5f5f5;
+	color: #0055a2
+}
+.container .inner-box .box-other a {
+	display: block;
+	width: 20%;
+	margin: 0 auto
+}
+.container .inner-box .box-other a img {
+	vertical-align: initial
+}
+#status-bar {
+	width: 100%;
+	height: 38px;
+	background: #e6e6e6
+}
+#status-bar p,
+#status-bar .backTop {
+	height: 38px;
+	font: 12px/38px "微软雅黑", arial;
+	color: #505050
+}
+#status-bar p {
+	float: left;
+	margin-left: 10px
+}
+#status-bar p em {
+	font-style: normal;
+	padding: 0 10px;
+	color: #b4b4b4
+}
+#status-bar .backTop {
+	float: right;
+	margin-right: 10px;
+	display: inline-block
+}
+#status-bar .backTop i {
+	width: 10px;
+	height: 9px;
+	line-height: 38px;
+	margin-left: 5px;
+	display: inline-block;
+	background: url(../imgs/arrow_up.png) no-repeat;
+	background-size: 10px 9px;
+	opacity: 0.6
+}
+#footer {
+	width: 100%;
+	background: #f5f5f5;
+}
+#footer .text {
+	width: 100%;
+	padding: 10px 0
+}
+#footer .text p {
+	text-align: center;
+	font: 12px/28px "微软雅黑", arial;
+	color: #505050
+}
+#footer .text p a {
+	height: 24px;
+	line-height: 24px;
+	display: inline-block;
+	margin-left: 5px;
+	padding: 0 10px;
+	border: 1px solid #bebebe;
+	border-radius: 5px;
+	color: #515151;
+	background: -webkit-linear-gradient(#fff, #e7e7e7);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e7e7e7));
+	background: linear-gradient(#fff, #e7e7e7)
+}
+#footer .text p a i {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(../imgs/tel_bg.png) no-repeat;
+	background-size: 14px 14px;
+	position: relative;
+	left: -4px;
+	top: 3px
+}
+#footer .link {
+	width: 100%;
+	height: 38px;
+	position: relative;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6
+}
+#footer .link a {
+	width: 60px;
+	position: absolute;
+	height: 14px;
+	top: 45%;
+	margin-top: -7px;
+	font-size: 12px
+}
+#footer .link a:nth-of-type(1) {
+	left: 20px
+}
+#footer .link a:nth-of-type(2) {
+	left: 50%;
+	margin-left: -30px
+}
+#footer .link a:nth-of-type(3) {
+	right: 20px
+}
+#footer .addr {
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 10px
+}
+#footer .addr p {
+	font: 12px/22px "微软雅黑", arial;
+	text-align: center;
+	color: #505050;
+	word-spacing: -1px
+}
+#mask-cart {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999
+}
+#mask-cart .cart {
+	width: 90%;
+	border-radius: 5px;
+	max-width: 500px;
+	background: #fff;
+	margin: auto;
+	position: absolute;
+	top: 40%;
+	margin-top: -50px;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	overflow: hidden
+}
+#mask-cart .cart .cart-title {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #e6e6e6;
+	color: #515151
+}
+#mask-cart .cart .cart-content {
+	width: 100%
+}
+#mask-cart .cart .cart-content .desc {
+	width: 100%;
+	margin: 20px 0;
+	padding: 30px 0
+}
+#mask-cart .cart .cart-content .desc p {
+	text-align: center;
+	line-height: 20px;
+	color: #515151
+}
+#mask-cart .cart .cart-content .btn {
+	height: 40px;
+	width: 90%;
+	margin: 20px auto
+}
+#mask-cart .cart .cart-content .btn a {
+	display: block;
+	width: 48%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 10px
+}
+#btnGoPay {
+	float: left;
+	background: #4694d2
+}
+#btnContinue {
+	float: right;
+	background: #0055A2
+}
+#mask-cart .cart .cart-title {
+	text-align: left;
+	padding-left: 10px;
+	color: #fff
+}
+#mask-cart .cart .cart-content .desc {
+	padding: 0
+}
+#mask-cart .cart .cart-content .desc p {
+	width: 85%;
+	margin: 0 auto
+}
+#mask-cart .cart .cart-content .desc p span {
+	width: 35%;
+	line-height: 25px;
+	float: left;
+	text-align: left
+}
+#mask-cart .cart .cart-content .desc input {
+	width: 62%;
+	line-height: 25px;
+	padding-left: 5px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	float: left
+}
+#mask-cart .cart .cart-content .desc .reg {
+	width: 85%;
+	margin: 15px auto
+}
+#mask-cart .cart .cart-content .desc .reg img {
+	width: 38%;
+	border: 1px solid #dcdcdc;
+	float: left;
+	padding: 1px 6px
+}
+#mask-cart .cart .cart-content .desc .reg span {
+	width: 56%;
+	color: #4694d1;
+	text-decoration: underline;
+	text-align: center;
+	line-height: 28px
+}
+
+/* 找回密码样式 */
+.header-pwd-reset { width: 80%; height: 40px; margin: 30px auto 0; position: relative; background: #f5f5f5; }
+.header-pwd-reset .section { display: inline-block; position: absolute; top: 50%; width: 14px; height: 14px; margin-top: -7px; border-radius: 50%; background: #cdcdcd; z-index: 9999; }
+.header-pwd-reset .active { background: #4694d1; }
+.header-pwd-reset .section1 { left: 0; }
+.header-pwd-reset .section2 { left: 50%; margin-left: -7px; }
+.header-pwd-reset .section3 { right: 0; }
+.header-pwd-reset .section1:after { display: block; content: '验证身份'; position: absolute; top: -20px; font-size: 12px; color: #cdcdcd; width: 50px; left: -50%; margin-left: -10px; }
+.header-pwd-reset .section2:after { display: block; content: '重置密码'; position: absolute; top: -20px; font-size: 12px; color: #cdcdcd; width: 50px; left: -50%; margin-left: -10px; }
+.header-pwd-reset .section3:after { display: block; content: '修改成功'; position: absolute; top: -20px; font-size: 12px; color: #cdcdcd; width: 50px; left: -50%; margin-left: -10px; }
+.header-pwd-reset .active:after { color: #505050; }
+.header-pwd-reset .progress-bar { width: 100%; height: 4px; background: #cdcdcd; position: absolute; left: 0; top: 50%; margin-top: -2px; z-index: 99; }
+.header-pwd-reset .progress-bar-hover { width: 50%; height: 4px; background: #4694d1; position: absolute; left: 0; top: 50%; margin-top: -2px; z-index: 999; }
+.header-pwd-reset .percent-0 { width: 0%; }
+.header-pwd-reset .percent-50 { width: 50%; }
+.header-pwd-reset .percent-100 { width: 100%; }
+
+.inner-pwd-reset { height: 164px; }
+.inner-pwd-reset .sucess-info { height: 164px; line-height: 164px; background: url(../imgs/success_meg.png) no-repeat center left; background-position: center left; text-indent: 30px; }
+.inner-pwd-reset .sucess-info a { color: #4694d1; }
+
+
+
+
+
+
+
+
+
+
+

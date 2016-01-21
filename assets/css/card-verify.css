@@ -1,0 +1,11 @@
+body { font: 12px "微软雅黑",arial; background: #f5f5f5; color: #505050; }
+.fixed { position: fixed; bottom: 0; left: 0; }
+.container-wrapper { width: 100%; }
+.content { background: #fff; padding: 10px; border-bottom: 1px solid #e6e6e6; margin-bottom: 60px; }
+
+.content .inputs { width: 94%; margin: 0 auto; padding: 0 0 10px 0; }
+.content .inputs input[type=text] { width: 100%; outline: none; margin: 12px 0 0 0; padding: 0; height: 38px; border-radius: 5px; border: 1px solid #d2d2d2; text-indent: 1em; }
+.content .notice { width: 94%; margin: 0 auto; text-align: justify; color: #ea545d; margin-bottom: 20px; }
+
+.btn-submit { width: 100%; height: 52px; }
+.btn-submit a { width: 100%; height: 100%; line-height: 52px; display: block; background: #0055a2; color: #fff; text-align: center; font-size: 14px; }

@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>添加发票信息</title>
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	    <link rel="stylesheet" href="assets/css/normalize.css" />
+	    <link rel="stylesheet" type="text/css" href="assets/css/common.css"/>
+	    <link rel="stylesheet" href="assets/css/uCenter.css" />
+	</head>
+	<body>
+		<div class="container uCenter-addInvoice">
+			<ul class="addInvoice-list">
+				<li class="addInvoice-item">
+					<div class="item-content clearfix">
+						<span class="addInvoice-type">发票类型</span>
+						<span class="span-select">
+							<select name="txt-type" class="txt-type">
+								<option value="0">普通发票</option>
+								<option value="1">餐饮发票</option>
+								<option value="2">交通发票</option>
+							</select>
+						</span>
+					</div>
+				</li>
+				<li class="addInvoice-item">
+					<div class="item-content clearfix">
+						<span class="addInvoice-title">发票抬头</span>
+						<span class="span-select">
+							<select name="txt-title" class="txt-title">
+								<option value="0">&nbsp;</option>
+								<option value="1">个人</option>
+								<option value="2">公司</option>
+							</select>
+						</span>
+					</div>
+				</li>
+				<li class="addInvoice-item">
+					<div class="item-content clearfix">
+						<span class="addInvoice-txt">发票内容</span>
+						<span class="span-select">
+							<select name="txt-cont" class="txt-cont">
+								<option value="0">&nbsp;</option>
+								<option value="1">哈哈</option>
+								<option value="2">呵呵</option>
+								<option value="3">嘿嘿</option>
+							</select>
+						</span>
+					</div>
+				</li>
+			</ul>
+			
+			<div class="btn-btm submit">提交</div>
+			
+		</div>
+
+		<!-- 引入js -->
+	    <script src="assets/js/jquery-2.1.4.min.js"></script>
+	    <script src="assets/js/uCenter.js"></script>
+	</body>
+</html>

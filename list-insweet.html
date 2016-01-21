@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>思蜜</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="assets/css/normalize.css">
+		<link rel="stylesheet" href="assets/css/common.css?v=222333">
+		<link rel="stylesheet" href="assets/css/list-insweet.css?v=dfff">
+	</head>
+
+	<body>
+		<header id="header">
+			<ul id="menu">
+				<li class="current"><a href="javascript:void(0);" onclick="headClick();">全部</a></li>
+				<li><a href="javascript:void(0);" onclick="headClick();">午后茶点</a></li>
+				<li><a href="javascript:void(0);" onclick="headClick();">饮品</a></li>
+				<li><a href="javascript:void(0);" onclick="headClick();">鲜花</a></li>
+				<li><a href="javascript:void(0);" onclick="headClick();">礼品</a></li>
+			</ul>
+		</header>
+		<div class="mask opacity hide"></div>
+		<div class="container">
+			<div class="container-wrapper clearfix">
+				<div class="inner-box no-product">
+					<a href="javascript:;" class="link" ><img data-original="assets/imgs/list/insweet01.png" /></a>
+					<div class="text">
+						<span class="t1">天鹅舞泡芙</span>
+						<span class="t2">Swan dance</span>
+						<span class="t3">4只装/<span class="t4">￥48</span></span>
+					</div>
+					<a href="javascript:void(0);" onclick="pageAdd();"><img class="img-add" src="assets/imgs/list/btn-add.png"></a>
+				</div>
+				<div class="inner-box no-product">
+					<a href="javascript:;" class="link" ><img data-original="assets/imgs/list/insweet02.png" /></a>
+					<div class="text">
+						<span class="t1">百利豆豆瑞士卷</span>
+						<span class="t2">Baileys Swiss Roll</span>
+						<span class="t3">4只装/<span class="t4">￥30</span></span>
+					</div>
+					<a href="javascript:void(0);" onclick="pageAdd();"><img class="img-add" src="assets/imgs/list/btn-add.png"></a>
+				</div>
+				<div class="inner-box">
+					<a href="javascript:;" class="link" ><img data-original="assets/imgs/list/insweet01.png" /></a>
+					<div class="text">
+						<span class="t1">天鹅舞泡芙</span>
+						<span class="t2">Swan dance</span>
+						<span class="t3">4只装/<span class="t4">￥48</span></span>
+					</div>
+					<a href="javascript:void(0);" onclick="pageAdd();"><img class="img-add" src="assets/imgs/list/btn-add.png"></a>
+				</div>
+				<div class="inner-box">
+					<a href="javascript:;" class="link" ><img data-original="assets/imgs/list/insweet03.jpg" /></a>
+					<div class="text">
+						<span class="t1">百利豆豆瑞士卷</span>
+						<span class="t2">Baileys Swiss Roll</span>
+						<span class="t3">4只装/<span class="t4">￥30</span></span>
+					</div>
+					<a href="javascript:void(0);" onclick="pageAdd();"><img class="img-add" src="assets/imgs/list/btn-add.png"></a>
+				</div>
+				<div class="inner-box">
+					<a href="javascript:;" class="link" ><img data-original="assets/imgs/list/insweet01.png" /></a>
+					<div class="text">
+						<span class="t1">天鹅舞泡芙</span>
+						<span class="t2">Swan dance</span>
+						<span class="t3">4只装/<span class="t4">￥48</span></span>
+					</div>
+					<a href="javascript:void(0);" onclick="pageAdd();"><img class="img-add" src="assets/imgs/list/btn-add.png"></a>
+				</div>
+				<div class="inner-box">
+					<a href="javascript:;" class="link" ><img data-original="assets/imgs/list/insweet02.png" /></a>
+					<div class="text">
+						<span class="t1">百利豆豆瑞士卷</span>
+						<span class="t2">Baileys Swiss Roll</span>
+						<span class="t3">4只装/<span class="t4">￥30</span></span>
+					</div>
+					<a href="javascript:void(0);" onclick="pageAdd();"><img class="img-add" src="assets/imgs/list/btn-add.png"></a>
+				</div>
+			</div>
+		</div>
+		<div class="buy-hide hide">
+			<div class="buyTop">
+				<img class="buy-img" src="assets/imgs/list/cake01.jpg" />
+				<div class="text">
+					<span class="buy-txtC">狮心王国</span>
+					<span class="buy-txtE">The Lion-heart King</span>
+					<br />
+					<span class="buy-txtI">适合生日派对、4-7人食用</span>
+					<img class="close" src="assets/imgs/list/close.jpg" />
+				</div>
+				<p class="price"><span>￥<span id="price">169</span>&nbsp;</span>/1.5磅</p>
+			</div>
+			<div class="buyMde">
+				<p class="spec">规格：</p>
+				<div class="buyMde-list">
+					<a class="type cur" href="javascript:void(0);" onclick="introduce();">1.5磅</a>
+					<a class="type" href="javascript:void(0);" onclick="introduce();">2.5磅</a>
+					<a class="type" href="javascript:void(0);" onclick="introduce();">3.5磅</a>
+					<a class="type" href="javascript:void(0);" onclick="introduce();">5.5磅</a>
+				</div>
+			</div>
+			<div class="buyBtm">
+				<span class="count">数量：</span>
+				<span class="countR">
+					<button class="subtract">－</button>
+					<input class="number" type="text" value="1" />
+					<button class="add">＋</button>
+				</span>
+			</div>
+			<div class="buyBtn">
+				<ul>
+					<li class="buyNow"><a href="javascript:void(0);" id="btnBuyNow">立刻购买</a></li>
+					<li class="addCart"><a href="javascript:void(0);" id="btnAddCart">加入购物车</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- footer nav begin -->
+		<nav id="nav">
+			<ul class="nav-list column-5 clearfix">
+				<li>
+					<a href="index.html">
+						<div class="img icon-home"></div>
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="list-cake.html">
+						<div class="img icon-cake"></div>
+						<p>蛋糕馆</p>
+					</a>
+				</li>
+				<li class="active">
+					<a href="list-insweet.html">
+						<div class="img icon-tea"></div>
+						<p>思蜜</p>
+					</a>
+				</li>
+				<li>
+					<a href="shopping-cart.html">
+						<div class="img icon-cart"></div>
+						<p>购物篮</p>
+					</a>
+				</li>
+				<li>
+					<a href="me.html">
+						<div class="img icon-me"></div>
+						<p>我</p>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- footer nav end -->
+		
+		<!-- 加入购物车模态框 begin -->
+		<div id="mask-cart" class="hide">
+			<!-- 城市选择 begin -->
+			<div class="cart">
+				<div class="cart-title">
+					<span>购物提示</span>
+				</div>
+				<div class="cart-content">
+					<div class="desc">
+						<p>已成功加入购物车，是否去结算？</p>
+					</div>
+					<div class="btn clearfix">
+						<a href="javascript:;" id="btnGoPay">去结算</a>
+						<a href="javascript:;" id="btnContinue">继续购物</a>
+					</div>
+				</div>
+			</div>
+			<!-- 城市选择 end -->
+		</div>
+		<!-- 加入购物车模态框 end -->
+		
+		<!-- 引入js -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+		<script src="assets/js/clientDetection.js"></script>
+		<script src="assets/js/lazyload.js"></script>
+		<script src="assets/js/list.js"></script>
+		<script src="assets/js/list-insweet.js"></script>
+		<script src="assets/js/footer-nav.js"></script>	
+		<script src="assets/js/list-insweet-android.js?v=44444"></script>
+	</body>
+
+</html>

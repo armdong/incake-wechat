@@ -1,0 +1,26 @@
+body { font: 12px "微软雅黑",arial; background: #f5f5f5; color: #505050; }
+
+.container-wrapper { width: 100%; background: #f5f5f5; }
+
+.tab { width: 100%; }
+.tab-title { width: 100%; overflow: hidden; position: fixed; top: 0; left: 0; z-index: 999;  background: #f5f5f5; }
+.tab-title > li { width: 33.3%; border-left: 1px solid #dcdcdc; border-bottom: 1px solid #dcdcdc; margin-left: -1px; float: left; line-height: 42px; height: 42px; overflow: hidden; text-align: center; color: #969696; background: #fff; }
+.tab-title > li.active { border-bottom-color: #f5f5f5; color: #515151; background: #f5f5f5; }
+
+.tab-content { width: 100%; margin-top: 53px; }
+.tab-content > li { width: 100%; display: none; }
+.tab-content > li.active { display: block; }
+
+.tab-content .content-item { width: 94%; margin: 0 auto; }
+.content-item .ticket-list { width: 100%; }
+.content-item .ticket-item { box-shadow: 0 1px 1px 0 #ddd; border-radius: 10px; background: #fff; margin: 10px 0; }
+.ticket-item .ticket-content { height: 70px; }
+.ticket-item .ticket-left { width: 58%; height: 100%; float: left; text-indent: 6px; position: relative; }
+.ticket-item .ticket-left .title { width: 100%; position: absolute; left: 0; top: 6px; color: #0055a2; }
+.ticket-item .ticket-left .info { width: 100%; position: absolute; left: 0; bottom: 6px; }
+.ticket-item .ticket-left .info p { width: 100%; line-height: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.ticket-item .ticket-right { height: 100%; float: right; }
+.ticket-item .ticket-right a { width: 123px; height: 70px; display: block; background: url(../imgs/record/ticket_my.png) no-repeat; background-size: cover; }
+.ticket-item .ticket-right p { width: 100%; line-height: 70px; height: 70px; text-align: center; color: #fff; font-size: 22px; }
+.ticket-item .ticket-right p span { font-size: 32px; font-weight: 300; }

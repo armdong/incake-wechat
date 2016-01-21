@@ -1,0 +1,79 @@
+body { font: 12px "微软雅黑",arial; background: #f5f5f5; color: #505050; }
+
+.container-wrapper { width: 100%; background: #f5f5f5; }
+
+.tab { width: 100%; }
+.tab-title { width: 100%; overflow: hidden; position: fixed; top: 0; left: 0; }
+.tab-title > li { width: 25%; border-left: 1px solid #dcdcdc; border-bottom: 1px solid #dcdcdc; margin-left: -1px; float: left; line-height: 42px; height: 42px; overflow: hidden; text-align: center; color: #969696; background: #fff; }
+.tab-title > li.active { border-bottom-color: #f5f5f5; color: #515151; background: #f5f5f5; }
+
+.tab-content { width: 100%; padding:0 0 10px 0; margin-top: 10px; margin-top: 53px; }
+.tab-content > li { width: 100%; display: none; }
+.tab-content > li.active { display: block; }
+
+.tab-content .order-wrap { width: 100%; }
+.tab-content .order-list { width: 94%; margin: 0 auto; }
+.tab-content .order-item { width: 100%; padding: 10px 0 0 0; margin: 0 0 10px 0; border-radius: 10px; box-shadow: 1px 1px 1px 0 #ddd; background: #fff; overflow: hidden; }
+
+.order-item .order-item-header,
+.order-item .order-item-content,
+.order-item .order-item-comment{ width: 94%; margin: 0 auto; }
+
+.order-item .order-item-header { height: 36px; line-height: 36px; border-bottom: 1px solid #e6e6e6; }
+.order-item .order-item-header span { height: 100%; }
+.order-item .order-item-header .order-no { width: 80%; float: left; color: #2d78b0; }
+.order-item .order-item-header .order-state { width: 20%; float: right; color: #ea545d; text-align: right; }
+
+.order-item .order-item-content .product-list { width: 100%; }
+.order-item .order-item-content .product-item { width: 100%; border-bottom: 1px dotted #e6e6e6; }
+.order-item .order-item-content .product-img { width: 20%; display: block; overflow: hidden; border: 1px solid #b4b4b4; border-radius: 5px; margin: 3%; float: left; }
+.order-item .order-item-content .product-img img { width: 100%; }
+.order-item .order-item-content .product-info { width: 70%; float: right; margin-top: 3%; }
+.order-item .order-item-content .product-info p { height: 28px; line-height: 28px; overflow: hidden; }
+.order-item .order-item-content .product-info span { display: block; float: left; }
+.order-item .order-item-content .product-info .procuct-title,
+.order-item .order-item-content .product-info .product-size { width: 70%; }
+.order-item .order-item-content .product-info .product-price,
+.order-item .order-item-content .product-info .product-num { width:30%; text-align: right; }
+.order-item .order-item-content .product-info .product-size,
+.order-item .order-item-content .product-info .product-num { color: #b5b5b5; }
+.order-item .order-item-content .product-info .product-price { color: #000; }
+.order-item .order-item-content .product-total { width: 100%; }
+.order-item .order-item-content .product-total p { height: 28px; line-height: 28px; width: 40%; float: right; text-align: right; }
+.order-item .order-item-content .product-total span {  }
+.order-item .order-item-content .product-total .price { color: #000; }
+
+.order-item .order-item-comment { padding: 10px 0; border-top: 1px dotted #e6e6e6; }
+.order-item .order-item-comment p { height: 28px; line-height: 28px; }
+.order-item .order-item-comment .comment-text { width: 70%; float: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.order-item .order-item-comment .comment-time { width: 30%; float: right; text-align: right; color: #b5b5b5; }
+
+.order-item .order-item-footer { width: 100%; padding: 0 0 10px 0; background: #fafafa; }
+.order-item .order-item-footer .footer-wrap { width: 94%; margin: 0 auto; }
+.order-item .order-item-footer p { height: 28px; line-height: 28px; width: 100%; float: left; text-align: right; }
+.order-item .order-item-footer .btns { height: 30px; line-height: 30px; width: 100%; padding-top: 5px; float: right; }
+.order-item .order-item-footer .btns a { width: 30%; float: right; height: 28px; line-height: 28px; text-align: center; border-radius: 5px; margin-left: 10px; }
+.order-item .order-item-footer .btn-add-comment,
+.order-item .order-item-footer .btn-cancel { color: #0055a2; border: 1px solid #0055a2; }
+.order-item .order-item-footer .btn-pay { color: #fff; background: #4694d1; border: 1px solid #4694d1; }
+.order-item .order-item-footer .btn-comment { color: #ea545d; border: 1px solid #ea545d; }
+
+.load-more { width: 100%; height: 20px; position: relative; }
+.load-more span { display: block; width: 20px; height: 20px; background: url(../imgs/indicator_medium.gif) no-repeat center center; background-size: 20px 20px; position: absolute; top: -10px; left: 50%; margin-left: -10px; }
+
+/* mask-payment begin */
+.mask-payment { width: 100%; height: 100%; background: rgba(0,0,0,.5); position: fixed; left: 0; top: 0; z-index: 999; display: none; }
+.mask-payment .payment { width: 90%; border-radius: 5px; max-width: 500px; background: #fff; margin: auto; position: absolute; top: 40%; margin-top: -50px; left: 0; right: 0; z-index: 9999; overflow: hidden; }
+.mask-payment .payment-title { width: 100%; height: 40px; line-height: 40px; text-align: center; background: #e6e6e6; color: #515151; font-size: 14px; }
+.mask-payment .payment-content { width: 100%; }
+.mask-payment .payment-content .payment-list { width: 90%; margin: 0 auto; padding: 10px 0; }
+.mask-payment .payment-content .payment-list li { width: 48%; height: 18px; line-height: 18px; padding: 5px 0; margin: 5px 0; border: 1px solid #bebebe; border-radius: 5px; text-align: center; color: #737373; overflow: hidden; }
+.mask-payment .payment-content .payment-list li.active { border-color: #ea545d;     position: relative; }
+.mask-payment .payment-content .payment-list li.active:after { display: block; content: url(../imgs/setting_item_bg.png); width: 20px; height: 20px; position: absolute; right: -1px; bottom: 0; vertical-align: bottom; }
+.mask-payment .payment-content .payment-list li:nth-of-type(odd) { float: left; }
+.mask-payment .payment-content .payment-list li:nth-of-type(even) { float: right; }
+.mask-payment .payment-content p { width: 100%; height: 40px; line-height: 40px; text-align: center;  }
+.mask-payment .payment-content p a { width: 50%; float: left; display: block; color: #fff; font-size: 16px; word-spacing: 2px; }
+.mask-payment .payment-content .btn-payment-ok { background: #0055a2; }
+.mask-payment .payment-content .btn-payment-cancel { background: #4694d2; }
+/* mask-payment end */

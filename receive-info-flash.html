@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>填写收件人信息</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="assets/css/normalize.css" />
+		<link rel="stylesheet" href="assets/css/common.css" />
+		<link rel="stylesheet" href="assets/css/receive-info-flash.css" />
+	</head>
+
+	<body>
+		
+		<div class="container-wrapper">
+			
+			<ul class="addr-list">
+				<li class="addr-item">
+					<div class="item-content">
+						<input type="text" placeholder="请输入收货人姓名" />
+					</div>
+				</li>
+				<li class="addr-item">
+					<div class="item-content clearfix">
+						<input type="tel" placeholder="请输入手机号" />
+						<input type="button" value="获取验证码" />
+					</div>
+				</li>
+				<li class="addr-item">
+					<div class="item-content">
+						<input type="text" placeholder="请输入验证码" />
+					</div>
+				</li>
+				<li class="addr-item option-receiver">
+					<div class="item-content">
+						<input type="text" placeholder="收货人（字符必须在2~6之间）" />
+					</div>
+				</li>
+				<li class="addr-item option-receiver">
+					<div class="item-content">
+						<input type="text" placeholder="收货人手机号码（只能输入数字）" />
+					</div>
+				</li>
+				<li class="addr-item option-receiver">
+					<div class="item-content">
+						<input type="text" placeholder="电话号码（可填可不填）" />
+					</div>
+				</li>
+				<li class="addr-item">
+					<div class="item-content clearfix">
+						<span class="span-select">
+							<select name="txt-addr-city" class="txt-addr-city">
+								<option value="0">城市</option>
+								<option value="1">上海市</option>
+								<option value="2">福州市</option>
+								<option value="3">苏州市</option>
+								<option value="4">昆山市</option>
+								<option value="5">厦门市</option>
+							</select>
+						</span>
+						<span class="span-select">
+							<select name="txt-addr-area" class="txt-addr-area">
+								<option value="0">城区</option>
+								<option value="1">闸北区</option>
+								<option value="2">宝山区</option>
+								<option value="3">普陀区</option>
+								<option value="4">黄浦区</option>
+								<option value="5">静安区</option>
+								<option value="6">长宁区</option>
+							</select>
+						</span>
+					</div>
+				</li>
+				<li class="addr-item">
+					<div class="item-content">
+						<span class="span-select full-width">
+							<select name="txt-addr-option" class="txt-addr-option">
+								<option value="0">请选择</option>
+								<option value="1">闸北区</option>
+								<option value="2">宝山区</option>
+								<option value="3">普陀区</option>
+								<option value="4">黄浦区</option>
+								<option value="5">静安区</option>
+								<option value="6">长宁区</option>
+							</select>
+						</span>
+					</div>
+				</li>
+				<li class="addr-item">
+					<div class="item-content">
+						<input type="text" placeholder="街道地址" />
+					</div>
+				</li>
+				<li class="addr-item">
+					<div class="item-content">
+						<ul class="addr-setting clearfix">
+							<li>
+								<a href="javascript:;">查看配送范围</a>
+							</li>
+							<li>
+								<span><i class="check-box checked"></i>是本人收货</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			
+			<div class="btn-submit fixed">
+				<a href="javascript:;">提交</a>
+			</div>
+			
+		</div>
+		
+		<!-- javascript begin -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+		<script src="assets/js/receive-info-flash.js"></script>
+		<!-- javascript end -->
+	</body>
+
+</html>

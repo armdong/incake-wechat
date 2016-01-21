@@ -1,0 +1,22 @@
+.fixed { position: fixed; bottom: 0; left: 0; }
+.container-wrapper { width: 100%; font: 12px "微软雅黑",arial; color: #505050; }
+
+.address-list { width: 100%; margin-bottom: 52px; }
+.address-list > li { width: 100%; height: 48px; padding: 10px 0; border-bottom: 1px solid #e6e6e6; }
+.address-list > li.active { background: #3c6487; color: #fff; }
+.address-list > li .item-content { width: 94%; margin: 0 auto; height: 100%; }
+.address-list > li .item-content .item-text { display: block; width: 88%; height: 100%; float: left; }
+.address-list > li.active .item-content .item-text { color: #fff; }
+.address-list > li .item-content .btn-check { width: 10%; height: 100%; float: left; display: block; }
+.address-list > li.active .item-content .btn-check { background: url(../imgs/address_checked_bg.png) no-repeat center left; }
+.address-list > li .item-content .text-content { width: 90%; float: right; }
+.address-list > li .item-content .text-content p { width: 100%; line-height: 24px; }
+.address-list > li .item-content .text-content .name {}
+.address-list > li .item-content .text-content .address { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.address-list > li .item-content .item-del { width: 12%; height: 100%; float: right; display: block; background: url(../imgs/address_del_bg.png) no-repeat center center; }
+.address-list > li.active .item-content .item-del { background: url(../imgs/address_del_active_bg.png) no-repeat center center; }
+
+/* btn-new begin */
+.btn-new { width: 100%; height: 52px; }
+.btn-new a { width: 100%; height: 100%; line-height: 52px; display: block; background: #0055a2; color: #fff; text-align: center; font-size: 14px; }
+/* btn-new end */
