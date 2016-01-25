@@ -5,6 +5,9 @@
 		fnInitTab();
 		
 		fnPay();
+
+		// 取消订单
+		fnCancelOrder();
 		
 	});
 	
@@ -45,6 +48,30 @@
 			$(this).addClass('active').siblings('li').removeClass('active');
 		});
 		
+	}
+
+	function fnCancelOrder(){
+		var $oBtnCancel = $('.btn-cancel');
+		var $oMaskOrder = $('.mask-order');
+		var $oBtnOrderCancel = $oMaskOrder.find('.btn-order-cancel');
+		var $oList = $oMaskOrder.find('.list');
+		var $aLi = $oList.find('li');
+
+		$oBtnCancel.on('click',function(){
+			$oMaskOrder.show();
+			$('body').bind('touchmove',function(e){
+				e.preventDefault();
+			});
+		});
+		
+		$oBtnOrderCancel.on('click',function(){
+			$oMaskOrder.hide();
+			$('body').unbind('touchmove');
+		});
+		
+		$aLi.on('click',function(){
+			$(this).addClass('active').siblings('li').removeClass('active');
+		});
 	}
 	
 })();
