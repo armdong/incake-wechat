@@ -3,6 +3,9 @@
 	$(function(){
 		
 		fnInitTab();
+
+		// 添加优惠券
+		fnAddTicket();
 		
 	});
 	
@@ -17,6 +20,25 @@
 				$aContentLi.eq(i).addClass('active').siblings().removeClass('active');
 			});			
 		});		
+	}
+
+	function fnAddTicket(){
+
+		var $oBtnAdd = $('.btn-new-ticket');
+		var $oMask = $('#mask-ticket');
+		var $oBtnCancel = $oMask.find('.btn-ticket-cancel');
+
+		$oBtnAdd.on('click',function(){
+			$oMask.show();
+			$('body').bind('touchmove',function(e){
+				e.preventDefault();
+			});
+		});
+
+		$oBtnCancel.on('click',function(){
+			$oMask.hide();
+			$('body').unbind('touchmove');
+		});
 	}
 	
 })();

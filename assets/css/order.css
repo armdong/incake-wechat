@@ -220,7 +220,8 @@
 
 /* receiver address wrapper end */
 
-
+/* 去掉优惠信息详情 */
+.setting-list .discount-list { padding: 0; }
 
 
 
