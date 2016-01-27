@@ -1,19 +1,22 @@
-(function(){
+(function() {
 
-    $(function(){
+    $(function() {
 
-        // 初始化信封事件
-        fnMailBox();
-
-    });
-
-    function fnMailBox(){
-        var $oBtnInit = $('#btn-init');
         var $oMask = $('#mask');
 
-        $oBtnInit.on('click',function(){
-            //$oMask.show();
-        });
-    }
+        // 验证码弹框
+        fnVerifyBox();
+
+        // 验证码弹框事件
+        function fnVerifyBox() {
+            var $oBtnOk = $('#btn-verify-ok');
+            var $oVerifyBox = $('#verify-box');
+            $oBtnOk.on('click', function() {
+                $oVerifyBox.hide();
+                $oMask.hide();
+            });
+        }
+
+    });
 
 })();

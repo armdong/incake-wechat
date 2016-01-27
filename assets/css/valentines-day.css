@@ -26,9 +26,13 @@ body { font-size: 62.5%; }
 /* verify box begin */
 #verify-box { position: absolute; top: 50%; left: 50%; z-index: 9999; width: 86%; border: .8em solid #e8dfd3; padding: 3em 0; font-size: 1em; background-color: #f2ede7; box-shadow: 0 0 .2em #e6e6e6; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 #verify-box ul { width: 100%; margin: 0 auto; font-family: 'sentypea'; font-size: 1.4em; }
-#verify-box li { width: 100%; line-height: 1.5em; margin: 1em 0; color: #444; }
+#verify-box li { width: 100%; line-height: 2em; height: 2em; margin: 1em 0; color: #444; }
 #verify-box .title { display: inline-block; float: left; width: 35%; height: 100%; text-align: right; }
 #verify-box .content { display: inline-block; float: left; width: 60%; height: 100%; border-bottom: 1px solid #dcd2c3; }
-#verify-box .content input { float: left; width: 100%; height: 100%; border: none; background: transparent; outline: none; text-indent: .1em; -webkit-appearance: none; }
+#verify-box .content input { float: left; width: 100%; height: 100%; border: none; font-family: Arial; background: transparent; outline: none; text-indent: .1em; -webkit-appearance: none; }
 #verify-box .content #txt-mobileno { width: 55%; }
-#verify-box #btn-fetch-vcode { position: relative; top: -0.5em; display: inline-block; float: right; width: 42%; padding: 1%; font-size: 1em; text-align: center; letter-spacing: -0.1em; background: url(../imgs/valentines-day/btn_vcode_bg.png) no-repeat center center; background-size: cover; }
+#btn-fetch-vcode { position: relative; top: -0.3em; display: inline-block; float: right; width: 42%; padding: 1%; font-size: 1em; text-align: center; letter-spacing: -0.1em; background: url(../imgs/valentines-day/btn_vcode_bg.png) no-repeat center center; background-size: 100% 100%; }
+#verify-box li.last { position: relative; }
+#btn-verify-ok { position: absolute; left: 50%; width: 37.96%; margin: 0.5em 0; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+#verify-box li.last .ok-tip { position: absolute; right: 22.98%; top: 0; width: 7.4%; }
+#verify-box li.last .ok-tip img { width: 100%; }
