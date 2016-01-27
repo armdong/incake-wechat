@@ -108,6 +108,18 @@
 					break;
 			}
 		});
+		//GAW规格切换
+		$(".gaw-list .type").click(function(){
+			
+			$(this).addClass("cur");
+	    	$(this).children('img').removeClass("hide");
+	    	$(this).siblings('.type').removeClass("cur");
+	    	$(this).siblings('.type').children('img').addClass("hide");
+	    	
+		    $(".number").val("1");
+		    $(".subtract").css("background-color","#d7d7d7");
+		    
+		});
 		
 		var numberNew=0;
 		/* 数量减 */
