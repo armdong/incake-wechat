@@ -1,0 +1,34 @@
+
+@font-face {
+    font-family: 'sentypea';
+    src: url('../fonts/SentyPea.eot');
+    src: url('../fonts/SentyPea.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SentyPea.woff') format('woff'),
+         url('../fonts/SentyPea.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body { width: 100%; height: 100%; }
+body { font-size: 62.5%; }
+.wrapper { position: relative; width: 100%; height: 100%; background-color: #fff; background-image: url(../imgs/valentines-day/wrapper_bg.jpg); background-repeat: no-repeat; background-position: left bottom; background-size: 100% auto; }
+.wrapper img { width: 100%; vertical-align: top; border: none; }
+
+.silk { position: absolute; top: 0; left: 0; width: 73.4375%; }
+.love { position: absolute; top: 22.62%; right: 3.125%; width: 50.625%; }
+.mail-box { position: absolute; right: 3.125%; bottom: 9.42%; z-index: 99; width: 36.25%; }
+.mail-box a { display: block; }
+.mail-box .mail-box-tip { position: absolute; top: -51.2%; left: -21.12%; z-index: 9; width: 90.517%; }
+
+/* mask begin */
+#mask { position: fixed; top: 0; left: 0; z-index: 999; width: 100%; height: 100%; background-color: rgba(203,172,127,.6); }
+
+/* verify box begin */
+#verify-box { position: absolute; top: 50%; left: 50%; z-index: 9999; width: 86%; border: .8em solid #e8dfd3; padding: 3em 0; font-size: 1em; background-color: #f2ede7; box-shadow: 0 0 .2em #e6e6e6; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+#verify-box ul { width: 100%; margin: 0 auto; font-family: 'sentypea'; font-size: 1.4em; }
+#verify-box li { width: 100%; line-height: 1.5em; margin: 1em 0; color: #444; }
+#verify-box .title { display: inline-block; float: left; width: 35%; height: 100%; text-align: right; }
+#verify-box .content { display: inline-block; float: left; width: 60%; height: 100%; border-bottom: 1px solid #dcd2c3; }
+#verify-box .content input { float: left; width: 100%; height: 100%; border: none; background: transparent; outline: none; text-indent: .1em; -webkit-appearance: none; }
+#verify-box .content #txt-mobileno { width: 55%; }
+#verify-box #btn-fetch-vcode { position: relative; top: -0.5em; display: inline-block; float: right; width: 42%; padding: 1%; font-size: 1em; text-align: center; letter-spacing: -0.1em; background: url(../imgs/valentines-day/btn_vcode_bg.png) no-repeat center center; background-size: cover; }
