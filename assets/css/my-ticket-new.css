@@ -7,10 +7,13 @@ body { font: 12px "微软雅黑",arial; background: #f5f5f5; color: #505050; }
 .tab-title > li { width: 50%; border-left: 1px solid #dcdcdc; border-bottom: 1px solid #dcdcdc; margin-left: -1px; float: left; line-height: 42px; height: 42px; overflow: hidden; text-align: center; color: #969696; background: #fff; }
 .tab-title > li.active { border-bottom-color: #f5f5f5; color: #515151; background: #f5f5f5; }
 
-.ticket-nouse { margin-top: 53px; line-height: 16px; text-align: center; }
-.ticket-nouse a { color: #d90000; text-decoration: underline; }
+.ticket-rules { margin-top: 53px; line-height: 16px; text-align: center; }
+.ticket-rules i { width: 15px; height: 16px; display: inline-block; background: url(../imgs/record/help_bg.png) no-repeat left center; margin-right: 5px; position: relative; top: 3px; }
+.ticket-rules a { color: #d90000; }
+.ticket-rules a span { padding: 0 5px; color: #666; font-family: arial; }
+.ticket-rules .split { margin: 0 10px; width: 0; height: 16px; border-left: 1px solid #dcdcdc; }
 
-.tab-content { width: 100%; }
+.tab-content { width: 100%; margin-bottom: 60px; }
 .tab-content > li { width: 100%; display: none; }
 .tab-content > li.active { display: block; }
 
@@ -52,7 +55,3 @@ body { font: 12px "微软雅黑",arial; background: #f5f5f5; color: #505050; }
 #mask-ticket .ticket-content .btn a { display: block; width: 48%; height: 100%; margin: 0 auto; text-align: center; line-height: 40px; font-size: 14px; color: #fff; border-radius: 10px; }
 #mask-ticket .btn-ticket-cancel { float: left; background: #4694d2; }
 #mask-ticket .btn-ticket-ok { float: right; background: #0055A2; }
-
-.ticket-rules { margin-bottom: 60px; line-height: 16px; text-align: center; }
-.ticket-rules i { width: 15px; height: 16px; display: inline-block; background: url(../imgs/record/help_bg.png) no-repeat left center; margin-right: 5px; position: relative; top: 3px; }
-.ticket-rules a { color: #d90000; }
