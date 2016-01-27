@@ -1,0 +1,21 @@
+body{ background-color: #fff; }
+.fixed { position: fixed; bottom: 0; left: 0; }
+.container-wrapper { width: 100%; font: 12px "微软雅黑",arial; color: #505050; }
+
+.bg-list { width: 100%; margin-bottom: 52px; }
+.bg-list > li { width: 100%; height: 40px; padding: 10px 0; border-bottom: 1px solid #e6e6e6; }
+.bg-list > li.active { background: #e6f0fb; }
+.bg-list > li .item-content { width: 94%; margin: 0 auto; height: 100%; }
+.bg-list > li .item-content .item-text { display: block; width: 88%; height: 100%; float: left; }
+.bg-list > li .item-content .btn-check { width: 6%; height: 100%; margin: 0 2%; float: left; display: block; }
+.bg-list > li.active .item-content .btn-check { background: url(../imgs/valentines-day/my-bg/check.png) no-repeat center center; background-size: contain; }
+.bg-list > li .item-content .text-content { width: 90%; float: left; }
+.bg-list > li.active .item-content .text-content { color: #0055a2; }
+.bg-list > li .item-content .text-content p { width: 70%; float: left; line-height: 40px; }
+.bg-list > li .item-content .text-content p.time{ width: 30%; }
+.bg-list > li .item-content .item-play{ width: 5%; height: 100%; margin: 0 3%; float: left; display: block; background: url(../imgs/valentines-day/my-bg/begin02.png) no-repeat center center; background-size: contain; }
+.bg-list > li.active .item-content .item-play{ background: url(../imgs/valentines-day/my-bg/begin01.png) no-repeat center center; background-size: contain; }
+/* btn-new begin */
+.btn-new { width: 100%; height: 52px;}
+.btn-new a { width: 100%; height: 100%; line-height: 52px; display: block; background: #0055a2; color: #fff; text-align: center; font-size: 16px; }
+/* btn-new end */
