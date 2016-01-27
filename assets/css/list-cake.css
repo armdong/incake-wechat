@@ -399,7 +399,9 @@ header .send-hide button {
 .cake-list .no-product .link::after { display: inline-block; content: ''; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: rgba(0,0,0,.5); z-index: 999; border-radius: 10px; }
 .cake-list .no-product .link::before { display: block; position: absolute; content: '售罄'; width: 50px; height: 50px; line-height: 50px; top: 50%; left: 50%; margin: -25px 0 0 -25px; color: #fff; z-index: 9999; font-size: 24px; }
 
-
+/* 主题蛋糕新增样式 */
+.container .inner-box.theme-cake .link { position: relative; }
+.container .inner-box.theme-cake .link:after { position: absolute; left: 1rem; top: .25rem; width: 25%; content: url(../imgs/list/theme_cake_mark.png); }
 
 
 
