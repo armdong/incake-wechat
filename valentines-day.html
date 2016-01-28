@@ -13,6 +13,9 @@
 <body>
     <!-- wrapper begin -->
     <div class="wrapper">
+        <!-- bgm begin -->
+        <audio src="assets/music/bgm.mp3" id="bgm" preload></audio>
+        <!-- bgm end -->
         <!-- silk begin -->
         <div class="silk">
             <img src="assets/imgs/valentines-day/silk.jpg" alt="Silk">
@@ -63,10 +66,33 @@
             </ul>
         </div>
         <!-- verify box end -->
+        <!-- player begin -->
+        <div id="player">
+            <div class="player-body">
+                <img src="assets/imgs/valentines-day/player_body.png" alt="">
+                <div class="musicbar">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="player-top" state="paused">
+                <div class="front">
+                    <img src="assets/imgs/valentines-day/player_top_front.png" alt="">
+                </div>
+                <div class="back">
+                    <img src="assets/imgs/valentines-day/player_top_back.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- player end -->
     </div>
     <!-- wrapper end -->
     <!-- javascript begin -->
     <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
     <script src="assets/js/valentines-day.js"></script>
     <!-- javascript end -->
 </body>
