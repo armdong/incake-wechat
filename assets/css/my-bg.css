@@ -3,20 +3,21 @@ body{ background-color: #fff; }
 .container-wrapper { width: 100%; font: 12px "微软雅黑",arial; color: #505050; }
 
 .voice-list { width: 100%; margin-bottom: 52px; }
-.voice-list > li { width: 100%; height: 40px; padding: 10px 0; border-bottom: 1px solid #e6e6e6; }
-.voice-list > li.active { background: #e6f0fb; }
-.voice-list > li .item-content { width: 94%; margin: 0 auto; height: 100%; }
-.voice-list > li .item-content .item-text { display: block; width: 78%; height: 100%; float: left; }
-.voice-list > li .item-content .btn-check { width: 6%; height: 100%; margin: 0 2%; float: left; display: block; }
-.voice-list > li.active .item-content .btn-check { background: url(../imgs/valentines-day/my-bg/check.png) no-repeat center center; background-size: contain; }
-.voice-list > li .item-content .text-content { width: 90%; float: left; }
-.voice-list > li.active .item-content .text-content { color: #0055a2; }
-.voice-list > li .item-content .text-content p { width: 45%; float: left; line-height: 40px; }
-.voice-list > li .item-content .text-content p.date{ width: 55%; }
-.voice-list > li .item-content .item-del { width: 5%; height: 100%; margin: 0 3%; float: left; display: block; background: url(../imgs/valentines-day/my-bg/del02.png) no-repeat center center; background-size: contain; }
-.voice-list > li.active .item-content .item-del { background: url(../imgs/valentines-day/my-bg/del01.png) no-repeat center center;  background-size: contain; }
-.voice-list > li .item-content .item-play{ width: 5%; height: 100%; margin: 0 3%; float: left; display: block; background: url(../imgs/valentines-day/my-bg/begin02.png) no-repeat center center; background-size: contain; }
-.voice-list > li.active .item-content .item-play{ background: url(../imgs/valentines-day/my-bg/begin01.png) no-repeat center center; background-size: contain; }
+.voice-list li { width: 100%; height: 40px; padding: 10px 0; border-bottom: 1px solid #e6e6e6; }
+.voice-list li.active { background: #e6f0fb; }
+.voice-list li .item-content { width: 94%; margin: 0 auto; height: 100%; }
+.voice-list li .item-content .item-text { display: block; width: 78%; height: 100%; float: left; }
+.voice-list li .item-content .btn-check { width: 6%; height: 100%; margin: 0 2%; float: left; display: block; }
+.voice-list li.active .item-content .btn-check { background: url(../imgs/valentines-day/my-bg/check.png) no-repeat center center; background-size: contain; }
+.voice-list li .item-content .text-content { width: 90%; float: left; }
+.voice-list li.active .item-content .text-content { color: #0055a2; }
+.voice-list li .item-content .text-content p { width: 45%; float: left; line-height: 40px; }
+.voice-list li .item-content .text-content p.date{ width: 55%; }
+.voice-list li .item-content .item-del { width: 5%; height: 100%; margin: 0 3%; float: left; display: block; background: url(../imgs/valentines-day/my-bg/del02.png) no-repeat center center; background-size: contain; }
+.voice-list li.active .item-content .item-del { background: url(../imgs/valentines-day/my-bg/del01.png) no-repeat center center;  background-size: contain; }
+.voice-list li .item-content .item-play{ width: 5%; height: 100%; margin: 0 3%; float: left; display: block; background: url(../imgs/valentines-day/my-bg/begin02.png) no-repeat center center; background-size: contain; }
+.voice-list li.active .item-content .item-play{ background: url(../imgs/valentines-day/my-bg/begin01.png) no-repeat center center; background-size: contain; }
+.voice-list li .item-content .item-pause{ width: 5%; height: 100%; margin: 0 3%; float: left; display: none; background: url(../imgs/valentines-day/my-bg/pause.png) no-repeat center center; background-size: contain; }
 /* btn-new begin */
 .btn-new { width: 100%; }
 .btn-new p{ height: 26px; line-height: 26px; text-align: center; background-color: #efe0b4; color: #fff; }
