@@ -3,19 +3,123 @@ body{ background-color: #fff; }
 .container-wrapper { width: 100%; font: 12px "微软雅黑",arial; color: #505050; }
 
 .bg-list { width: 100%; margin-bottom: 52px; }
-.bg-list > li { width: 100%; height: 40px; padding: 10px 0; border-bottom: 1px solid #e6e6e6; }
-.bg-list > li.active { background: #e6f0fb; }
-.bg-list > li .item-content { width: 94%; margin: 0 auto; height: 100%; }
-.bg-list > li .item-content .item-text { display: block; width: 88%; height: 100%; float: left; }
-.bg-list > li .item-content .btn-check { width: 6%; height: 100%; margin: 0 2%; float: left; display: block; }
-.bg-list > li.active .item-content .btn-check { background: url(../imgs/valentines-day/my-bg/check.png) no-repeat center center; background-size: contain; }
-.bg-list > li .item-content .text-content { width: 90%; float: left; }
-.bg-list > li.active .item-content .text-content { color: #0055a2; }
-.bg-list > li .item-content .text-content p { width: 70%; float: left; line-height: 40px; }
-.bg-list > li .item-content .text-content p.time{ width: 30%; }
-.bg-list > li .item-content .item-play{ width: 5%; height: 100%; margin: 0 3%; float: left; display: block; background: url(../imgs/valentines-day/my-bg/begin02.png) no-repeat center center; background-size: contain; }
-.bg-list > li.active .item-content .item-play{ background: url(../imgs/valentines-day/my-bg/begin01.png) no-repeat center center; background-size: contain; }
-/* btn-new begin */
-.btn-new { width: 100%; height: 52px;}
-.btn-new a { width: 100%; height: 100%; line-height: 52px; display: block; background: #0055a2; color: #fff; text-align: center; font-size: 16px; }
-/* btn-new end */
+.bg-list li { width: 100%; height: 40px; padding: 10px 0; border-bottom: 1px solid #e6e6e6; }
+.bg-list li.active { background: #e6f0fb; }
+.bg-list li .item-content { width: 94%; margin: 0 auto; height: 100%; }
+.bg-list li .item-content .item-text { display: block; width: 88%; height: 100%; float: left; }
+.bg-list li .item-content .btn-check { width: 6%; height: 100%; margin: 0 2%; float: left; display: block; }
+.bg-list li.active .item-content .btn-check { background: url(../imgs/valentines-day/my-bg/check.png) no-repeat center center; background-size: contain; }
+.bg-list li .item-content .text-content { width: 90%; float: left; }
+.bg-list li .item-content .text-content p { width: 70%; float: left; line-height: 40px; }
+.bg-list li .item-content .text-content p.time{ width: 30%; }
+.bg-list li .item-content .item-play{ width: 5%; height: 100%; margin: 0 3%; float: left; display: block; background: url(../imgs/valentines-day/my-bg/begin02.png) no-repeat center center; background-size: contain; }
+.bg-list li.active .item-content .item-play{ background: url(../imgs/valentines-day/my-bg/begin01.png) no-repeat center center; background-size: contain; }
+
+.container-wrapper .btn-sure { display: block; width: 100%; height: 52px; line-height: 52px; background: #0055a2; color: #fff; text-align: center; font-size: 16px; }
+
+.popup-tip{ position: fixed; top: 0; left: 0; z-index: 999; width: 100%; height: 100%; background: rgba(255,255,255,.6); }
+.popup-tip .tip-content{ position: absolute; top: 20%; left: 8%; z-index:9999; width: 78%; padding: 10px; border-radius: 12px; background-color: #fff; box-shadow: 0px 0px 6px #bfc2c5; }
+.popup-tip .tip-text{ position: relative; width: 100%; color: #0055a2; }
+.popup-tip .tip-text img{ width: 100%; }
+.popup-tip .tip-text ul{ position: absolute; bottom: 24%; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.popup-tip .tip-text li{ float: left; font-size: 14px; font-weight: bold; } 
+.popup-tip .melody ul{ width: 80%; height: 60px; margin: 0 auto; overflow: hidden; }
+.popup-tip .melody li{ width: 4%; height: 120px; margin-right: 2%; float: left; -webkit-animation: 1.5s infinite melody linear; animation: 1.5s infinite melody linear; }
+.popup-tip .tip-content a{ display: block; width: 80%; height: 32px; line-height: 32px; margin: 50px auto 20px; border: 2px #0055a2 solid; border-radius: 18px; font-size: 14px; text-align: center; color: #0f3297;  }
+
+@-webkit-keyframes melody{
+	0% {
+		-webkit-transform: scaleY(0.1);
+		background-color: #b7e0f4;
+	}
+	50% {
+		-webkit-transform: scaleY(1);
+		background-color: #4db1e5;
+	}
+	100% {
+		-webkit-transform: scaleY(0.1);
+		background-color: #3cabe4;
+	}
+}
+@keyframes melody{
+	0% {
+		-webkit-transform: scaleY(0.1);
+		background-color: #b7e0f4;
+	}
+	50% {
+		-webkit-transform: scaleY(1);
+		background-color: #4db1e5;
+	}
+	100% {
+		-webkit-transform: scaleY(0.1);
+		background-color: #3cabe4;
+	}
+}
+.melody li:nth-of-type(2),.melody li:nth-of-type(4) {
+	-webkit-animation-delay: -.1s;
+	animation-delay: -.1s;
+}
+.melody li:nth-of-type(3),.melody li:nth-of-type(8) {
+	-webkit-animation-delay: -.2s;
+	animation-delay: -.2s;
+}
+.melody li:nth-of-type(5),.melody li:nth-of-type(9) {
+	-webkit-animation-delay: -.3s;
+	animation-delay: -.3s;
+}
+.melody li:nth-of-type(6) {
+	-webkit-animation-delay: -.4s;
+	animation-delay: -.4s;
+}
+.melody li:nth-of-type(7) {
+	-webkit-animation-delay: -.5s;
+	animation-delay: -.5s;
+}
+.melody li:nth-of-type(10),.melody li:nth-of-type(12) {
+	-webkit-animation-delay: -.6s;
+	animation-delay: -.6s;
+}
+.melody li:nth-of-type(11) {
+	-webkit-animation-delay: -.7s;
+	animation-delay: -.7s;
+}
+.melody li:nth-of-type(13),.melody li:nth-of-type(15) {
+	-webkit-animation-delay: -.8s;
+	animation-delay: -.8s;
+}
+.melody li:nth-of-type(14),.melody li:nth-of-type(17) {
+	-webkit-animation-delay: -.9s;
+	animation-delay: -.9s;
+}
+.melody li:nth-of-type(16) {
+	-webkit-animation-delay: -1s;
+	animation-delay: -1s;
+}
+.melody li:nth-of-type(17) { 
+	margin-right: 0;
+}
+
+.tip-text li:nth-of-type(1) {
+	-webkit-animation: 2s infinite txtMove linear;
+	animation: 2s infinite txtMove linear;
+}
+@-webkit-keyframes txtMove {
+	0%{margin-left:0px;}
+	100%{margin-left:-2px;}
+}
+@keyframes txtMove {
+	0%{margin-left:0px;}
+	100%{margin-left:-2px;}
+}
+.tip-text li:nth-of-type(6), .tip-text li:nth-of-type(7) {
+	-webkit-animation: 1s infinite showMargin linear;
+	animation: 1s infinite showMargin linear;
+}
+@-webkit-keyframes showMargin{
+	0%{margin-left: 0;}
+	100%{margin-left: 1px;}
+}
+@keyframes showMargin{
+	0%{margin-left: 0;}
+	100%{margin-left: 1px;}
+}
