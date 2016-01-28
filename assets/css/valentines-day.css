@@ -42,7 +42,8 @@ body { font-size: 62.5%; }
 #player .player-body, #player .player-top { width: 100%; }
 #player .player-body { position: relative; }
 #player .player-body .musicbar { position: absolute; top: .4em; left: 50%; width: 3.8em; height: 2em; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
-#player .player-body .musicbar > div { width: .3em; height: 100%; background-color: #01fcff; border-radius: .2em; margin: .1em; display: inline-block; -webkit-animation: line-scale-pulse-out .9s 0s infinite cubic-bezier(.85,.25,.37,.85); animation: line-scale-pulse-out .9s 0s infinite cubic-bezier(.85,.25,.37,.85); -webkit-animation-play-state: paused; animation-play-state: paused; }
+#player .player-body .musicbar > div { width: .3em; height: 100%; background-color: #01fcff; border-radius: .2em; margin: .1em; display: inline-block; }
+#player .player-body .musicbar.running > div { -webkit-animation: line-scale-pulse-out .9s 0s infinite cubic-bezier(.85,.25,.37,.85); animation: line-scale-pulse-out .9s 0s infinite cubic-bezier(.85,.25,.37,.85); }
 #player .player-body .musicbar > div:nth-of-type(1) { -webkit-animation-delay: .4s!important; animation-delay: .4s!important; }
 #player .player-body .musicbar > div:nth-of-type(2) { -webkit-animation-delay: .2s!important; animation-delay: .2s!important; }
 #player .player-body .musicbar > div:nth-of-type(4) { -webkit-animation-delay: .2s!important; animation-delay: .2s!important; }

@@ -68,11 +68,7 @@
                 tl.to($oPlayerTop, 1, {
                     transform: 'rotateX(180deg)',
                     onComplete: function() {
-                        $oMusicBar.attr('state', 'running');
-                        $aMusicDiv.css({
-                            '-webkit-animation-play-state': 'running',
-                            'animation-play-state': 'running'
-                        });
+                        $oMusicBar.addClass('running');
 
                         // 播放音乐
                         $oAudio.get(0).play();
@@ -83,22 +79,14 @@
 
             // 暂停/继续播放控制
             $oMusicBar.on('click', function() {
-                if ($(this).attr('state') === "running") {
-                    $(this).attr('state', 'paused');
-                    $aMusicDiv.css({
-                        '-webkit-animation-play-state': 'paused',
-                        'animation-play-state': 'paused'
-                    });
+                if ($(this).hasClass('running')) {
+                    $(this).removeClass('running');                    
 
                     // 暂停音乐
                     $oAudio.get(0).pause();
                     clearInterval(iTimer); // 清除播放器
                 } else {
-                    $(this).attr('state', 'running');
-                    $aMusicDiv.css({
-                        '-webkit-animation-play-state': 'running',
-                        'animation-play-state': 'running'
-                    });
+                    $(this).addClass('running');
 
                     // 继续播放音乐
                     $oAudio.get(0).play();
@@ -115,11 +103,7 @@
                     tl.to($oPlayerTop, 1, {
                         transform: 'rotateX(0deg)',
                         onComplete: function() {
-                            $oMusicBar.attr('state', 'paused');
-                            $aMusicDiv.css({
-                                '-webkit-animation-play-state': 'paused',
-                                'animation-play-state': 'paused'
-                            });
+                            $oMusicBar.removeClass('running'); 
 
                             // 清除定时器
                             clearInterval(iTimer);
