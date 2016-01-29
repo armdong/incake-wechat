@@ -10,8 +10,8 @@ body{ background-color: #fff; }
 .bg-list li .item-content .btn-check { width: 6%; height: 100%; margin: 0 2%; float: left; display: block; }
 .bg-list li.active .item-content .btn-check { background: url(../imgs/valentines-day/my-bg/check.png) no-repeat center center; background-size: contain; }
 .bg-list li .item-content .text-content { width: 90%; float: left; }
-.bg-list li .item-content .text-content p { width: 70%; float: left; line-height: 40px; }
-.bg-list li .item-content .text-content p.time{ width: 30%; }
+.bg-list li .item-content .text-content p { width: 70%; float: left; line-height: 40px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.bg-list li .item-content .text-content p.time{ width: 25%; padding-left: 5%; }
 .bg-list li .item-content .item-play{ width: 5%; height: 100%; margin: 0 3%; float: left; display: block; background: url(../imgs/valentines-day/my-bg/begin02.png) no-repeat center center; background-size: contain; }
 .bg-list li .item-content .item-pause{ width: 5%; height: 100%; margin: 0 3%; float: left; display: none; background: url(../imgs/valentines-day/my-bg/pause.png) no-repeat center center; background-size: contain; }
 .bg-list li.active .item-content .item-play{ background: url(../imgs/valentines-day/my-bg/begin01.png) no-repeat center center; background-size: contain; }
