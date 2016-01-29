@@ -255,21 +255,34 @@
         function fnVoiceManual() {
             var $oBtnPop = $('#mail-manual'),
                 $oManual = $('#voice-manual'),
+                $oManualContent = $oManual.find('.manual-content'),
                 tl = new TimelineLite();
 
             // 手册展开
             $oBtnPop.on('click', function() {
                 tl.clear();
-                tl.to($oManual, .5, {
-                    right: 0
+                tl.to($oManual, .2, {
+                    width: '100%',
+                    onStart: function(){
+                    	$oManual.show();
+                    }
+                });
+                tl.to($oManualContent, .2, {
+                	display: 'block'
                 });
             });
 
             // 手册收缩
             $oManual.on('click',function(){
             	tl.clear();
-                tl.to($oManual, .5, {
-                    right: '-100%'
+            	tl.to($oManualContent, .2, {
+                	display: 'none'
+                });
+                tl.to($oManual, .3, {
+                    width: 0,
+                    onComplete: function(){
+                    	$oManual.hide();
+                    }
                 });
             });
         }

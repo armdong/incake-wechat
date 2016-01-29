@@ -27,8 +27,6 @@ body {
 }
 body {
 	position: relative;
-	width: 100%;
-	overflow-x: hidden;
 	color: #505050;
 	background-color: #f5f5f5;
 	font-size: 1rem;
@@ -567,8 +565,8 @@ body {
 .content .voice-box dl { float: left; padding-top: .5rem; color: #b4b4b4; font-size: .6rem; line-height: 1.2rem; margin-left: 8%; word-wrap: nowrap; }
 
 /* 语音口令使用方法 */
-#voice-manual { position: absolute; top: 0; right: -100%; z-index: 998; width: 100%; height: 100%; background-color: rgba(255,255,255,.5); }
-#voice-manual .manual-content { width: 65%; height: 100%; margin-left: auto; border-left: 1px solid #e6e6e6; padding: 1rem; background-color: #fff; color: #505050; font-family: "微软雅黑"; }
+#voice-manual { position: absolute; top: 0; right: 0; z-index: 998; display: none; width: 0; height: 100%; background-color: rgba(255,255,255,.5); }
+#voice-manual .manual-content { display: none; width: 65%; height: 100%; margin-left: auto; border-left: 1px solid #e6e6e6; padding: 1rem; background-color: #fff; color: #505050; font-family: "微软雅黑"; }
 #voice-manual .manual-content h2 { font-size: 1rem; font-weight: normal; line-height: 2.4rem; }
 #voice-manual .manual-content ul { font-size: .8rem; }
 #voice-manual .manual-content ul li { padding: .5rem 0; }
