@@ -52,7 +52,7 @@
 .product-list .list-item dl { width: 70%; float: right; margin-top: 3%; }
 .product-list .list-item dt { color: #737373; line-height: 28px; }
 .product-list .list-item dd { color: #b5b5b5; line-height: 18px; }
-.product-list .list-item .total { position: absolute; bottom: 12%; right: 5%; line-height: 18px; color: #b5b5b5; }
+.product-list .list-item .total { float: right; margin-right: 3%; line-height: 18px; color: #b5b5b5; }
 .product-list .list-item .total strong { font-weight: normal; color: #ea545d; font-size: 14px; }
 /* product-list end */
 
@@ -223,7 +223,18 @@
 /* 去掉优惠信息详情 */
 .setting-list .discount-list { padding: 0; }
 
-
+/* 新增语音信封样式 begin */
+.product-list .list-item .voice-box { float: left; width: 100%; padding: .8rem 0; border-top: 1px dashed #e6e6e6; }
+.product-list .list-item .mail-box { width: 100%; }
+.product-list .list-item .mail-box .mail { float: left; width: 18%; margin-left: 5%; }
+.product-list .list-item .mail-box .mail img { width: 100%; }
+.product-list .list-item .mail-box .text { float: right; width: 70%; }
+.product-list .list-item .mail-box .text p { font-size: .8rem; line-height: 1.5rem; color: #b5b5b5; }
+.product-list .list-item .mail-box .text span { float: left; }
+.product-list .list-item .mail-box .text .mail-title { color: #505050; }
+.product-list .list-item .mail-box .text .tip { float: right; margin-right: 3%; }
+.product-list .list-item .mail-box .text em { font-style: normal; color: #ea545d; }
+.product-list .list-item .mail-box .text a { float: right; display: inline-block; line-height: 1.4rem; color: #4694d1; text-decoration: underline; }
 
 
 
