@@ -94,3 +94,16 @@ body { font: 12px "微软雅黑",arial; background: #f5f5f5; color: #505050; }
 .order .content .btn-order-ok { background: #0055a2; }
 .order .content .btn-order-cancel { background: #4694d2; }
 /* mask cancel end */
+
+/* 新增语音信封样式 begin */
+.order-item .order-item-content .product-item .voice-box { float: left; width: 100%; padding: .8rem 0; border-top: 1px dashed #e6e6e6; }
+.order-item .order-item-content .product-item .mail-box { width: 100%; }
+.order-item .order-item-content .product-item .mail-box .mail { float: left; width: 18%; margin-left: 4%; }
+.order-item .order-item-content .product-item .mail-box .mail img { width: 100%; }
+.order-item .order-item-content .product-item .mail-box .text { float: right; width: 70%; }
+.order-item .order-item-content .product-item .mail-box .text p { font-size: 12px; line-height: 1.5rem; color: #b5b5b5; }
+.order-item .order-item-content .product-item .mail-box .text span { float: left; }
+.order-item .order-item-content .product-item .mail-box .text .mail-title { color: #505050; }
+.order-item .order-item-content .product-item .mail-box .text .tip { float: right; margin-right: 3%; }
+.order-item .order-item-content .product-item .mail-box .text em { font-style: normal; color: #ea545d; }
+.order-item .order-item-content .product-item .mail-box .text a { float: right; display: inline-block; line-height: 1.4rem; color: #4694d1; text-decoration: underline; }
