@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>购物篮</title>
+		<meta name="format-detection" content="telephone=no">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 		<link rel="stylesheet" href="assets/css/normalize.css" />
 		<link rel="stylesheet" href="assets/css/common.css?v=9938383" />
@@ -47,7 +48,7 @@
 					<a class="circle circle-cake"><img src="assets/imgs/shopping-cart/unchecked.png" class="unchecked" /><img src="assets/imgs/shopping-cart/checked.png" class="checked hide" /></a>
 					<div class="div-img"><img src="assets/imgs/shopping-cart/cake.jpg" /></div>
 					<div class="cont">
-						<p class="cake-name">爱丁堡之恋<span class="price">￥169.00</span></p>
+						<p class="cake-name">音蛋糕<span class="price">￥169.00</span></p>
 						<p class="spec">规格：￥169\1.2磅
 							<br />免费配送5套餐具</p>
 						<p class="cont-btm">
@@ -59,6 +60,31 @@
 							<a href="javascript:void(0);" class="delete"><img src="assets/imgs/shopping-cart/delete.png" /></a>
 						</p>
 					</div>
+					<!-- 语音信封 begin -->
+					<div class="voice-box clearfix">
+						<div class="mail-box clearfix">
+							<div class="mail"><img src="assets/imgs/shopping-cart/voice_box_mail.png" alt=""></div>
+							<div class="text">
+								<p class="clearfix">
+									<span class="mail-title">语音信封</span>
+									<a href="javascript:;" id="mail-manual">使用方法</a>
+								</p>
+								<p>
+									<span>语音口令：<em>APWJ123</em></span>
+									<span class="tip">长按口令复制</span>
+								</p>
+							</div>
+						</div>
+						<dl>
+							<dt>温馨提示：</dt>
+							<dd>① 复制口令，登录服务号：INCAKE订购，即可参加活动；</dd>
+							<dd>② 回复口令，可添加录音，也可使用指定背景音；</dd>
+							<dd>③ 具体教程请点击右上角“使用方法”；</dd>
+							<dd>④ 收货人手机号码为唯一身份识别证明；</dd>
+							<dd>⑤ 若需其他帮助，欢迎拨打客服热线：4009215757。</dd>
+						</dl>
+					</div>
+					<!-- 语音信封 end -->
 				</div>
 			</div>
 			<!-- 搭配套餐 -->
@@ -327,8 +353,39 @@
 			</div>
 		</div>
 
+		<!-- 语音口令使用方法 begin -->
+		<div id="voice-manual">
+			<div class="manual-content">
+				<h2>语音口令使用方法：</h2>
+				<ul>
+					<li>
+						<p class="title">1. 复制红框内的语音口令：</p>
+						<div class="content">
+							<img src="assets/imgs/shopping-cart/tip_01.png" alt="">
+						</div>
+					</li>
+					<li>
+						<p class="title">2. 复制的语音口令粘贴至INCAKE服务号首
+    页文本框内，如图：</p>
+						<div class="content">
+							<img src="assets/imgs/shopping-cart/tip_02.png" alt="">
+						</div>
+					</li>
+					<li>
+						<p class="title">3. 点击发送即可，根据所收到的信息进行选
+    择，如图：</p>
+						<div class="content">
+							<img src="assets/imgs/shopping-cart/tip_03.png" alt="">
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 语音口令使用方法 end -->
+
 		<!-- 引入js -->
 		<script src="assets/js/jquery-2.1.4.min.js"></script>
+		<script src="assets/js/TweenMax.min.js"></script>
 		<script src="assets/js/lazyload.js"></script>
 		<script src="assets/js/scroll-fix.js"></script>
 		<script src="assets/js/shopping-cart.js?vv"></script>
