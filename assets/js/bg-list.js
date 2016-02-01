@@ -44,7 +44,7 @@
 			$.each($aItemPlay, function(i, ele) {
 				$(ele).on('click', function() {
 					// check model
-					$aItemText.eq(i + 1).trigger('click');
+					$aItemText.eq(i).trigger('click');
 					// get player src
 					originSrc = $oPlayer.attr('src');
 					//show this pause
