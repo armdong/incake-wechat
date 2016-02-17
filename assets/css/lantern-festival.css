@@ -1,0 +1,8 @@
+.content { background-color: #efe9e0; }
+.content .main { position: relative; }
+.content .main a { position: absolute; left: 28.6%; display: block; width: 42.4%; height: 2%; }
+.content .main .btn01 { top: 16.8%; }
+.content .main .btn02 { top: 38.8%; }
+.content .main .btn03 { top: 57.8%; }
+.content .main .btn04 { top: 76.2%; }
+.content .main .btn05 { top: 96%; }
