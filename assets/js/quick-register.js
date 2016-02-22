@@ -47,6 +47,12 @@
 
         });
 
+        $(window).on('resize',function(){
+            clientH = $(window).height();
+            iNavH = $oNav.height();
+            iBtnFooterH = $oBtnFooter.height();
+        });
+
         function fnInitSwiper() {
             var $oSwiper = $('#activities-swiper'),
                 $aImg = $oSwiper.find('img'),
