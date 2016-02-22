@@ -5,9 +5,7 @@
         // 轮播图
         fnInitSwiper();
 
-        var timer = null,
-            isStop = true,
-            $oBtnMore = $('#find-more'),
+        var $oBtnMore = $('#find-more'),
             clientH = $(window).height(),
 
             $oNav = $('#float-nav'),
@@ -17,14 +15,14 @@
             $oHotLi = $oNav.find('.li-hot'),
             $oFeatureLi = $oNav.find('.li-feature'),
 
+            $oBtnFooter = $('#float-footer'),
+            iBtnFooterH = $oBtnFooter.height(),
+
             $oActivities = $('#activities'),
-            iActivitiesTop = $oActivities.offset().top,
-
             $oHot = $('#hot'),
-            iHotTop = $oHot.offset().top,
-
             $oFeature = $('#feature'),
-            iFeatureTop = $oFeature.offset().top;
+
+            $oFrmRegister = $('#frm-register');
 
         fnFindMore();
         fnNav();
@@ -33,16 +31,20 @@
 
             var scrollT = document.documentElement.scrollTop || document.body.scrollTop;
 
-            if (scrollT >= clientH / 5) {
+            if (scrollT >= iNavH) {
                 $oBtnMore.hide();
+                $oNav.show();
             } else {
                 $oBtnMore.show();
+                $oNav.hide();
             }
 
-            if (!isStop) {
-                clearInterval(timer);
+            if (scrollT > ($('#container').height() - clientH - iBtnFooterH)) {
+                $oBtnFooter.hide();
+            } else {
+                $oBtnFooter.show();
             }
-            isStop = false;
+
         });
 
         function fnInitSwiper() {
@@ -75,43 +77,28 @@
 
         function fnFindMore() {
             $oBtnMore.on('click', function() {
-                fnScrollTop(iActivitiesTop - iNavH);
+                fnScrollTop($oActivities);
             });
         }
 
         function fnNav() {
             $oActivitiesLi.on('click', function() {
-                fnScrollTop(iActivitiesTop);
+                fnScrollTop($oActivities);
             });
             $oHotLi.on('click', function() {
-                fnScrollTop(iHotTop);
+                fnScrollTop($oHot);
             });
             $oFeatureLi.on('click', function() {
-                fnScrollTop(iFeatureTop);
+                fnScrollTop($oFeature);
+            });
+            $oBtnFooter.on('click', function() {
+                fnScrollTop($oFrmRegister);
             });
         }
 
         // 滑倒指定位置
-        function fnScrollTop(iTop) {
-            iTop = iTop - iNavH;
-            timer = setInterval(function() {
-                var scrollT = document.documentElement.scrollTop || document.body.scrollTop, //滚动条距离顶部的高度
-                    disT = scrollT - iTop,
-                    iSpeed = Math.floor(-disT / 6);
-
-                if (iSpeed == 0 ) {
-                    document.documentElement.scrollTop = document.body.scrollTop = scrollT - disT;
-                } else {
-                    document.documentElement.scrollTop = document.body.scrollTop = scrollT + iSpeed;
-                }
-
-                isStop = true;
-
-                if (iSpeed == 0) {
-                    clearInterval(timer);
-                }
-
-            }, 30);
+        function fnScrollTop($obj) {
+            $('html,body').animate({ scrollTop: $obj.offset().top - iNavH }, 800);
         }
 
     });
