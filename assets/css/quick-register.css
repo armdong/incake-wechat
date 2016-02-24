@@ -2,8 +2,11 @@
 
 #container { width: 100%; background-color: #f5f5f5; }
 
-#banner { width: 100%; }
-#banner img { width: 100%; }
+#banner { position: relative; width: 100%; }
+#banner > img { width: 100%; }
+#banner > a { position: absolute; top: 10px; right: 24px; width: 15%; text-align: center; }
+#banner > a img { width: 20px; height: 20px; }
+#banner > a span { display: block; line-height: 18px; color: #0055a2; font-size: 12px; }
 
 #container .section { width: 100%; }
 #container .sec-header { width: 100%; }
