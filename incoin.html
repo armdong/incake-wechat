@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>兑换充值</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/incoin.css" />
+</head>
+
+<body>
+    
+    <div class="container-wrapper">
+        
+        <div id="tab-nav" class="clearfix">
+            <li>充值</li>
+            <li class="active">兑换</li>
+        </div>
+        <div id="info">
+            <p>IN币余额:<span><i>50</i>IN币</span><a href="javascript:;" class="incoin-tutorial">IN币攻略</a></p>
+        </div>
+        <div id="tab-body">
+            <li>
+                <!-- 充值 begin -->
+                <ul class="tab-content" id="recharge">
+                    <li class="item">
+                        <p class="clearfix">
+                            <span class="item-title">充值账户</span>
+                            <span class="item-content span-label">13355555555</span>
+                        </p>
+                    </li>
+                    <li class="item">
+                        <p class="clearfix">
+                            <span class="item-title">充值金额</span>
+                            <span class="item-content span-select">
+                                <select name="sel-money" class="sel-money">
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                    <option value="150">150</option>
+                                    <option value="200">200</option>
+                                </select>
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+                <!-- 充值 end -->
+                <dl class="summary">
+                    <dt>温馨提示:</dt>
+                    <dd>1、充值成功后，余额可能存在延迟现象，一般1到5分钟内到账，如有问题，请咨询客服；</dd>
+                    <dd>2、充值金额目前不能任意选择；</dd>
+                    <dd>3、您只能用支付宝、微信进行充值；</dd>
+                    <dd>4、充值完成后，您可以进入我的IN币充值记录页面查看余额充值状态；</dd>
+                    <dd>5、IN币一旦充值成功后，则无法退款。</dd>
+                </dl>
+                <div class="next-step">
+                    <a href="javascript:;" class="btn-next">下一步</a>
+                </div>
+            </li>
+            <li class="active">
+                <!-- 兑换 begin -->
+                <ul class="tab-content" id="exchange">
+                    <li class="item">
+                        <p class="clearfix">
+                            <span class="item-title">兑换账户</span>
+                            <span class="item-content span-label">13355555555</span>
+                        </p>
+                    </li>
+                    <li class="item">
+                        <p class="clearfix">
+                            <span class="item-title">蛋糕卡号</span>
+                            <input type="text" class="item-content" placeholder="请输入蛋糕卡号" />
+                        </p>
+                    </li>
+                    <li class="item">
+                        <p class="clearfix">
+                            <span class="item-title">密码</span>
+                            <input type="password" class="item-content" placeholder="请输入蛋糕卡密码" />
+                        </p>
+                    </li>
+                    <li class="item">
+                        <p class="clearfix">
+                            <span class="item-title">兑换金额</span>
+                            <span class="item-content span-select">
+                                <select name="sel-money" class="sel-money">
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                    <option value="150">150</option>
+                                    <option value="200">200</option>
+                                </select>
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+                <!-- 兑换 end -->
+                <dl class="summary">
+                    <dt>温馨提示:</dt>
+                    <dd>1、购买的蛋糕卡，面值分别为：50元，100元，150元，200元等；</dd>
+                    <dd>2、输入所持蛋糕卡的卡号及密码，即可显示该卡可兑换IN币分值；</dd>
+                    <dd>3、选择兑换金额，点击确定，即可完成兑换；</dd>
+                    <dd>4、兑换金额不可超过卡内余额；</dd>
+                    <dd>5、暂不提供IN币兑换现金业务。</dd>
+                </dl>
+                <div class="next-step">
+                    <a href="javascript:;" class="btn-next">下一步</a>
+                </div>
+            </li>
+        </div>
+
+    </div>
+
+    <!-- javascript begin -->
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/incoin.js"></script>
+    <!-- javascript end -->
+</body>
+
+</html>

@@ -41,8 +41,9 @@
 .content .section-item > a i { border-radius: 50%; display: block; width: 20px; height: 20px; position: absolute; left: 0; top: 50%; margin-top: -10px; }
 
 .content .section-01 > a:nth-of-type(1) i { background: url(../imgs/me/item_01_bg.png) no-repeat; background-size: 20px 20px; }
-.content .section-01 > a:nth-of-type(2) i { background: url(../imgs/me/item_02_bg.png) no-repeat; background-size: 20px 20px; }
-.content .section-01 > a:nth-of-type(3) i { background: url(../imgs/me/item_07_bg.png) no-repeat; background-size: 20px 20px; }
+.content .section-01 > a:nth-of-type(2) i { background: url(../imgs/me/item_09_bg.png) no-repeat; background-size: 20px 20px; }
+.content .section-01 > a:nth-of-type(3) i { background: url(../imgs/me/item_02_bg.png) no-repeat; background-size: 20px 20px; }
+.content .section-01 > a:nth-of-type(4) i { background: url(../imgs/me/item_07_bg.png) no-repeat; background-size: 20px 20px; }
 .content .section-02 > a:nth-of-type(1) i { background: url(../imgs/me/item_08_bg.png) no-repeat; background-size: 20px 20px; }
 .content .section-02 > a:nth-of-type(2) i { background: url(../imgs/me/item_03_bg.png) no-repeat; background-size: 20px 20px; }
 .content .section-03 > a:nth-of-type(1) i { background: url(../imgs/me/item_04_bg.png) no-repeat; background-size: 20px 20px; }
