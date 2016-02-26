@@ -15,14 +15,14 @@
     <div class="container-wrapper">
         
         <div id="tab-nav" class="clearfix">
-            <li>充值</li>
-            <li class="active">兑换</li>
+            <li class="active">充值</li>
+            <li>兑换</li>
         </div>
         <div id="info">
-            <p>IN币余额:<span><i>50</i>IN币</span><a href="javascript:;" class="incoin-tutorial">IN币攻略</a></p>
+            <p>IN币余额:<span><i>50</i>IN币</span><a href="incoin-tutorial.html" class="incoin-tutorial">IN币攻略</a></p>
         </div>
         <div id="tab-body">
-            <li>
+            <li class="li-recharge active">
                 <!-- 充值 begin -->
                 <ul class="tab-content" id="recharge">
                     <li class="item">
@@ -58,7 +58,7 @@
                     <a href="javascript:;" class="btn-next">下一步</a>
                 </div>
             </li>
-            <li class="active">
+            <li class="li-exchange">
                 <!-- 兑换 begin -->
                 <ul class="tab-content" id="exchange">
                     <li class="item">
@@ -107,7 +107,40 @@
                 </div>
             </li>
         </div>
-
+        <!-- 支付方式 begin -->
+        <div id="mask-payment">
+            <div class="payment">
+                <div class="header">
+                    <h2>选择支付方式</h2>
+                    <p>充值<span>20</span>IN币</p>
+                    <a href="javascript:;" class="btn-close"><img src="assets/imgs/icon_close.png" alt=""></a>
+                </div>
+                <div class="main">
+                    <ul>
+                        <li class="active"><p>招行银联</p></li>
+                        <li><p>微信支付</p></li>
+                        <li><p>快钱支付</p></li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <a href="javascript:;" class="btn-pay">去支付</a>
+                </div>
+            </div>
+        </div>
+        <!-- 支付方式 end -->
+        <!-- 兑换提示 begin -->
+        <div id="mask-msg">
+            <div class="msg">
+                <div class="main">
+                    <p>您已成功兑换<span>50</span>IN币</p>
+                </div>
+                <div class="footer clearfix">
+                    <a href="javascript:;" class="btn-return">返回</a>
+                    <a href="javascript:;" class="btn-ok">确定</a>
+                </div>
+            </div>
+        </div>
+        <!-- 兑换提示 end -->
     </div>
 
     <!-- javascript begin -->

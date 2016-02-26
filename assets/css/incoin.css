@@ -30,3 +30,30 @@ body { background-color: #fff; }
 
 #tab-body .next-step { position: fixed; bottom: 0; left: 0; width: 100%; height: 52px; }
 #tab-body .next-step > a { display: block; width: 100%; height: 100%; line-height: 52px; font-size: 14px; color: #fff; text-align: center; background-color: #0055a2; }
+
+#mask-payment { display: none; position: fixed; top: 0; left: 0; z-index: 999; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); }
+#mask-payment .payment { position: absolute; top: 50%; left: 50%; width: 90%; color: #505050; background-color: #fff; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); border-radius: 5px; overflow: hidden; }
+#mask-payment .payment .header { position: relative; width: 100%; padding: 6px 0; border-bottom: 1px solid #dcdcdc; }
+#mask-payment .payment .header h2 { font-weight: normal; font-size: 16px; text-align: center; line-height: 28px; }
+#mask-payment .payment .header p { color: #b3b3b3; font-size: 14px; text-align: center; line-height: 24px; }
+#mask-payment .payment .header p span { margin: 0 4px; }
+#mask-payment .payment .header .btn-close { display: block; position: absolute; top: 30%; right: 10%; width: 8%; }
+#mask-payment .payment .header .btn-close img { width: 100%; }
+#mask-payment .payment .main { width: 100%; border-bottom: 1px solid #dcdcdc; padding: 10px 0; }
+#mask-payment .payment .main ul { width: 86%; margin: 0 auto; }
+#mask-payment .payment .main li { width: 100%; height: 40px; line-height: 40px; }
+#mask-payment .payment .main li > p { position: relative; top: 5px; width: 60%; height: 28px; line-height: 28px; margin: 0 auto; text-align: center; border: 1px solid #bebebe; border-radius: 5px; overflow: hidden; }
+#mask-payment .payment .main li.active > p { border-color: #ea545d; }
+#mask-payment .payment .main li.active > p:after { display: block; content: url(../imgs/setting_item_bg.png); width: 20px; height: 20px; position: absolute; right: -1px; bottom: 0; vertical-align: bottom; }
+#mask-payment .payment .footer { width: 100%; height: 48px; }
+#mask-payment .payment .footer > a { display: block; width: 100%; height: 100%; line-height: 48px; text-align: center; color: #fff; background-color: #0055a2; }
+
+#mask-msg { display: none; position: fixed; top: 0; left: 0; z-index: 999; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); }
+#mask-msg .msg { position: absolute; top: 50%; left: 50%; width: 70%; padding: 20px; color: #505050; background-color: #fff; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); border-radius: 5px; overflow: hidden; }
+#mask-msg .msg .main { width: 100%; padding: 30px 0; }
+#mask-msg .msg .main p { font-size: 16px; text-align: center; line-height: 50px; }
+#mask-msg .msg .main p span { margin: 0 5px; font-weight: 600; font-size: 18px; color: #ea545d; }
+#mask-msg .msg .footer { width: 100%; height: 38px; }
+#mask-msg .msg .footer > a { display: block; width: 48%; height: 38px; line-height: 38px; text-align: center; border-radius: 5px; }
+#mask-msg .msg .footer .btn-return { float: left; background-color: #e6e6e6; }
+#mask-msg .msg .footer .btn-ok { float: right; background-color: #0055a2; color: #fff; }
