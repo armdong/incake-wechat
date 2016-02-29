@@ -1,0 +1,43 @@
+html, body { width: 100%; height: 100%; }
+body { font-family: "Arial","微软雅黑"; font-size: 12px; }
+
+.container-wrapper { width: 100%; height: 100%; overflow: hidden; }
+.container-wrapper img { width: 100%; }
+
+#girls-day { width: 100%; height: 100%; background: url(../imgs/girls-day/body_bg.jpg) no-repeat; background-size: cover; background-position: center center; }
+
+#girls-day .header { position: relative; height: 28px; padding: 8px 0 8px 24px; background: #fff; }
+.header .logo { width: 76px; height: 28px; }
+.header > a { position: absolute; top: 5px; right: 24px; width: 15%; text-align: center; }
+.header > a img { width: 20px; height: 20px; }
+.header > a span { display: block; line-height: 18px; color: #0055a2; }
+
+#girls-day .main { width: 100%; }
+.main .page { position: relative; display: none; width: 100%; height: 100%; overflow: hidden; }
+
+.main .page-01 { display: block; }
+.main .page-01 .btn-open { display: block; width: 54.21875%; margin: 10px auto 0; }
+.main .page-01 .logo { position: absolute; bottom: 38px; left: 50%; width: 20.3125%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+
+.main .page-02 .frm-reg { display: block; width: 78.75%; margin: 0 auto; }
+.main .page-02 .frm-reg > li { width: 100%; height: 48px; margin-top: 10px; border-radius: 24px; border: 2px solid #fa719b; background-color: rgba(0,0,0,.4); overflow: hidden; }
+.main .page-02 .frm-reg > li.last { border: none; }
+.main .page-02 .frm-reg > li input { width: 100%; line-height: 48px; font-size: 14px; text-indent: 2em; color: #fff; background-color: transparent; border: none; outline: none; -webkit-appearance: none; }
+.main .page-02 .frm-reg > li .txt-mobile { float: left; width: 60%; }
+.main .page-02 .frm-reg > li .btn-vcode { display: block; float: right; width: 30%; height: 30px; margin-right: 4%; margin-top: 9px; line-height: 30px; border-radius: 15px; text-align: center; color: #4a1a25; background-color: #ad9a9c; overflow: hidden; }
+.main .page-02 .frm-reg > li .btn-reg { display: block; width: 100%; height: 48px; line-height: 48px; font-size: 14px; text-align: center; color: #070100; background-color: #fa719b; }
+.main .page-02 .logo { position: absolute; bottom: 38px; left: 50%; width: 20.3125%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+
+.main .page-03 .page-inner { position: absolute; top: 50%; left: 0; width: 100%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.page-03 .page-inner .ticket { width: 44.53125%; margin: 10px auto 0; }
+.page-03 .page-inner .ticket span { width: 100%; display: inline-block; text-align: center; color: #9d7179; line-height: 34px; }
+.page-03 .page-inner .notice { width: 56.25%; margin: 10px auto 0; }
+.page-03 .page-inner .notice span { display: block; width: 100%; font-size: 16px; line-height: 28px; text-align: center; color: #e4cbd0; }
+.page-03 .page-inner .notice span i { font-style: normal; font-size: 22px; margin: 0 5px; color: #fa719b; }
+.page-03 .page-inner > a { display: block; width: 78.75%; height: 36px; margin: 10px auto 0; line-height: 36px; font-size: 14px; text-align: center; color: #070100; background-color: #fa719b; border-radius: 18px; overflow: hidden; }
+.page-03 .page-inner .reg-info { width: 83.75%; margin: 10px auto 0; border-top: 1px solid #fff; }
+.page-03 .page-inner .reg-info > p { padding: 10px 5px; color: #e4cbd0; line-height: 20px; }
+.page-03 .page-inner .reg-info .content { width: 78.36%; margin: 0 auto; padding: 10px 0; background-color: #372f2a; }
+.page-03 .page-inner .reg-info .content p { text-align: center; line-height: 20px; color: #e4cbd0; font-size: 14px; }
+.page-03 .page-inner .reg-info .content p span { display: line-height; color: #fa719b; }
+.page-03 .page-inner .reg-info .tip { text-align: center; }
