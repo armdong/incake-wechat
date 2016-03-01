@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>兑换充值</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/incoin.css" />
+</head>
+
+<body>
+    
+    <div class="container-wrapper">
+        
+        <div id="tab-nav" class="clearfix">
+            <li class="active">充值</li>
+            <li>兑换</li>
+        </div>
+        <div id="info">
+            <p>IN币余额:<span><i>50</i>IN币</span><a href="incoin-tutorial.html" class="incoin-tutorial">IN币攻略</a></p>
+        </div>
+        <div id="tab-body">
+            <li class="li-recharge active">
+                <!-- 充值 begin -->
+                <ul class="tab-content" id="recharge">
+                    <li class="item">
+                        <p class="clearfix">
+                            <span class="item-title">充值账户</span>
+                            <span class="item-content span-label">13355555555</span>
+                        </p>
+                    </li>
+                    <li class="item">
+                        <p class="clearfix">
+                            <span class="item-title">充值金额</span>
+                            <span class="item-content span-select">
+                                <select name="sel-money" class="sel-money">
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                    <option value="150">150</option>
+                                    <option value="200">200</option>
+                                </select>
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+                <!-- 充值 end -->
+                <dl class="summary">
+                    <dt>温馨提示:</dt>
+                    <dd>1、充值成功后，余额可能存在延迟现象，一般1到5分钟内到账，如有问题，请咨询客服；</dd>
+                    <dd>2、充值金额目前不能任意选择；</dd>
+                    <dd>3、您只能用支付宝、微信进行充值；</dd>
+                    <dd>4、充值完成后，您可以进入我的IN币充值记录页面查看余额充值状态；</dd>
+                    <dd>5、IN币一旦充值成功后，则无法退款。</dd>
+                </dl>
+                <div class="next-step">
+                    <a href="javascript:;" class="btn-next">下一步</a>
+                </div>
+            </li>
+            <li class="li-exchange">
+                <!-- 兑换 begin -->
+                <ul class="tab-content" id="exchange">
+                    <li class="item">
+                        <p class="clearfix">
+                            <span class="item-title">兑换账户</span>
+                            <span class="item-content span-label">13355555555</span>
+                        </p>
+                    </li>
+                    <li class="item">
+                        <p class="clearfix">
+                            <span class="item-title">蛋糕卡号</span>
+                            <input type="text" class="item-content" placeholder="请输入蛋糕卡号" />
+                        </p>
+                    </li>
+                    <li class="item">
+                        <p class="clearfix">
+                            <span class="item-title">密码</span>
+                            <input type="password" class="item-content" placeholder="请输入蛋糕卡密码" />
+                        </p>
+                    </li>
+                    <li class="item">
+                        <p class="clearfix">
+                            <span class="item-title">兑换金额</span>
+                            <span class="item-content span-select">
+                                <select name="sel-money" class="sel-money">
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                    <option value="150">150</option>
+                                    <option value="200">200</option>
+                                </select>
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+                <!-- 兑换 end -->
+                <dl class="summary">
+                    <dt>温馨提示:</dt>
+                    <dd>1、购买的蛋糕卡，面值分别为：50元，100元，150元，200元等；</dd>
+                    <dd>2、输入所持蛋糕卡的卡号及密码，即可显示该卡可兑换IN币分值；</dd>
+                    <dd>3、选择兑换金额，点击确定，即可完成兑换；</dd>
+                    <dd>4、兑换金额不可超过卡内余额；</dd>
+                    <dd>5、暂不提供IN币兑换现金业务。</dd>
+                </dl>
+                <div class="next-step">
+                    <a href="javascript:;" class="btn-next">下一步</a>
+                </div>
+            </li>
+        </div>
+        <!-- 支付方式 begin -->
+        <div id="mask-payment">
+            <div class="payment">
+                <div class="header">
+                    <h2>选择支付方式</h2>
+                    <p>充值<span>20</span>IN币</p>
+                    <a href="javascript:;" class="btn-close"><img src="assets/imgs/icon_close.png" alt=""></a>
+                </div>
+                <div class="main">
+                    <ul>
+                        <li class="active"><p>招行银联</p></li>
+                        <li><p>微信支付</p></li>
+                        <li><p>快钱支付</p></li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <a href="javascript:;" class="btn-pay">去支付</a>
+                </div>
+            </div>
+        </div>
+        <!-- 支付方式 end -->
+        <!-- 兑换提示 begin -->
+        <div id="mask-msg">
+            <div class="msg">
+                <div class="main">
+                    <p>您已成功兑换<span>50</span>IN币</p>
+                </div>
+                <div class="footer clearfix">
+                    <a href="javascript:;" class="btn-return">返回</a>
+                    <a href="javascript:;" class="btn-ok">确定</a>
+                </div>
+            </div>
+        </div>
+        <!-- 兑换提示 end -->
+    </div>
+
+    <!-- javascript begin -->
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/incoin.js"></script>
+    <!-- javascript end -->
+</body>
+
+</html>

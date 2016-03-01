@@ -1,0 +1,28 @@
+body { font: 12px "微软雅黑",arial; background: #f5f5f5; color: #505050; }
+
+.container-wrapper { width: 100%; background: #f5f5f5; }
+
+.tab { width: 100%; }
+.tab-title { width: 100%; overflow: hidden; position: fixed; top: 0; left: 0; z-index: 999;  background: #f5f5f5; }
+.tab-title > li { width: 33.3%; border-left: 1px solid #dcdcdc; border-bottom: 1px solid #dcdcdc; margin-left: -1px; float: left; line-height: 42px; height: 42px; overflow: hidden; text-align: center; color: #969696; background: #fff; }
+.tab-title > li.active { border-bottom-color: #f5f5f5; color: #515151; background: #f5f5f5; }
+
+.tab-content { width: 100%; margin-top: 53px; }
+.tab-content > li { width: 100%; display: none; }
+.tab-content > li.active { display: block; }
+
+.tab-content .content-item { width: 94%; margin: 0 auto; }
+.content-item .record-list { width: 100%; }
+.content-item .record-item { width: 100%; box-shadow: 0 1px 1px 0 #ddd; border-radius: 10px; background: #fff; margin: 10px 0; position: relative; }
+.content-item .record-item .item-top { width: 90%; margin: 0 auto; padding: 10px 0; }
+.record-item .item-top > div { float: left; }
+.record-item .item-top > div p { line-height: 24px; }
+.record-item .item-top > div p.time { color: #b5b5b5; }
+.record-item .item-top > div span { color: #2d78b0; }
+.record-item .item-top > a { position: relative; top: 10px; right: 0; display: block; padding: 5px 10px; float: right; color: #ea545d; border: 1px solid #ea545d; border-radius: 5px; }
+
+.content-item .record-item .item-body { width: 100%; border-top: 1px solid #f1f1f1; }
+.record-item .item-body > ul { width: 90%; margin: 0 auto; padding: 10px 0; }
+.record-item .item-body > ul li { float: left; width: 50%; }
+.record-item .item-body > ul p { line-height: 20px; }
+.record-item .item-body > ul p .money { color: #ea545d; }
