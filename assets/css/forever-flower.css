@@ -1,0 +1,11 @@
+.content { width: 100%; }
+.content img { width: 100%; vertical-align: top; border: none; }
+
+.content .banner { width: 100%; }
+.content .main { position: relative; width: 100%; }
+.content .main .btn { display: block; position: absolute; bottom: 2.5%; left: 11.72%; width: 30%; }
+
+.content .rules { width: 100%; background-color: #f5f5f5; }
+.content .rules dl { width: 80%; margin: 0 auto; padding: 10px 0; }
+.content .rules dt { font-size: 16px; line-height: 24px; color: #ad77ae; }
+.content .rules dd { font-size: 12px; line-height: 20px; color: #666; }
