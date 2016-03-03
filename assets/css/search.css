@@ -1,23 +1,29 @@
-.search-container { width: 100%; background: #fff; }
-.search-container .search-header { width: 100%; height: 50px; line-height: 50px; border-bottom: 1px solid #dcdcdc; overflow: hidden; }
-.search-header .search-form { width: 96%; margin: 5px auto 0; height: 38px; border: 1px solid #d2d4d3; border-radius: 5px; overflow: hidden; }
-.search-header .search-form input { width: 76%; height: 38px; line-height: 38px; font-size: 14px; text-indent: 1em; border: none; outline: none; background: transparent; -webkit-appearance: none; appearance: none; float: left; color: #999; }
-.search-header .search-form button { width: 24%; float: right; height: 40px; line-height: 40px; text-align: center; border: none; outline: none; background: #0055a2; color: #fff; font-size: 16px; position: relative; top: -1px; }
-.search-header .search-form button i { width: 16px; height: 16px; display: inline-block; background: url(../imgs/search/btn_search.png) no-repeat; background-size: cover; margin-right: 5px; position: relative; top: 2px; }
+body { font: 14px '微软雅黑','Arial' !important; background: #fff; }
+
+.search-container { width: 100%; }
+.search-container .search-header { position: relative; width: 100%; height: 46px; border-bottom: 1px solid #dcdcdc; overflow: hidden; }
+.search-header .location { display: block; height: 46px; line-height: 46px; position: absolute; top: 50%; margin-top: -23px; padding: 0 6px; }
+.search-header .location i:nth-of-type(1) { padding: 0 6px; display: inline-block; width: 13px; height: 14px; background: url(../imgs/location_bg.png) no-repeat; position: relative; top: 2px; left: 10px; }
+.search-header .location i:nth-of-type(2) { width: 10px; height: 9px; display: inline-block; background: url(../imgs/arrow_down.png) no-repeat; position: relative; left: 4px; top: 0; }
+.search-header .search { position: absolute; right: 5%; top: 50%; width: 65%; height: 30px; -webkit-transform: translateY(-50%); transform: translateY(-50%); border: 1px solid #505050; border-radius: 16px; overflow: hidden; }
+.search-header .search > input { float: left; width: 80%; height: 100%; line-height: 30px; border: none; -webkit-appearance: none; outline: none; text-indent: 1em; }
+.search-header .search .btn-search { display: block; float: right; position: relative; top: 6px; width: 18px; height: 18px; margin-right: 10px; background: url(../imgs/icon_search.png) no-repeat; background-size: cover; background-position: center center; }
 
 .search-container .search-history { width: 94%; margin: 0 auto; padding-bottom: 10px; border-bottom: 1px solid #d2d4d3; }
 .search-history .history-header { width: 100%; padding: 10px 0; }
 .search-history .history-header h3 { font-weight: normal; font-size: 16px; line-height: 24px; float: left; color: #999; }
 .search-history .history-header h3 i { width: 16px; height: 16px; display: inline-block; border: none; background: url(../imgs/search/btn_search_history.png) no-repeat center center; position: relative; top: 2px; background-size: cover; margin-right: 5px; }
 .search-history .history-header button { width: 24px; height: 24px; float: right; border: none; background: url(../imgs/search/btn_history_del.png) no-repeat center center; outline: none; }
-.search-history .history-body { width: 100%; text-align: center; color: #333; }
-.search-history .history-body span { display: inline-block; font-size: 14px; line-height: 24px; border: 1px solid #d2d4d3; padding: 2px 6px; float: left; margin: 0 10px 10px 0; border-radius: 5px; color: #333; }
+.search-history .history-body { width: 100%; text-align: center; }
+.search-history .history-body span { display: inline-block; float: left; width: 31%; height: 32px; margin-right: 3.5%; margin-bottom: 10px; font-size: 14px; line-height: 32px; color: #4f4f4f; background-color: #f0f0f0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.search-history .history-body span.last-col { margin-right: 0; }
 
 .search-container .search-hot { width: 94%; margin: 0 auto; }
 .search-hot .hot-header { width: 100%; padding: 10px 0; }
 .search-hot .hot-header h3 { font-weight: normal; font-size: 16px; line-height: 24px; color: #999; }
 .search-hot .hot-header h3 i { width: 20px; height: 20px; display: inline-block; border: none; background: url(../imgs/search/btn_search_hot.png) no-repeat center center; position: relative; top: 4px; background-size: cover; margin-right: 5px; }
-.search-hot .hot-body { width: 100%; }
-.search-hot .hot-body span { display: inline-block; font-size: 14px; line-height: 24px; border: 1px solid #d2d4d3; padding: 2px 6px; float: left; margin: 0 10px 10px 0; border-radius: 5px; color: #333; }
+.search-hot .hot-body { width: 100%; text-align: center; }
+.search-hot .hot-body span { display: inline-block; float: left; width: 31%; height: 32px; margin-right: 3.5%; margin-bottom: 10px; font-size: 14px; line-height: 32px; color: #4f4f4f; background-color: #f0f0f0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.search-hot .hot-body span.last-col {  margin-right: 0; }
 
-.container { padding-top: 0; }
+.container { padding-top: 0; background-color: #f5f5f5; }

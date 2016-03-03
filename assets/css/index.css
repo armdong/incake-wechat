@@ -7,12 +7,10 @@
 #header .location i:nth-of-type(1) { padding: 0 6px; display: inline-block; width: 13px; height: 14px; background: url(../imgs/location_bg.png) no-repeat; position: relative; top: 2px; left: 10px; }
 #header .location i:nth-of-type(2) { width: 10px; height: 9px; display: inline-block; background: url(../imgs/arrow_down.png) no-repeat; position: relative; left: 4px; top: 0; }
 nav { width: 100%; }
-#header .search { display: block; height: 50px; position: absolute; top: 0; right: 0; padding: 0 6px; }
-#header .search img { width: 50px; height: 50px; }
 /* header end */
 
 /* swiper begin */
-#index-swiper { width: 100%; }
+#index-swiper { width: 100%; margin-top: 47px; }
 #index-swiper .swiper-pagination { position: absolute; z-index: 10; bottom: 5px; width: 100%;  text-align: center; }
 #index-swiper .swiper-pagination-bullet { background: #fff; box-shadow: 0 0 2px rgba(0,0,0,0.3); opacity: 1; }
 #index-swiper .swiper-pagination-bullet-active { background: #ea545d; }
@@ -141,3 +139,9 @@ background:linear-gradient(#fff, #e7e7e7);
 .wrap-container .sec .column-3 li:nth-of-type(3n+1) { margin-left: 1%; }
 .wrap-container .sec .column-2 li:nth-of-type(2n+1) { margin-left: 1%; }
 #rec-list li:nth-of-type(3n+1) { margin-left: 0; }
+
+/* added search style on 2016/03/03 */
+.fixed { position: fixed !important; top: 0; left: 0; z-index: 999999999; }
+#header .search { display: none; position: absolute; right: 5%; top: 50%; width: 65%; height: 30px; -webkit-transform: translateY(-50%); transform: translateY(-50%); border: 1px solid #505050; border-radius: 16px; overflow: hidden; }
+#header .search > input { float: left; width: 80%; height: 100%; line-height: 30px; border: none; -webkit-appearance: none; outline: none; text-indent: 1em; }
+#header .search .btn-search { display: block; float: right; position: relative; top: 6px; width: 18px; height: 18px; margin-right: 10px; background: url(../imgs/icon_search.png) no-repeat; background-size: cover; background-position: center center; }
