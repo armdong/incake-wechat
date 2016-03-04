@@ -356,7 +356,7 @@ img {
 }
 .container .g-evaluation .reply {
 	padding: .5rem 0;
-	border-bottom: 1px solid #e6e6e6;
+	border-top: 1px dashed #e6e6e6;
 	color: #c8a155;
 }
 .container .g-evaluation .reply span {
