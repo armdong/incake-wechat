@@ -1,0 +1,27 @@
+html, body { width: 100%; height: 100%; }
+body { font-size: 14px; font-family: Arial, "微软雅黑"; }
+
+#reg-container { width: 100%; height: 100%; overflow: hidden; }
+#reg-container img { width: 100%; }
+#reg-container .page { display: none; position: relative; width: 100%; height: 100%; background-color: #fff; opacity: 0; }
+
+#reg-container .page .bottom-logo { position: absolute; bottom: 2.905%; left: 50%; width: 36.40625%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+
+#reg-container #page1 { display: block; opacity: 1; background: url(../imgs/invite-register/page1_bg.jpg) no-repeat; background-position: top center; background-size: contain; }
+#reg-container #page1 .btn { display: block; position: absolute; bottom: 12.852%; left: 50%; width: 75%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+
+#reg-container #page2 { background: url(../imgs/invite-register/page2_bg.jpg) no-repeat; background-position: top center; background-size: contain; }
+#reg-container #page2 .frm-reg { display: block; position: absolute; bottom: 14.7%; left: 50%; z-index: 2; width: 78.75%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+#reg-container #page2 .frm-reg .exist-notice { /* display: none; */ color: #fa5e5e; font-size: 12px; line-height: 20px; }
+#reg-container #page2 .frm-reg .exist-notice p { text-align: center; }
+#reg-container #page2 .frm-reg .exist-notice a { color: #257de9; text-decoration: underline; }
+#reg-container #page2 .frm-reg li { width: 100%; height: 36px; margin-top: 10px; border-radius: 20px; border: 2px solid #c80000; background-color: rgba(255, 255, 255, .9); overflow: hidden; }
+#reg-container #page2 .frm-reg li.last { border: none; }
+#reg-container #page2 .frm-reg li input { width: 100%; line-height: 36px; font-size: 14px; text-indent: 2em; color: #666; background-color: transparent; border: none; outline: none; -webkit-appearance: none; }
+#reg-container #page2 .frm-reg li .txt-mobile { float: left; width: 60%; }
+#reg-container #page2 .frm-reg li .btn-vcode { display: block; float: right; width: 35%; height: 30px; margin-right: 2%; margin-top: 3px; line-height: 30px; border-radius: 15px; text-align: center; color: #fff; background-color: #cfb981; overflow: hidden; }
+#reg-container #page2 .frm-reg li .btn-reg { display: block; width: 100%; height: 36px; line-height: 36px; font-size: 14px; text-align: center; color: #fff; background-color: #c80000; }
+
+#reg-container #page3 { background: url(../imgs/invite-register/page3_bg.jpg) no-repeat; background-position: top center; background-size: contain; background-color: #cfb981; }
+#reg-container #page3 .btn { display: block; position: absolute; bottom: 12.852%; left: 50%; width: 75%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+#reg-container #page3 .notice { position: absolute; top: -100%; left: 0; width: 100%; height: 100%; background: url(../imgs/invite-register/page3_notice.png) no-repeat; background-position: top center; background-size: contain; background-color: rgba(0, 0, 0, 0.8); }
