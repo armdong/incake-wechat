@@ -1,0 +1,19 @@
+html, body { width: 100%; height: 100%; }
+body { font-family: Arial, "Microsoft Yahei"; font-size: 14px; }
+.container-wrapper { position: relative; width: 100%; height: 100%; overflow: hidden; background: url(../imgs/ifit/body_bg.jpg) no-repeat; background-size: cover; background-position: top center; background-color: #fff; }
+.container-wrapper img { width: 100%; }
+.container-wrapper .logo { position: relative; top: 1.96%; width: 23.47%; margin: 0 auto; }
+.container-wrapper .content { position: absolute; top: 10.345%; left: 50%; width: 96.26%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.container-wrapper .content .frm { position: absolute; top: 40%; left: 50%; width: 77.56%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.container-wrapper .content .frm input, 
+.container-wrapper .content .frm a { display: inline-block; width: 100%; margin-bottom: 10px; }
+.container-wrapper .content .frm input { height: 36px; line-height: 36px; -webkit-appearance: none; outline: none; text-indent: 1em; border: 1px solid #aeaeae; border-radius: 5px; }
+.container-wrapper .content .frm .btn { height: 38px; line-height: 38px; font-size: 16px; text-align: center; background: #000; color: #fff; border-radius: 5px; }
+.container-wrapper .content .frm .link { line-height: 24px; text-align: center; color: #cf2525; }
+.container-wrapper .mask { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .3); }
+.container-wrapper .mask .mask-tip { position: absolute; top: 50%; left: 50%; width: 68%; padding: 30px 15px; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-color: #fff; border-radius: 5px; }
+.container-wrapper .mask .mask-tip p { font-size: 16px; color: #000; line-height: 24px; text-align: center; }
+.container-wrapper .mask .mask-tip a { display: inline-block; width: 100%; margin-top: 10px; font-size: 14px; color: #ce2424; line-height: 24px; text-align: center; }
+
+.manual-container { width: 100%; }
+.manual-container img { width: 100%; }
