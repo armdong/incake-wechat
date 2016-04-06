@@ -22,10 +22,6 @@ img { border: none; vertical-align: top; }
 #page-02 .frm li .txt-mobile { float: left; width: 60%; }
 #page-02 .frm li .btn-vcode { float: right; width: 40%; height: 38px; line-height: 38px; background: #ffcf0d; color: #fff; text-align: center; }
 #page-02 .frm li .btn-submit { display: block; width: 100%; height: 38px; line-height: 38px; text-align: center; background: #a05a14; color: #fff; border-radius: 10px; }
-#page-02 .mask-share { position: absolute; top: -100%; left: 0; width: 100%; height: 100%; background: url(../imgs/cheese/mask_bg.png); }
-#page-02 .mask-share .share { position: relative; width: 100%; height: 100%; background: url(../imgs/cheese/mask_share_bg.png) no-repeat; background-size: contain; background-position: top center; }
-#page-02 .mask-share .share .qr-code { position: absolute; bottom: 0; left: 0; width: 100%; }
-#page-02 .mask-share .share .qr-code img { width: 100%; }
 
 #page-query { width: 100%; height: 100%; background-color: #fff; background: url(../imgs/cheese/footer_bg.png) no-repeat; background-size: contain; background-position: bottom center; overflow: hidden; }
 #page-query .banner { width: 100%; }
