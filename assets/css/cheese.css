@@ -1,0 +1,42 @@
+html, body { width: 100%; height: 100%; }
+body, p, ul, li { margin: 0; padding: 0; }
+body { font-size: 14px; font-family: Arial, 'Microsoft Yahei'; }
+li { list-style: none; }
+a { text-decoration: none; }
+img { border: none; vertical-align: top; }
+.container-wrapper { width: 100%; height: 100%; background-color: #fff; }
+#page-01 { width: 100%; }
+#page-01 .swiper-pagination-bullet-active { background-color: #ca6806; }
+#page-01 .content-01 { width: 100%; vertical-align: top; }
+#page-01 .content-01 img { width: 100%; border: none; vertical-align: top; }
+#page-01 .btn-open { position: fixed; bottom: 0; left: 0; display: block; width: 100%; }
+#page-01 .btn-open img { width: 100%; border: none; vertical-align: bottom; }
+
+#page-02 { display: none; position: relative; width: 100%; height: 100%; opacity: 0; background-color: #fff; background: url(../imgs/cheese/footer_bg.png) no-repeat; background-size: contain; background-position: bottom center; }
+#page-02 .banner { width: 100%; }
+#page-02 .banner img { width: 100%; }
+#page-02 .frm { width: 70%; margin: 50px auto 0; }
+#page-02 .frm li { width: 100%; height: 38px; line-height: 38px; border: 2px solid #ffcf0d; border-radius: 10px; margin-bottom: 10px; }
+#page-02 .frm li.last { border: none; margin-bottom: 0; padding: 0 2px; border-radius: 0; }
+#page-02 .frm li input { width: 100%; height: 38px; line-height: 38px; border: none; background: transparent; -webkit-appearance: none; outline: none; text-indent: 1em; }
+#page-02 .frm li .txt-mobile { float: left; width: 60%; }
+#page-02 .frm li .btn-vcode { float: right; width: 40%; height: 38px; line-height: 38px; background: #ffcf0d; color: #fff; text-align: center; }
+#page-02 .frm li .btn-submit { display: block; width: 100%; height: 38px; line-height: 38px; text-align: center; background: #a05a14; color: #fff; border-radius: 10px; }
+#page-02 .mask-share { position: absolute; top: -100%; left: 0; width: 100%; height: 100%; background: url(../imgs/cheese/mask_bg.png); }
+#page-02 .mask-share .share { position: relative; width: 100%; height: 100%; background: url(../imgs/cheese/mask_share_bg.png) no-repeat; background-size: contain; background-position: top center; }
+#page-02 .mask-share .share .qr-code { position: absolute; bottom: 0; left: 0; width: 100%; }
+#page-02 .mask-share .share .qr-code img { width: 100%; }
+
+#page-query { width: 100%; height: 100%; background-color: #fff; background: url(../imgs/cheese/footer_bg.png) no-repeat; background-size: contain; background-position: bottom center; overflow: hidden; }
+#page-query .banner { width: 100%; }
+#page-query .banner img { width: 100%; }
+#page-query .frm { width: 100%; margin-top: 70px; }
+#page-query .frm ul { width: 70%; margin: 0 auto; }
+#page-query .frm li { width: 100%; height: 38px; line-height: 38px; border: 2px solid #ffcf0d; border-radius: 10px; margin-bottom: 20px; }
+#page-query .frm li.last { border: none; margin-bottom: 0; padding: 0 2px; border-radius: 0; }
+#page-query .frm li input { width: 100%; height: 38px; line-height: 38px; border: none; background: transparent; -webkit-appearance: none; outline: none; text-indent: 1em; }
+#page-query .frm li .btn-query { display: block; width: 100%; height: 38px; line-height: 38px; text-align: center; background: #a05a14; color: #fff; border-radius: 10px; }
+#page-query .frm .result { display: none; width: 70%; margin: -30px auto 0; }
+#page-query .frm .result img { width: 100%; }
+#page-query .frm .success { position: relative; top: 0; left: -200%; }
+#page-query .frm .fail { position: relative; top: 0; right: -200%; }
