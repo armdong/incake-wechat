@@ -45,6 +45,9 @@
 
         // 订单查询
         fnQuery();
+
+        // 城市定位
+        fnInitCity();
     });
 
     // 开团
@@ -119,6 +122,44 @@
                 });
             }
 
+        });
+    }
+
+    function fnInitCity() {
+
+        var $oPage = $('#page-01');
+
+        // 城市选择
+        $oPage.on('click', '.location', function() {
+            var $oMask = $('#mask');
+            if ($oMask.hasClass('hide')) {
+                $oMask.removeClass('hide');
+                // 禁用页面touchmove
+                $('body').bind('touchmove', function(e) {
+                    e.preventDefault();
+                });
+            }
+        });
+
+        // 城市选择确认
+        $('#btnCitySure').on('click', function() {
+            var $oMask = $('#mask');
+            if (!$oMask.hasClass('hide')) {
+                $oMask.addClass('hide');
+                // 禁用页面touchmove
+                $('body').unbind('touchmove');
+            }
+        });
+
+        // 城市切换
+        var $oCity = $('#city-group');
+        var $aCitySpan = $oCity.find('span');
+
+        $.each($aCitySpan, function(i, ele) {
+            $(ele).on('click', function() {
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+            });
         });
     }
 
