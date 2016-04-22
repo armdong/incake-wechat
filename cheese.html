@@ -8,6 +8,7 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
+	<link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/cheese.css" />
 </head>
 
@@ -16,6 +17,15 @@
     <div class="container-wrapper">
 
     	<div id="page-01">
+
+    		<!-- header begin -->
+			<div class="header">
+				<a href="javascript:;" class="logo">
+					<img src="assets/imgs/logo@2x.png" alt="Logo" title="INCAKE">
+				</a>
+				<a class="location" href="javascript:;"><i></i><span>上海</span><i></i></a>
+			</div>
+			<!-- header end -->
 		
 			<!-- 轮播图 -->
 			<div class="swiper-container" id="slide">
@@ -64,6 +74,35 @@
 			</ul>
 
 		</div>
+
+		<!-- 遮罩层 begin -->
+		<div id="mask" class="hide">
+			<!-- 城市选择 begin -->
+			<div class="locate">
+				<div class="locate-title">
+					<span><i class="icon-locate"></i>位置获取</span>
+				</div>
+				<div class="locate-content">
+					<div class="desc">
+						<p>您当前的所在位置：<span id="cityName">正在定位中</span></p>
+						<p>是否选择此城市为配送城市</p>
+					</div>
+					<div class="city" id="city-group">
+						<span class="active">上海市</span>
+						<span>苏州市</span>
+						<span>昆山市</span>
+						<span>无锡市</span>
+						<span>福州市</span>
+						<span>厦门市</span>
+					</div>
+					<div class="btn">
+						<a href="javascript:;" id="btnCitySure">确定</a>
+					</div>
+				</div>
+			</div>
+			<!-- 城市选择 end -->
+		</div>
+		<!-- 遮罩层 end -->
        
     </div>
 

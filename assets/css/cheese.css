@@ -6,6 +6,12 @@ a { text-decoration: none; }
 img { border: none; vertical-align: top; }
 .container-wrapper { width: 100%; height: 100%; background-color: #fff; }
 #page-01 { width: 100%; }
+#page-01 .header { width: 100%; height: 46px; position: relative; background: #fff; border-bottom: 1px solid #dcdcdc; overflow: hidden; }
+#page-01 .header .logo { display: block; position: absolute; width: 94px; left: 50%; margin-left: -47px; top: 8px;  }
+#page-01 .header .logo img { width: 94px; }
+#page-01 .header .location { display: block; height: 50px; line-height: 50px; position: absolute; top: 50%; margin-top: -25px; padding: 0 6px; }
+#page-01 .header .location i:nth-of-type(1) { padding: 0 6px; display: inline-block; width: 13px; height: 14px; background: url(../imgs/location_bg.png) no-repeat; position: relative; top: 2px; left: 10px; }
+#page-01 .header .location i:nth-of-type(2) { width: 10px; height: 9px; display: inline-block; background: url(../imgs/arrow_down.png) no-repeat; position: relative; left: 4px; top: 0; }
 #page-01 .swiper-pagination-bullet-active { background-color: #ca6806; }
 #page-01 .content-01 { width: 100%; vertical-align: top; }
 #page-01 .content-01 img { width: 100%; border: none; vertical-align: top; }
@@ -36,3 +42,18 @@ img { border: none; vertical-align: top; }
 #page-query .frm .result img { width: 100%; }
 #page-query .frm .success { position: relative; top: 0; left: -200%; }
 #page-query .frm .fail { position: relative; top: 0; right: -200%; }
+
+/* mask begin */
+#mask { width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: fixed; top: 0; left: 0; z-index: 999; }
+#mask .locate { width: 90%; border-radius: 5px; max-width: 500px; background: #fff; margin: auto; position: absolute; top: 40%; margin-top: -50px; left: 0; right: 0; z-index: 9999; overflow: hidden; }
+#mask .locate-title { width: 100%; height: 40px; line-height: 40px; text-align: center; background: #e6e6e6; }
+#mask .locate-title .icon-locate{ display: inline-block; width: 13px; height: 14px; background: url(../imgs/location_bg.png) no-repeat; position: relative; margin-right: 6px; top: 2px; }
+#mask .locate-content { width: 100%; height: 200px; position: relative; }
+#mask .locate-content .desc { width: 100%; margin: 20px 0; }
+#mask .locate-content .desc p { text-align: center; line-height: 20px; color: #515151; }
+#mask .locate-content .city { width: 90%; margin-top: 10px; margin: 0 auto; }
+#mask .locate-content .city span { color: black; outline:none; display: inline-block; width: 22%; margin:5px auto; line-height: 26px; height: 26px; /*margin: 0 1%;*/ border: 1px solid #e6e6e6; border-radius: 14px; font-size: 12px; text-align: center; }
+#mask .locate-content .city span.active { border-color: #e74566; color: #e74566; }
+#mask .locate-content .btn { height: 40px; width: 100%; position: absolute; bottom: 14px; }
+#mask .locate-content .btn a { display: block; width: 60%; height: 100%; background: #0055A2; margin: 0 auto; text-align: center; line-height: 40px; font-size: 14px; color: #fff; border-radius: 10px; }
+/* mask end */
