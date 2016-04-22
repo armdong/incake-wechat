@@ -1,0 +1,8 @@
+.content .banners { position: relative; }
+.content a { position: absolute; left: 74%; display: block; width: 18%; height: 6%; }
+.content a.cake01 { top: 56%; }
+.content a.cake02 { top: 74%; }
+.content a.cake03 { top: 93.6%; }
+.content dl { width: 88%; padding: 6%; background-color: #064f72; color: #fff; }
+.content dt { margin-bottom: 12px; font-size: 16px; line-height: 16px; text-align: center; }
+.content dd { font-size: 12px; line-height: 18px; text-align: justify; }
