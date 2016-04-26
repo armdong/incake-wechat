@@ -1,0 +1,52 @@
+html,body,.content { height: 100%; }
+
+.content .page { background: url(../imgs/lottery-free-single/body_bg.jpg) no-repeat; background-size: cover; background-position: center center; }
+
+.content .page01 { position: relative; height: 100%; }
+.page01 .banner { position: absolute; left: 20%; width: 60%; }
+.page01 .banner01 { top: 2%; }
+.page01 .btn-lottery{ bottom: 0; display: inline-block; }
+
+.content .page02 { position: relative; height: 100%; }
+.page02 .banner { position: relative; top: 6%; }
+.page02 .banner:after{ content: ''; display: block; position: absolute; bottom: -20px; left: 10%; width: 80%; height: 1px; border-bottom: 1px #000 solid; } 
+.page02 .page-regist { position: absolute; bottom:10%; left: 50%; width: 78%; padding: 36px 4% 0; transform: translateX(-50%); }
+.page02 .page-regist li { width: 100%; height: 50px; line-height: 50px; background-color: #fff; border-radius: 6px; margin-bottom: 10px; }
+.page02 .page-regist li input { width: 90%; height: 50px; padding-left: 5%; border: 0; border-radius: 6px 0 0 6px; font-size: 14px; line-height: 50px; }
+.page02 .page-regist li .txt-mobile { float: left; width: 55%; }
+.page02 .page-regist li .btn-vcode { display: inline-block; float: left; width: 40%; height: 50px; background-color: #297fa0; border-radius: 0 6px 6px 0;  font-size: 14px; line-height: 50px; text-align: center; color: #fff; }
+.page02 .page-regist .btn-regist { display: inline-block; float: left; width: 100%; height: 50px; background-color: #0a3e56; border-radius: 6px; margin-top: 10px; font-size: 16px; line-height: 50px; text-align: center; color: #fff;  }
+
+.page03 .banner { margin-top: 6%; }
+#lottery { position: relative; width:95%; margin:-3% auto 0; }
+#lottery .tips { position: absolute; top: 14%; left: 28%; font-size: 22px; line-height: 22px; color: #505050; }
+#lottery .tips span { margin: 0 2px; font-size: 32px; color: #d10303; vertical-align: text-top; }
+#lottery ul { position: absolute; top: 22%; left: 5.6%; width: 85%; padding: 2%; border-radius: 8px; background-color: rgba(255,255,255,.5); }
+#lottery ul li { float: left; width: 32%; margin: 0 2% 2% 0; }
+#lottery ul li>img:nth-of-type(1) { display: block; }
+#lottery ul li>img:nth-of-type(2) { display: none; }
+#lottery ul li.active>img:nth-of-type(1) { display: none; }
+#lottery ul li.active>img:nth-of-type(2) { display: block; }
+#lottery ul li:nth-of-type(3n){ margin-right: 0; }
+#lottery ul li.li-last { margin-bottom: 0; }
+#lottery ul li a { display: block; width:100%; height:100%; }
+.page03 .rules { background-color: #093e55; padding: 6% 0; margin-top: 6%; }
+.page03 .rules dl { width: 90%; margin: 0 auto; color: #fff; }
+.page03 .rules dt { margin-bottom: 6px; font-size: 18px; line-height: 30px; text-align: center; }
+.page03 .rules dd { font-size: 14px; line-height: 22px; text-align: justify; }
+
+
+/* 抽奖弹窗 */
+#popup-tip,#popup-share { position: fixed; top: 0; left: 0; z-index: 999; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
+#popup-tip .tip-content { position: absolute; top: 50%; left: 50%; z-index:9999; width: 80%; padding: 10% 0; border-radius: 4px; background-color: #fff;transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); }
+#popup-tip .tip-content p { text-align: center; font-size: 14px; }
+#popup-tip .tip-content .tip-title { width: 100%; margin: 0 auto; font-size: 16px; line-height: 26px; color: #b90101; }
+#popup-tip .tip-content .tip-title span { font-weight: bold; }
+#popup-tip .tip-content dl { width: 90%; margin: 6px auto; font-size: 14px; line-height: 20px; color: #505050; text-align: justify; }
+#popup-tip .tip-content dt { font-weight: bold; }
+#popup-tip .tip-content dd { text-indent: 2em; }
+#popup-tip .tip-content a { display: block; width: 76%; height: 34px; margin: 6px auto; background-color:#093e55; border-radius: 4px; font-size: 14px; line-height: 34px; text-align: center; color: #fff; }
+/* 分享弹窗 */
+#popup-share { background: #000; }
+#popup-share p { position: absolute; top: 0; left: 0; z-index:9999; width: 100%; }
+#popup-share p img{ width: 100%; }

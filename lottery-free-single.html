@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no" />
+		<title>抽奖免单活动</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/common_b.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/lottery-free-single.css"/>
+	</head>
+	<body>
+		
+		<div class="content">
+			
+			<div class="page page01">
+				<div class="banner banner01">
+					<img src="assets/imgs/lottery-free-single/banner01.png"/>
+				</div>
+				<a href="javascript:;" class="banner btn-lottery">
+					<img src="assets/imgs/lottery-free-single/banner02.png"/>
+				</a>
+			</div>
+			
+			<div class="page page02 hide">
+				<div class="banner"><img src="assets/imgs/lottery-free-single/top_bg.png"/></div>
+				<div class="page-regist">
+					<ul>
+	                    <li class="clearfix">
+	                        <input type="text" class="txt-mobile" placeholder="请输入您的手机号码">
+	                        <a href="javascript:;" class="btn-vcode">获取验证码</a>
+	                    </li>
+	                    <li>
+	                        <input type="text" class="txt-vcode" placeholder="请输入验证码">
+	                    </li>
+	                    <li>
+	                        <input type="text" class="txt-vcode" placeholder="请输入您的姓名">
+	                    </li>
+	                </ul>
+	                <a href="javascript:;" class="btn-regist">提交</a>
+				</div>
+			</div>
+			
+			<div class="page page03 hide">
+				<img src="assets/imgs/lottery-free-single/top_bg.png" class="banner"/>
+				<div id="lottery">
+					<img src="assets/imgs/lottery-free-single/lottery_bg.png"/>
+					<p class="tips">你还有<span>1</span>次抽奖机会</p>
+					<ul class="clearfix">
+						<li class="lottery-unit lottery-unit-0 active"><img src="assets/imgs/lottery-free-single/tip01.png"><img src="assets/imgs/lottery-free-single/active01.png"></li>
+						<li class="lottery-unit lottery-unit-1"><img src="assets/imgs/lottery-free-single/tip02.png"><img src="assets/imgs/lottery-free-single/active02.png"></li>
+			            <li class="lottery-unit lottery-unit-2"><img src="assets/imgs/lottery-free-single/tip03.png"><img src="assets/imgs/lottery-free-single/active03.png"></li>
+						<li class="lottery-unit lottery-unit-7"><img src="assets/imgs/lottery-free-single/tip04.png"><img src="assets/imgs/lottery-free-single/active04.png"></li>
+						<li><a href="#"><img src="assets/imgs/lottery-free-single/btn_begin.png"/></a></li>
+						<li class="lottery-unit lottery-unit-3"><img src="assets/imgs/lottery-free-single/tip02.png"><img src="assets/imgs/lottery-free-single/active02.png"></li>
+						<li class="lottery-unit lottery-unit-6 li-last"><img src="assets/imgs/lottery-free-single/tip03.png"><img src="assets/imgs/lottery-free-single/active03.png"></li>
+						<li class="lottery-unit lottery-unit-5 li-last"><img src="assets/imgs/lottery-free-single/tip01.png"><img src="assets/imgs/lottery-free-single/active01.png"></li>
+			            <li class="lottery-unit lottery-unit-4 li-last"><img src="assets/imgs/lottery-free-single/tip04.png"><img src="assets/imgs/lottery-free-single/active04.png"></li>
+					</ul>
+				</div>
+				<div class="rules">
+					<dl>
+						<dt>活动规则：</dt>
+						<dd>1. 使用本券订购INCAKE1.2/1.5磅常规款蛋糕享受5折优惠；</dd>
+						<dd>2. 适用地区：上海苏州昆山无锡福州厦门；</dd>
+						<dd>3. 本券不可购买主题蛋糕，思蜜下午茶，已经星座蛋糕且不与其他优惠活动同享，不可与其他优惠券代金卡一同使用；</dd>
+						<dd>4. 本券有效期为一个月。</dd>
+					</dl>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!-- 抽奖弹窗 -->
+		<div id="popup-tip" class="hide">
+			<div class="tip-content">
+				<p class="tip-title">恭喜！</p>
+				<p class="tip-title">您抽中INCAKE蛋糕<span>免单券</span></p>
+				<dl>
+					<dt>使用方法：</dt>
+					<dd>优惠券已经生成在您的INCAKE账户内，账户名：您输入的手机号，密码：手机号后六位， 登录“INCAKE 订购”微信公众号，点击微信订购，即可购买蛋糕。</dd>
+				</dl>
+				<a href="javascript:;" class="btn-share">分享好友</a>
+				<p class="tip">分享好友，可额外获得1次抽奖机会哦</p>
+			</div>
+		</div>
+		
+		<!-- 分享弹窗 -->
+		<div id="popup-share" class="hide">
+			<p><img src="assets/imgs/lottery-free-single/share_bg.png"/></p>
+		</div>
+		
+		<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="assets/js/lottery-free-single.js"></script>
+		
+	</body>
+</html>
