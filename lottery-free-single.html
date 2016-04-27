@@ -44,7 +44,7 @@
 				<img src="assets/imgs/lottery-free-single/top_bg.png" class="banner"/>
 				<div id="lottery">
 					<img src="assets/imgs/lottery-free-single/lottery_bg.png"/>
-					<p class="tips">你还有<span>1</span>次抽奖机会</p>
+					<p class="tips">你还有<span id="count">1</span>次抽奖机会</p>
 					<ul class="clearfix">
 						<li class="lottery-unit lottery-unit-0 active"><img src="assets/imgs/lottery-free-single/tip01.png"><img src="assets/imgs/lottery-free-single/active01.png"></li>
 						<li class="lottery-unit lottery-unit-1"><img src="assets/imgs/lottery-free-single/tip02.png"><img src="assets/imgs/lottery-free-single/active02.png"></li>
@@ -71,13 +71,13 @@
 		</div>
 		
 		<!-- 抽奖弹窗 -->
-		<div id="popup-tip" class="hide">
+		<div id="popup-tip">
 			<div class="tip-content">
 				<p class="tip-title">恭喜！</p>
-				<p class="tip-title">您抽中INCAKE蛋糕<span>免单券</span></p>
+				<p class="tip-title">您抽中INCAKE蛋糕<span id="prize">免单券</span></p>
 				<dl>
 					<dt>使用方法：</dt>
-					<dd>优惠券已经生成在您的INCAKE账户内，账户名：您输入的手机号，密码：手机号后六位， 登录“INCAKE 订购”微信公众号，点击微信订购，即可购买蛋糕。</dd>
+					<dd>优惠券已经生成在您的INCAKE账户内，账户名：您输入的手机号，密码：手机号后六位，登录“INCAKE 订购”微信公众号，点击微信订购，即可购买蛋糕。</dd>
 				</dl>
 				<a href="javascript:;" class="btn-share">分享好友</a>
 				<p class="tip">分享好友，可额外获得1次抽奖机会哦</p>
@@ -85,7 +85,7 @@
 		</div>
 		
 		<!-- 分享弹窗 -->
-		<div id="popup-share" class="hide">
+		<div id="popup-share">
 			<p><img src="assets/imgs/lottery-free-single/share_bg.png"/></p>
 		</div>
 		

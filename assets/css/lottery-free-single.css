@@ -37,7 +37,7 @@ html,body,.content { height: 100%; }
 
 
 /* 抽奖弹窗 */
-#popup-tip,#popup-share { position: fixed; top: 0; left: 0; z-index: 999; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
+#popup-tip,#popup-share { position: fixed; top: 0; left: 0; z-index: 999; display: none; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
 #popup-tip .tip-content { position: absolute; top: 50%; left: 50%; z-index:9999; width: 80%; padding: 10% 0; border-radius: 4px; background-color: #fff;transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); }
 #popup-tip .tip-content p { text-align: center; font-size: 14px; }
 #popup-tip .tip-content .tip-title { width: 100%; margin: 0 auto; font-size: 16px; line-height: 26px; color: #b90101; }

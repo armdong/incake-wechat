@@ -35,12 +35,13 @@
 		}
 	};
 
-	var click=false;
+	var click = false;
+	// 这里是控制抽奖奖项逻辑,只能抽中5折(70%)和7折(30%)奖项
+	var arrPrize = [1,1,1,3,3,3,4,4,4,4,4,4,4,7,7,7,7,7,7,7];
 	
 	$(function() {
 		lotteryPage();
 		init();
-		initPopup();
 	});
 	
 	function lotteryPage() {
@@ -61,11 +62,14 @@
 	
 	function init(){
 		lottery.init('lottery');
+		var $oCount = $('#count');
+		
 		$("#lottery a").click(function(){
 			if (click) {
 				return false;
 			}else{
 				lottery.speed=100;
+				$oCount.html('0');
 				roll();
 				click=true;
 				return false;
@@ -81,11 +85,13 @@
 			lottery.prize=-1;
 			lottery.times=0;
 			click=false;
+			initPopup(lottery.index);
 		}else{
 			if (lottery.times<lottery.cycle) {
 				lottery.speed -= 10;
 			}else if(lottery.times==lottery.cycle) {
-				var index = Math.random()*(lottery.count)|0;
+				// 这里是控制抽奖奖项逻辑,只能抽中5折(70%)和7折(30%)奖项
+				var index = arrPrize[parseInt(Math.random()*20)];
 				lottery.prize = index;		
 			}else{
 				if (lottery.times > lottery.cycle+10 && ((lottery.prize==0 && lottery.index==7) || lottery.prize==lottery.index+1)) {
@@ -102,14 +108,26 @@
 		return false;
 	}
 	
-	function initPopup(){
+	
+	
+	function initPopup(index){
 		var $oPopupTip = $('#popup-tip');
 		var $oBtnShare = $oPopupTip.find('.btn-share');
 		var $oPopupShare = $('#popup-share');
+		var tips = '';
+		
+		if(index==1||index==3){
+			tips='7折券';
+		}else if(index==4||index==7){
+			tips='5折券';
+		}
+		
+		$oPopupTip.find('#prize').html(tips);
+		$oPopupTip.show();
 		
 		$oBtnShare.click(function(){
-			$oPopupTip.addClass('hide');
-			$oPopupShare.removeClass('hide');
+			$oPopupTip.hide();
+			$oPopupShare.show();
 		});
 	}
 	
