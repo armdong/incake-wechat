@@ -1,0 +1,9 @@
+.content { width: 100%; background-color: #000; }
+.content .section { position: relative; width: 100%; }
+.content .section img { width: 100%; }
+
+.content .section .btn-go { position: absolute; top: 0; right: 23%; display: block; width: 19%; }
+
+.content .section .rules { position: relative; top: -20px; width: 80%; margin: 0 auto; color: #a55927; }
+.content .section .rules dt { text-align: center; font-size: 14px; line-height: 30px; margin-bottom: 10px; }
+.content .section .rules dd { font-size: 12px; line-height: 20px; text-align: justify; }

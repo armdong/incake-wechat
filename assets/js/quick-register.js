@@ -102,6 +102,7 @@
             });
             $oBtnFooter.on('click', function() {
                 fnScrollTop($oFrmRegister);
+                // 
             });
         }
 
