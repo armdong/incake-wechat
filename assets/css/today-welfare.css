@@ -1,0 +1,36 @@
+html, body { width: 100%; height: 100%; overflow: hidden; }
+#container { position: relative; width: 100%; min-height: 100%; overflow-y: auto; } 
+#container img { width: 100%; vertical-align: top; border: none; }
+#container .page { display: none; position: absolute; top: 0; left: 0; width: 100%; min-height: 100%; background-color: #fff; }
+#container .banner { width: 100%; }
+#container .content { width: 100%; }
+#container .page1 { display: block; }
+#container .page1 .banner { position: relative; }
+#container .page1 .banner .go-home { display: block; position: absolute; top: 6px; right: 6px; width: 15%; border-radius: 50%; overflow: hidden; }
+#container .page1 .title { font-size: 14px; line-height: 38px; text-align: center; color: #19181e; }
+#container .page1 ul { width: 93.75%; margin: 0 auto; }
+#container .page1 li { width: 100%; margin-bottom: 10px; }
+#container .page1 li .ticket { float: left; width: 73.3%; } 
+#container .page1 li .btn { display: block; float: right; width: 26.7%; } 
+
+#container .page2 { background-color: #fd618a; overflow-x: hidden; }
+#container .page2 .content { position: relative; }
+#container .page2 .slide { position: absolute; top: 0; width: 100%; background-color: #fd618a; }
+#container .page2 .slide1 { left: 0; }
+#container .page2 .slide1 .title { width: 100%; text-align: center; height: 30px; line-height: 30px; font-size: 14px; color: #fff; margin: 15px 0; }
+#container .page2 .slide1 .title span { display: none; line-height: 30px; background: url("../imgs/today-welfare/tip_bg.png") no-repeat left center; text-indent: 35px; }
+#container .page2 .slide1 ul { width: 78.125%; margin: 0 auto; }
+#container .page2 .slide1 li { width: 100%; height: 40px; line-height: 40px; border: 1px solid #e4426c; margin-bottom: 10px; border-radius: 21px; overflow: hidden; background: #fff; }
+#container .page2 .slide1 li.last { height: 38px; line-height: 38px; border: none; }
+#container .page2 .slide1 input { width: 100%; height: 100%; text-indent: 2em; border: none; outline: none; -webkit-appearance: none; }
+#container .page2 .slide1 .txt-mobile { float: left; width: 60%; }
+#container .page2 .slide1 .btn-vcode { display: inline-block; position: relative; top: 5px; right: 5px; float: right; width: 36%; height: 30px; line-height: 30px; background-color: #fe8caa; color: #fff; text-align: center; border-radius: 21px; overflow: hidden; }
+#container .page2 .slide1 .btn-reg { display: inline-block; width: 100%; height: 100%; background-color: #41c0d5; color: #fff; text-align: center; }
+#container .page2 .slide2 { left: 100%; font-size: 12px; }
+#container .page2 .slide2 .title { margin: 15px 0; text-align: center; color: #fff; }
+#container .page2 .slide2 .title h2 { font-size: 16px; line-height: 24px; color: #fff; }
+#container .page2 .slide2 .title p { line-height: 18px; margin-bottom: 10px; }
+#container .page2 .slide2 .title .btn-buy { display: block; width: 60%; height: 32px; line-height: 32px; margin: 0 auto; color: #fff; text-align: center; background: #41c0d5; border-radius: 16px; overflow: hidden; }
+#container .page2 .slide2 dl { width: 87.5%; margin: 0 auto; border-top: 1px solid #fff; color: #fff; padding: 10px 0; }
+#container .page2 .slide2 dt { font-size: 14px; line-height: 24px; }
+#container .page2 .slide2 dd { line-height: 20px; text-align: justify; }
