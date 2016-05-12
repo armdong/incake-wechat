@@ -1,0 +1,103 @@
+html, body { width: 100%; height: 100%; }
+.container-wrapper { position: relative; width: 100%; height: 100%; max-width: 640px; margin: 0 auto; }
+.container-wrapper img { width: 100%; }
+
+.container-wrapper #mask { position: absolute; top: 0; left: 0; z-index: 999; width: 100%; height: 100%; background: rgba(0, 0, 0, .8); }
+
+.container-wrapper .page { display: none; position: relative; width: 100%; min-height: 100%; overflow-y: auto; }
+.container-wrapper .page .logo { position: absolute; bottom: 0; left: 50%; width: 28.75%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.container-wrapper .page .content { width: 100%; padding-bottom: 80px; }
+
+.container-wrapper .page1 { display: block; background-color: #f1cb34; }
+.container-wrapper .page1 .btn { position: absolute; top: 25%; left: 50%; z-index: 9; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 30.625%; }
+.container-wrapper .page1 .btn img { -webkit-transform-origin: center center; transform-origin: center center; -webkit-animation: 2.5s btn-scale infinite; animation: 2.5s btn-scale infinite; }
+@-webkit-keyframes btn-scale {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.5); }
+	100% { -webkit-transform: scale(1); }
+}
+@keyframes btn-scale {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.5); }
+	100% { transform: scale(1); }
+}
+.container-wrapper .page1 .location { position: absolute; top: 3%; left: 3%; width: 20.3125%; height: 24px; line-height: 24px; border: 1px solid #3d2c28; border-radius: 13px; background-color: #f1cb34; }
+.container-wrapper .page1 .location p { width: 100%; text-align: center; }
+.container-wrapper .page1 .location::before { position: absolute; left: 6px; top: 3px; width: 10px; height: 16px; content: url("../imgs/freecake/location_bg.png"); }
+.container-wrapper .page1 .location::after { position: absolute; top: 8px; right: 6px; content: ''; width: 0; height: 0; border-top: 8px solid #3d2c28; border-right: 4px solid transparent; border-bottom: 8px solid transparent; border-left: 4px solid transparent; }
+.page1 .location ul { display: none; position: absolute; top: 30px; left: 0; width: 100%; border: 1px solid #3d2c28; background-color: #f1cb34; }
+.page1 .location ul::after { position: absolute; top: -12px; right: 20%; content: ''; width: 0; height: 0; border-top: 6px solid transparent; border-right: 8px solid transparent; border-bottom: 6px solid #3d2c28; border-left: 8px solid transparent; }
+.page1 .location ul li { width: 100%; height: 32px; line-height: 32px; text-align: center; border-bottom: 1px solid #f1cb34; background-color: #3d2c28; color: #f1cb34; }
+.page1 .location ul li:last-of-type { border-bottom: none; }
+.page1 .location ul li.active { background-color: #f1cb34; color: #3d2c28; }
+.container-wrapper .page1 .mask-tip { position: absolute; top: 30%; left: 50%; z-index: 9999; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 75%; }
+.page1 .mask-tip .mask-tip-close { position: absolute; top: 5%; right: 5%; width: 10.68%; }
+
+.container-wrapper .page2 { background: url("../imgs/freecake/page2_bg.png"); }
+.container-wrapper .page2 .banner { width: 100%; }
+.container-wrapper .page2 .frm-register { width: 100%; }
+.page2 .frm-register > p { height: 28px; text-align: center; color: #f1cb34; font-size: 16px; padding: 20px 0; }
+.page2 .frm-register > p .exists-notice { display: none; line-height: 28px; }
+.page2 .frm-register > p .exists-notice img { display: inline-block; width: 28px; height: 28px; margin-right: 10px; }
+.page2 .frm-register > ul { width: 100%; }
+.page2 .frm-register > ul li { width: 78.125%; height: 36px; margin: 0 auto; line-height: 36px; border-radius: 20px; border: 2px solid #f1cb34; background-color: #fbefbf; overflow: hidden; margin-bottom: 14px; }
+.page2 .frm-register > ul li:last-of-type { border: none; background: transparent; margin-bottom: none; }
+.page2 .frm-register > ul li input { width: 100%; height: 100%; border: none; outline: none; -webkit-appearance: none; text-indent: 2em; background-color: transparent; }
+.page2 .frm-register > ul li .btn-fetch { display: inline-block; width: 100%; height: 100%; background-color: #f1cb34; font-size: 16px; text-align: center; color: #3d2c28; }
+.page2 .frm-register > ul li .txt-mobile { float: left; width: 62%; }
+.page2 .frm-register > ul li .btn-vcode { float: right; position: relative; top: 4px; width: 36%; height: 28px; line-height: 28px; text-align: center; color: #fbefbf; margin-right: 2%; background-color: #e2a154; border-radius: 14px; }
+.container-wrapper .page2 .result { display: none; width: 100%; padding: 30px 0; color: #f1cb34; text-align: center; }
+.page2 .result .result-ok { display: block; }
+.page2 .result .result-ok > h2 { color: inherit; line-height: 40px; }
+.page2 .result .result-ok > h3 { color: inherit; line-height: 30px; font-weight: normal; }
+.page2 .result .result-ok > p { margin: 20px 0 10px; line-height: 24px; }
+.page2 .result .result-ok > .btn-share { display: block; width: 78.125%; height: 36px; margin: 0 auto; line-height: 36px; background-color: #f1cb34; font-size: 14px; text-align: center; color: #3d2c28; border-radius: 18px; }
+.page2 .result .result-fail { display: none; }
+.page2 .result .result-fail > h2 { color: inherit; line-height: 70px; margin-bottom: 30px; }
+.page2 .result .result-fail > h2 img { display: inline-block; width: 66px; height: 60px; margin-right: 10px; }
+.page2 .result .result-fail > .btn-cakelist { display: block; width: 78.125%; height: 36px; margin: 0 auto; line-height: 36px; background-color: #f1cb34; font-size: 14px; text-align: center; color: #3d2c28; border-radius: 18px; }
+.page2 .result > .rules { width: 86.25%; margin: 0 auto; padding-top: 30px; margin-top: 20px; text-align: left; border-top: 1px solid #f1cb34; }
+.page2 .result > .rules dt { font-size: 16px; line-height: 30px; }
+.page2 .result > .rules dd { font-size: 14px; line-height: 24px; }
+.container-wrapper .page2 .mask-share { display: none; position: absolute; top: 0; left: 0; z-index: 9999; width: 100%; }
+
+/* freecake-guide.html style */
+.container-wrapper .page3 { display: block; background: url("../imgs/freecake/page2_bg.png"); }
+.container-wrapper .page3 .banner { width: 100%; }
+.container-wrapper .page3 .result { width: 100%; padding: 30px 0; color: #f1cb34; text-align: center; }
+.page3 .result { display: block; }
+.page3 .result > h2 { color: inherit; line-height: 40px; }
+.page3 .result > h3 { color: inherit; line-height: 30px; font-weight: normal; }
+.page3 .result > p { margin: 20px 0 10px; line-height: 24px; }
+.page3 .result > .rules { width: 86.25%; margin: 0 auto; padding-top: 30px; margin-top: 20px; text-align: left; border-top: 1px solid #f1cb34; }
+.page3 .result > .rules p { font-size: 14px; line-height: 24px; text-align: center; }
+.page3 .result > .rules p span { font-weight: bold; }
+.page3 .result > .rules .qrcode { width: 45%; margin: 20px auto; }
+
+/* freecake-result.html style */
+.container-wrapper .page4 { display: block; background: url("../imgs/freecake/page2_bg.png"); }
+.container-wrapper .page4 .banner { width: 100%; }
+.container-wrapper .page4 .frm-register { width: 100%; }
+.page4 .frm-register > ul { width: 100%; margin-top: 70px; }
+.page4 .frm-register > ul li { width: 78.125%; height: 36px; margin: 0 auto; line-height: 36px; border-radius: 20px; border: 2px solid #f1cb34; background-color: #fbefbf; overflow: hidden; margin-bottom: 14px; }
+.page4 .frm-register > ul li:last-of-type { border: none; background: transparent; margin-bottom: none; }
+.page4 .frm-register > ul li input { width: 100%; height: 100%; border: none; outline: none; -webkit-appearance: none; text-indent: 2em; background-color: transparent; }
+.page4 .frm-register > ul li .btn-result { display: inline-block; width: 100%; height: 100%; background-color: #f1cb34; font-size: 16px; text-align: center; color: #3d2c28; }
+.page4 .frm-register > ul li .txt-mobile { float: left; width: 62%; }
+.page4 .frm-register > ul li .btn-vcode { float: right; position: relative; top: 4px; width: 36%; height: 28px; line-height: 28px; text-align: center; color: #fbefbf; margin-right: 2%; background-color: #e2a154; border-radius: 14px; }
+.container-wrapper .page4 .result { display: none; width: 100%; padding: 30px 0; color: #f1cb34; text-align: center; }
+.page4 .result .result-ok { display: block; }
+.page4 .result .result-ok > h3 { color: inherit; line-height: 30px; }
+.page4 .result .result-ok > p { line-height: 24px; }
+.page4 .result .result-ok > .btn { display: block; width: 78.125%; height: 36px; margin: 30px auto 40px; line-height: 36px; background-color: #f1cb34; font-size: 14px; text-align: center; color: #3d2c28; border-radius: 18px; }
+.page4 .result .result-ok > .btn-exchange { display: none; font-size: 16px; font-weight: bold; }
+.page4 .result .result-fail { display: none; }
+.page4 .result .result-fail > h2 { color: inherit; line-height: 70px; margin-bottom: 20px; }
+.page4 .result .result-fail > h2 img { display: inline-block; width: 66px; height: 60px; margin-right: 10px; }
+.page4 .result .result-fail > p { font-size: 16px; line-height: 24px; }
+.page4 .result .result-fail > p span { font-weight: bold; }
+.page4 .result .result-fail > .btn-cakelist { display: block; width: 78.125%; height: 36px; margin: 10px auto 0; line-height: 36px; background-color: #f1cb34; font-size: 14px; text-align: center; color: #3d2c28; border-radius: 18px; }
+.page4 .result > .rules { width: 86.25%; margin: 0 auto; padding-top: 30px; margin-top: 20px; text-align: left; border-top: 1px solid #f1cb34; }
+.page4 .result > .rules dt { font-size: 16px; line-height: 30px; }
+.page4 .result > .rules dd { font-size: 14px; line-height: 24px; }
+.container-wrapper .page4 .mask-share { display: none; position: absolute; top: 0; left: 0; z-index: 9999; width: 100%; }
