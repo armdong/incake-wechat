@@ -1,0 +1,6 @@
+header > img { width: 222px; }
+.content { width: 100%; }
+.content img { width: 100%; vertical-align: top; border: none; }
+.content .top { width: 100%; }
+.content .bottom { position: relative; width: 100%; }
+.content .bottom .btn-cake { position: absolute; top: 0; left: 0; display: block; width: 68.4375%; -webkit-transform: translateY(-28%); transform: translateY(-28%); }
