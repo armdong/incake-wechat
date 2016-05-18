@@ -7,7 +7,7 @@
     });
 
     function fnLoading() {
-        $(window).on('touchstart', function(event) {
+        $(window).bind('touchstart', function(event) {
             event.preventDefault();
             /* Act on the event */
             return false;
@@ -32,6 +32,7 @@
                         opacity: 0
                     }, 1000, function() {
                         $(this).remove();
+                        $(window).unbind('touchstart');
         				fnGetGift();
                     });
                 }
@@ -42,6 +43,7 @@
                     opacity: 0
                 }, 1000, function() {
                     $(this).remove();
+                    $(window).unbind('touchstart');
     				fnGetGift();
                 });
             };
