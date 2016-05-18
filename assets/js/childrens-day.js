@@ -1,8 +1,52 @@
 (function() {
 
     $(document).ready(function() {
-        fnGetGift();
+
+        // loading
+        fnLoading();
     });
+
+    function fnLoading() {
+        $(window).on('touchstart', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            return false;
+        });
+        fnLoadImg();
+    }
+
+    function fnLoadImg() {
+
+    	// 图片数组
+        var arrImg = ['top.jpg', 'li3_bd.png', 'bottom_title.jpg', 'li1_bd.png', 'mask_bg.png', 'li2_bd.png', 'yellow_man.png', 'center.jpg', 'li3_bg.png', 'li1_bg.png', 'li3_btn.png', 'li1_btn.png', 'li2_btn.png', 'btn_buy_bg.png', 'li2_bg.png', 'icon_ok.png'];
+        var num = 0;
+        var url = 'assets/imgs/childrens-day/';
+
+        $.each(arrImg, function(index, obj) {
+            var objImg = new Image();
+            objImg.src = url + obj;
+            objImg.onload = function() {
+                num++;
+                if (num == arrImg.length) {
+                    $('#loading').animate({
+                        opacity: 0
+                    }, 1000, function() {
+                        $(this).remove();
+        				fnGetGift();
+                    });
+                }
+            };
+            //图片加载错误或不全
+            objImg.onerror = function() {
+                $('#loading').animate({
+                    opacity: 0
+                }, 1000, function() {
+                    $(this).remove();
+    				fnGetGift();
+                });
+            };
+        });
+    }
 
     function fnGetGift() {
         var $oUl = $('#btnList'),
@@ -51,12 +95,12 @@
             // 注册提示框隐藏，结果提示层显示
             $oMaskReg.fadeOut(function() {
                 $oMaskResult.fadeIn();
-                if (isSecondShare) {	// 第二次分享
+                if (isSecondShare) { // 第二次分享
                     $oMaskResult.find('.result-again').fadeIn();
                 } else {
-                    if (isUserExists) {	// 老用户
+                    if (isUserExists) { // 老用户
                         $oMaskResult.find('.result-old').fadeIn();
-                    } else {	// 新用户
+                    } else { // 新用户
                         $oMaskResult.find('.result-new').fadeIn();
                     }
                 }
