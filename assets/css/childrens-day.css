@@ -48,6 +48,7 @@ html, body { width: 100%; height: 100%; }
 #mask .mask { display: none; position: absolute; top: 46%; left: 50%; width: 90%; padding: 30px 0; background-color: #fff; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); box-shadow: 1px 1px 6px rgba(0, 0, 0, .9); }
 #mask .mask img { width: 100%; }
 #mask .mask .yellow-man { position: absolute; top: 0; right: 10%; width: 43.5185%; -webkit-transform: translateY(-90%); transform: translateY(-90%); }
+#mask .mask .mask-close { position: absolute; top: 6px; right: 6px; width: 10%; }
 #mask .mask-reg ul { width: 74%; margin: 0 auto; }
 #mask .mask-reg li { width: 100%; height: 38px; line-height: 38px; border: 2px solid #f7d03a; border-radius: 21px; margin-bottom: 10px; overflow: hidden; }
 #mask .mask-reg li input { display: inline-block; width: 100%; height: 100%; border: none; background-color: transparent; outline: none; -webkit-appearance: none; text-indent: 1em; }
