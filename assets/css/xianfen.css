@@ -1,0 +1,9 @@
+.content { width: 100%; background-color: #fff; background: url("../imgs/xianfen/bg.png"); background-position: bottom center; }
+.content img { width: 100%; }
+.content .banner { width: 100%; }
+.content .center { position: relative; width: 100%; }
+.content .center .inner { position: absolute; top: 0; left: 50%; width: 81.5625%; height: 100%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.content .center .inner .box { position: relative; width: 78%; height: 100%; margin-left: auto; }
+.center .inner .box > input { position: absolute; top: 50%; left: 0; width: 64%; height: 38px; line-height: 38px; outline: none; -webkit-appearance: none; border: 1px solid #888; text-indent: 1em; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.center .inner .box > a { display: inline-block; position: absolute; top: 50%; right: 0; width: 30%; height: 40px; line-height: 40px; text-align: center; background-color: #d61518; color: #fff; font-size: 16px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.content .bottom { width: 100%; }
