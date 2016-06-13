@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>今日福利</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/today-welfare-skn.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div class="page page1">
+            <div class="mask"></div>
+            <div class="banner">
+                <img src="assets/imgs/today-welfare-skn/top_bg.jpg" alt="">
+                <div class="inner">
+                    <img src="assets/imgs/today-welfare-skn/banner.png" alt="">
+                    <div class="circle">
+                        <img src="assets/imgs/today-welfare-skn/circle_bg.png" alt="">
+                        <div class="circleProgress_wrapper" id="circleContainer">
+                            <div class="wrapper right">
+                                <div class="circleProgress rightcircle"></div>
+                            </div>
+                            <div class="wrapper left">
+                                <div class="circleProgress leftcircle"></div>
+                            </div>
+                        </div>
+                        <p><span id="currentSecond">60</span>s</p>
+                    </div>
+                </div>
+                <a href="http://wap.incake.net" class="go-home"><img src="assets/imgs/today-welfare-skn/home_btn.png" alt=""></a>
+                <div class="location">
+                    <p>苏州</p>
+                    <ul>
+                        <li class="active">苏州</li>
+                        <li>昆山</li>
+                        <li>南京</li>
+                        <li>北京</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content" id="btnList">
+                <p class="title" id="titleTip">60秒内点击领取</p>
+                <ul>
+                    <li class="clearfix">
+                        <div class="ticket">
+                            <img src="assets/imgs/today-welfare-skn/ticket1.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="btn">
+                            <img src="assets/imgs/today-welfare-skn/ticket1_btn.png" alt="">
+                            <img src="assets/imgs/today-welfare-skn/ticket_timeout.png" alt="" class="timeout">
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <div class="ticket">
+                            <img src="assets/imgs/today-welfare-skn/ticket2.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="btn">
+                            <img src="assets/imgs/today-welfare-skn/ticket2_btn.png" alt="">
+                            <img src="assets/imgs/today-welfare-skn/ticket_timeout.png" alt="" class="timeout">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page page2">
+            <div class="banner">
+                <img src="assets/imgs/today-welfare-skn/page2_banner.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="slide slide1">
+                    <p class="title"><span>您已是INCAKE会员</span></p>
+                    <ul>
+                        <li class="clearfix">
+                            <input type="text" class="txt-mobile" placeholder="请输入手机号码">
+                            <a href="javascript:;" class="btn-vcode">获取验证码</a>
+                        </li>
+                        <li>
+                            <input type="text" class="txt-vcode" placeholder="请输入验证码">
+                        </li>
+                        <li>
+                            <input type="text" class="txt-name" placeholder="请输入您的名字">
+                        </li>
+                        <li class="last"><a href="javascript:;" class="btn-reg">注册领取红包</a></li>
+                    </ul>
+                </div>
+                <div class="slide slide2">
+                    <div class="title">
+                        <h2>亲爱的小IN,您已注册成功！</h2>
+                        <p>蛋糕优惠券已发送到您的账户</p>
+                        <a href="javascript:;" class="btn-buy">点击查看优惠券使用详情</a>
+                    </div>
+                    <dl>
+                        <dt>蛋糕优惠券使用规则：</dt>
+                        <dd>1. 注册成功后，即可领取常规款1.2/1.5磅蛋糕半价券以及芝士蛋糕0元券；</dd>
+                        <dd>2. 常规款半价券，可半价订购INCAKE任意1.2/1.5磅正价产品（下午茶系列，主题蛋糕，节日产品，优惠套餐除外）；</dd>
+                        <dd>3. 芝士蛋糕0元券，可0元免费换购INCAKE芝士星语蛋糕一个（不含运费），需补25元运费；</dd>
+                        <dd>4. 芝士蛋糕0元券兑换流程：进入官网—芝士星语—立即购买—去结算—优惠信息—选择芝士蛋糕0元券，支付即可；</dd>
+                        <dd>5. 由于不同站点产品品类不同，以官网在售产品为准；</dd>
+                        <dd>6. 半价券有效期为一个月，芝士蛋糕0元券有效期为7天。</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- javascript begin -->
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/today-welfare-skn.js"></script>
+    <!-- javascript end -->
+</body>
+
+</html>
