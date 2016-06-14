@@ -20,6 +20,8 @@
 		fnInvoiceChange();
 		// 地址管理
 		fnReceiverAddress();
+		// 提交订单
+		fnOrderSubmit();
 	});
 
 	function initDateInput() {
@@ -378,6 +380,23 @@
 			}
 		});
 		
+	}
+	
+	// 提交订单
+	function fnOrderSubmit(){
+		var $oCOD = $('#COD'),
+		$oBtnSubmit = $('#btn-submit'),
+		$oMaskOrder = $('#mask-order'),
+		$oBtnClose = $oMaskOrder.find('.btn-close');
+		
+		$oBtnSubmit.on('click',function(){
+			if($oCOD.hasClass('active')){
+				$oMaskOrder.show();
+			}
+		});
+		$oBtnClose.on('click',function(){
+			$oMaskOrder.hide();
+		});
 	}
 
 })();

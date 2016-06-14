@@ -19,6 +19,12 @@ html, body { width: 100%; height: 100%; }
 .container-wrapper > .btn-share,
 .container-wrapper > .btn-rebuy { color: #0055a2; }
 
+.container-wrapper .lottery-tips { width: 80%; margin: 10% auto 0; }
+.container-wrapper .lottery-tips .text { font-size: 12px; line-height: 20px; text-align: center; color: #682b00; }
+.container-wrapper .lottery-tips .text span { color: #f49d03; }
+.container-wrapper .lottery-tips .qrCode { display: block; width: 50%; margin: 8% auto; }
+.container-wrapper .lottery-tips img { width: 100%; }
+
 .container-wrapper .mask-share { position: absolute; top: -100%; left: 0; width: 100%; height: 100%; background: url(../imgs/cheese/mask_bg.png); }
 .container-wrapper .mask-share .share { position: relative; width: 100%; height: 100%; background: url(../imgs/cheese/mask_share_bg.png) no-repeat; background-size: contain; background-position: top center; }
 .container-wrapper .mask-share .share .qr-code { position: absolute; bottom: 0; left: 0; width: 100%; }
