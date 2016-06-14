@@ -108,6 +108,15 @@
                 }
             });
         });
+
+        // 关闭按钮
+        $oMask.on('click', '.mask-close', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            $(this).closest('.mask').fadeOut(function(){
+                $oMask.fadeOut();
+            });
+        });
     }
 
 })();

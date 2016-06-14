@@ -78,13 +78,14 @@ html, body { width: 100%; height: 100%; }
 .container-wrapper .page4 { display: block; background: url("../imgs/freecake/page2_bg.png"); }
 .container-wrapper .page4 .banner { width: 100%; }
 .container-wrapper .page4 .frm-register { width: 100%; }
-.page4 .frm-register > ul { width: 100%; margin-top: 70px; }
+.page4 .frm-register > p { height: 28px; text-align: center; color: #f1cb34; font-size: 16px; padding: 20px 0; margin-top: 70px; }
+.page4 .frm-register > p .exists-notice { line-height: 28px; }
+.page4 .frm-register > p .exists-notice img { display: inline-block; width: 28px; height: 28px; margin-right: 10px; }
+.page4 .frm-register > ul { width: 100%; }
 .page4 .frm-register > ul li { width: 78.125%; height: 36px; margin: 0 auto; line-height: 36px; border-radius: 20px; border: 2px solid #f1cb34; background-color: #fbefbf; overflow: hidden; margin-bottom: 14px; }
 .page4 .frm-register > ul li:last-of-type { border: none; background: transparent; margin-bottom: none; }
 .page4 .frm-register > ul li input { width: 100%; height: 100%; border: none; outline: none; -webkit-appearance: none; text-indent: 2em; background-color: transparent; }
 .page4 .frm-register > ul li .btn-result { display: inline-block; width: 100%; height: 100%; background-color: #f1cb34; font-size: 16px; text-align: center; color: #3d2c28; }
-.page4 .frm-register > ul li .txt-mobile { float: left; width: 62%; }
-.page4 .frm-register > ul li .btn-vcode { float: right; position: relative; top: 4px; width: 36%; height: 28px; line-height: 28px; text-align: center; color: #fbefbf; margin-right: 2%; background-color: #e2a154; border-radius: 14px; }
 .container-wrapper .page4 .result { display: none; width: 100%; padding: 30px 0; color: #f1cb34; text-align: center; }
 .page4 .result .result-ok { display: block; }
 .page4 .result .result-ok > h3 { color: inherit; line-height: 30px; }
