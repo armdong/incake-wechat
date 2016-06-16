@@ -146,3 +146,8 @@ background:linear-gradient(#fff, #e7e7e7);
 #header .search { display: none; position: absolute; right: 5%; top: 50%; width: 65%; height: 30px; -webkit-transform: translateY(-50%); transform: translateY(-50%); border: 1px solid #505050; border-radius: 16px; overflow: hidden; }
 #header .search > input { float: left; width: 80%; height: 100%; line-height: 30px; border: none; -webkit-appearance: none; outline: none; text-indent: 1em; }
 #header .search .btn-search { display: block; float: right; position: relative; top: 6px; width: 18px; height: 18px; margin-right: 10px; background: url(../imgs/icon_search.png) no-repeat; background-size: cover; background-position: center center; }
+
+
+.wrap-container .column-3 li { float: left; margin: 0 1%; }
+.wrap-container .column-3 li:nth-of-type(3n+1) { margin-left: 1.5% !important; }
+.wrap-container .sec-list li p.en { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
