@@ -139,83 +139,74 @@
 			$oTitleName.html('蛋糕卡');
 			$oMaskChange.show();
 			//---------------2
-//---------------3
-//			var txtTicketCard = $('#txtTicketCard');
-//			var num = getLastNCharacter(txtTicketCard.val(),5);
-//			var htmlstr = '<li>蛋糕卡 卡号后5位 '+ num +' <i class="icon-close"></i></li>';
-//			if($oCouponTicket.find('li').length>0){
-//				$oCouponTicket.prepend(htmlstr);
-//				clearTicketInput();
-//			}else{
-//				$oCouponTicket.html(htmlstr);
-//				clearTicketInput();
-//			}
+			var txtTicketCard = $('#txtTicketCard');
+			var num = getLastNCharacter(txtTicketCard.val(),5);
+			var htmlstr = '<li>蛋糕卡 卡号后5位 '+ num +' <i class="icon-close"></i></li>';
+			if($oCouponTicket.find('li').length>0){
+				$oCouponTicket.prepend(htmlstr);
+				clearTicketInput();
+			}else{
+				$oCouponTicket.html(htmlstr);
+				clearTicketInput();
+			}
 
-//			var ticketNum = $oCouponTicket.find('li').length;
-//			$oResult.html('已添加'+ticketNum+'张蛋糕卡');
-//----------------3
-			$oResult.html('已添加1张蛋糕卡');
+			var ticketNum = $oCouponTicket.find('li').length;
+			$oResult.html('已添加'+ticketNum+'张蛋糕卡');
 			// 清空现金券
 			$oCouponCash.empty();
 		});
 		
 		// delete ticket
-//----------------4
-//		$oCouponTicket.delegate('.icon-close','click',function(){
-//			$(this).parent().remove();
-//			var ticketNum = $oCouponTicket.find('li').length;
-//			if(ticketNum>0){
-//				$oResult.html('已添加'+ticketNum+'张蛋糕卡');
-//			}else{
-//				$oResult.html('暂无');
-//			}			
-//		});
-//---------------4
+		$oCouponTicket.delegate('.icon-close','click',function(){
+			$(this).parent().remove();
+			var ticketNum = $oCouponTicket.find('li').length;
+			if(ticketNum>0){
+				$oResult.html('已添加'+ticketNum+'张蛋糕卡');
+			}else{
+				$oResult.html('暂无');
+			}			
+		});
 
 		// add cash
 		$('#btnCouponCash').on('click',function(){
-			//---------------5
+			//---------------3
 			$oTitleName.html('现金券');
 			$oMaskChange.show();
-			//---------------5
-//----------------6			
-//			var txtCashCard = $('#txtCashCard');
-//			var num = getLastNCharacter(txtCashCard.val(),5);
-//			var htmlstr = '<li>现金券 卡号后5位 '+ num +' <i class="icon-close"></i></li>';
-//			if($oCouponCash.find('li').length>0){
-//				$oCouponCash.prepend(htmlstr);
-//				clearCashInput();
-//			}else{
-//				$oCouponCash.html(htmlstr);
-//				clearCashInput();
-//			}
-//			var cashNum = $oCouponCash.find('li').length;
-//			$oResult.html('已添加'+cashNum+'张现金券');
-//----------------6			
-			$oResult.html('已添加1张现金券');
+			//---------------3
+			var txtCashCard = $('#txtCashCard');
+			var num = getLastNCharacter(txtCashCard.val(),5);
+			var htmlstr = '<li>现金券 卡号后5位 '+ num +' <i class="icon-close"></i></li>';
+			if($oCouponCash.find('li').length>0){
+				$oCouponCash.prepend(htmlstr);
+				clearCashInput();
+			}else{
+				$oCouponCash.html(htmlstr);
+				clearCashInput();
+			}
+			var cashNum = $oCouponCash.find('li').length;
+			$oResult.html('已添加'+cashNum+'张现金券');
+
 			// 清空蛋糕卡
 			$oCouponTicket.empty();
 		});
 		
 		// delete cash
-//----------------7
-//		$oCouponCash.delegate('.icon-close','click',function(){
-//			$(this).parent().remove();
-//			var cashNum = $oCouponCash.find('li').length;
-//			if(cashNum>0){
-//				$oResult.html('已添加'+cashNum+'张现金券');
-//			}else{
-//				$oResult.html('暂无');
-//			}			
-//		});
-//----------------7		
-		//-------------8
+		$oCouponCash.delegate('.icon-close','click',function(){
+			$(this).parent().remove();
+			var cashNum = $oCouponCash.find('li').length;
+			if(cashNum>0){
+				$oResult.html('已添加'+cashNum+'张现金券');
+			}else{
+				$oResult.html('暂无');
+			}			
+		});
+		//-------------4
 		$oChangeClose.on('click',function(){
 			$oMaskChange.hide();
 			$oIconChange.removeClass('icon-open').addClass('icon-close');
 			$oIconChange.closest('.item-header').siblings('.item-content').hide();
 		});
-		//-------------8
+		//-------------4
 		
 		function clearTicketInput(){
 			$('#txtTicketCard').val('');
