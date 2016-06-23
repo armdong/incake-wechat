@@ -257,3 +257,10 @@
 #mask-order .order-content .orderNum { margin-bottom: 6%; }
 #mask-order .order-content .text span { color: #f49d03; }
 #mask-order .qr-code { display: inline-block; width: 50%; margin: 8% auto 0; }
+
+/* v6-22 */
+#mask-change { display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; z-index: 999; }
+#mask-change .change-content { position: absolute; top: 50%; left: 50%; width: 88%; padding-bottom: 6%; background-color: #fff; border-radius: 6px; text-align: center; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); }
+#mask-change .change-content .title { width: 100%; height: 40px; line-height: 40px; border-radius: 6px 6px 0 0;  text-align: center; background: #e6e6e6; color: #515151; font-size: 16px; }
+#mask-change .change-content .text { width: 80%; margin: 0 auto; padding: 50px 0; font-size: 14px; }
+#mask-change .change-content a { display: block; width: 48%; height: 100%; margin: 0 auto; text-align: center; line-height: 40px; font-size: 14px; color: #fff; border-radius: 5px; background: #4694d2; margin: 0 auto; }
