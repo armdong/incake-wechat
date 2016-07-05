@@ -1,0 +1,103 @@
+.swiper-pagination-bullet-active { background-color: #c92222; }
+
+#container { width: 100%; background-color: #f5f5f5; }
+
+#banner { position: relative; width: 100%; }
+#banner > img { width: 100%; }
+#banner > a { position: absolute; top: 10px; right: 24px; width: 15%; text-align: center; }
+#banner > a img { width: 20px; height: 20px; }
+#banner > a span { display: block; line-height: 18px; color: #0055a2; font-size: 12px; }
+
+#container .section { width: 100%; }
+#container .sec-header { width: 100%; }
+#container .sec-header .sec-title { position: relative; width: 98%; height: 40px; margin: 0 auto; background: url('../imgs/register-welfare3/title_bg.png') repeat-x; }
+#container .sec-header .sec-title span { display: inline-block; position: absolute; left: 50%; padding: 0 20px; line-height: 40px; color: #999; background-color: #f5f5f5; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+#container .sec-body { width: 100%; }
+#container .sec-body .list { width: 87.5%; margin: 0 auto; }
+.sec-body .list li { width: 48.2%; margin-bottom: 10px; }
+.sec-body .list li:nth-of-type(odd) { float: left; }
+.sec-body .list li:nth-of-type(even) { float: right; }
+.sec-body .list .img { display: block; width: 100%; }
+.sec-body .list .img img { width: 100%; }
+.sec-body .list .text { width: 100%; color: #505050; }
+.sec-body .list .text .cn { text-align: center; line-height: 24px; }
+.sec-body .list .text .en { text-align: center; line-height: 18px; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+#container #feature { width: 93.75%; margin: 0 auto; background-color: #ffe7d3; }
+#feature .sec-header { width: 94%; margin: 0 auto; padding-top: 10px; }
+#feature .sec-header .sec-title { background: url('../imgs/register-welfare3/feature_title_bg.png') repeat-x; }
+#feature .sec-header .sec-title span { color: #623723; background-color: #ffe7d3; }
+#feature .sec-body { width: 80%; margin: 0 auto; padding-bottom: 10px; }
+#feature .sec-body ul,
+#feature .sec-body li { width: 100%; margin-bottom: 10px; }
+#feature .sec-body .icon { float: left; width: 8.4%; }
+#feature .sec-body .text { float: left; width: 77.6%; margin-left: 14%; }
+#feature .sec-body .text > h2 { line-height: 20px; font-size: 14px; color: #5a2e1a; }
+#feature .sec-body .text > p { line-height: 20px; font-size: 12px; color: #9e7967; }
+
+#container #rules { width: 93.75%; margin: 20px auto; background-color: #f6eee1; }
+#rules .sec-header { width: 94%; margin: 0 auto; padding-top: 10px; }
+#rules .sec-header .sec-title { background: url('../imgs/register-welfare3/feature_title_bg.png') repeat-x; }
+#rules .sec-header .sec-title span { color: #623723; background-color: #f6eee1; width: 46%; }
+#rules .sec-body { width: 80%; margin: 0 auto; padding-bottom: 10px; }
+#rules .sec-body ul { width: 100%; margin-bottom: 10px; }
+#rules .sec-body li { position: relative; padding-left: 10px; font-size: 12px; line-height: 20px; color: #9e7967; text-align: justify; }
+#rules .sec-body li:before { display: block; position: absolute; top: 8px; left: 0; content: ''; width: 4px; height: 4px; background-color: #9e7967; }
+
+#container #portal { width: 100%; padding: 30px 0 50px; }
+#portal .btn-portal { display: block; width: 80%; margin: 0 auto; }
+#portal .btn-portal img { width: 100%; }
+
+#find-more { display: block; position: fixed; left: 50%; top: 60%; z-index: 2; width: 18%; -webkit-transform: translateX(-50%); transform: translateX(-50%); -webkit-animation: findMore 2.5s ease infinite; animation: findMore 2.5s ease infinite; }
+#find-more img { width: 100%; }
+@-webkit-keyframes findMore { 0% { top: 65%; } 50% { top: 70%; } 100% { top: 65%; } }
+@keyframes findMore { 0% { top: 65%; } 50% { top: 70%; } 100% { top: 65%; } }
+
+#float-nav { display: none; position: fixed; top: 0; left: 0; z-index: 3; width: 100%; background-color: #fff; }
+#float-nav ul { width: 100%; padding: 5px 0; }
+#float-nav ul li { float: left; border-left: 1px solid #c1c1c1; margin-left: -1px; }
+#float-nav ul li:nth-of-type(1) { width: 33%; }
+#float-nav ul li:nth-of-type(2) { width: 34%; }
+#float-nav ul li:nth-of-type(3) { width: 33%; }
+#float-nav ul li > div { display: block; width: 16%; margin: 0 auto; }
+#float-nav ul li > div img { width: 100%; }
+#float-nav ul li > p { text-align: center; line-height: 20px; color: #787878; }
+
+#float-footer { position: fixed; bottom: 0; left: 0; z-index: 2; width: 100%; }
+#float-footer img { width: 100%; }
+
+#mask-redirect { display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; z-index: 999; }
+#mask-redirect .redirect { width: 90%; border-radius: 5px; max-width: 500px; background: #fff; margin: auto; position: absolute; top: 40%; margin-top: -50px; left: 0; right: 0; z-index: 9999; overflow: hidden; }
+#mask-redirect .redirect .redirect-title { width: 100%; height: 40px; line-height: 40px; text-align: center; background: #e6e6e6; color: #515151; }
+#mask-redirect .redirect .redirect-content { width: 100%; }
+#mask-redirect .redirect .redirect-content .desc { width: 80%; margin: 0 auto; padding: 30px 0; }
+#mask-redirect .redirect .redirect-content .desc p { text-align: center; line-height: 20px; color: #515151; }
+#mask-redirect .redirect .redirect-content .btn { height: 40px; width: 80%; margin: 20px auto; }
+#mask-redirect .redirect .redirect-content .btn a { display: block; width: 48%; height: 100%; margin: 0 auto; text-align: center; line-height: 40px; font-size: 14px; color: #fff; border-radius: 10px; }
+#mask-redirect .redirect .redirect-content .btn .btn-redirect-ok { float: left; background: #4694d2; }
+#mask-redirect .redirect .redirect-content .btn .btn-redirect-cancel { float: right; background: #0055A2; }
+
+/* 注册结果 */
+#mask-result { display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; z-index: 999; }
+#mask-result img { width: 100%; }
+#mask-result .result { width: 73.4375%; max-width: 500px; background: #fff; margin: auto; position: absolute; top: 50%; left: 0; right: 0; z-index: 9999; overflow: hidden; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+#mask-result .result .btn-result-close { display: block; position: absolute; top: 5%; right: 5%; width: 10.6%; }
+#mask-result .result .result-content { width: 100%; }
+#mask-result .result .result-content .result-info { display: none; width: 100%; }
+
+/* 注册弹框 */
+#mask-register { display: none; position: fixed; top: 0; left: 0; z-index: 99; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); }
+#mask-register .frm-register { position: absolute; left: 50%; top: 50%; width: 80%; padding: 10px 0 30px; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-color: #fff; }
+#mask-register .frm-register .frm-register-close { display: block; position: absolute; top: 5%; right: 5%; width: 12%; }
+#mask-register .frm-register .frm-register-close img { width: 100%; }
+#mask-register .frm-register > h2 { text-align: center; color: #ff0000; font-size: 20px; line-height: 60px; font-weight: normal; }
+#mask-register .frm-register .sec-body { width: 90%; margin: 0 auto; }
+#mask-register .frm-register .sec-body li { margin-bottom: 10px; position: relative; }
+#mask-register .frm-register .sec-body li input { display: block; height: 40px; line-height: 40px; text-indent: 3em; -webkit-appearance: none; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 12px; }
+#mask-register .frm-register .sec-body li .txt-mobile { float: left; width: 60%; border-radius: 5px 0 0 5px; }
+#mask-register .frm-register .sec-body li #btn-vcode { float: left; width: 40%; height: 40px; line-height: 40px; margin-left: -4px; text-align: center; border: 1px solid #ddd; border-radius: 0 5px 5px 0; color: #fff; background-color: #8bade5; }
+#mask-register .frm-register .sec-body li a { font-size: 12px; }
+#mask-register .frm-register .sec-body li .txt-vcode { width: 100%; }
+#mask-register .frm-register .sec-body li .icon-mobile { position: absolute; width: 6%; height: 100%; margin-left: 3%; background: url('../imgs/register-welfare3/icon_mobile.png') no-repeat; background-size: contain; background-position: left center;  }
+#mask-register .frm-register .sec-body li .icon-vcode { position: absolute; width: 6%; height: 100%; margin-left: 3%; background: url('../imgs/register-welfare3/icon_vcode.png') no-repeat; background-size: contain; background-position: left center;  }
+#mask-register .frm-register #btn-register { display: block; width: 100%; height: 42px; line-height: 42px; text-align: center; border-radius: 5px; background-color: #0e2f8f; color: #fff; }

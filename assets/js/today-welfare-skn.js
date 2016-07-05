@@ -29,12 +29,12 @@
             event.preventDefault();
 
             if (!isExpand) { // 非下拉状态
-                $oMask.fadeIn(function() {
-                    $oUl.slideDown();
+                $oMask.fadeIn('fast', function() {
+                    $oUl.slideDown('fast');
                 });
             } else {
-                $oUl.slideUp(function() {
-                    $oMask.fadeOut();
+                $oUl.slideUp('fast', function() {
+                    $oMask.fadeOut('fast');
                 });
             }
 
@@ -54,6 +54,7 @@
 
     // 开始动画
     function fnAnimationRunning() {
+        
         // 拿到 animation 动画目标元素
         var $aTarget = $('#circleContainer').find('.circleProgress'),
             $oTime = $('#currentSecond'),
