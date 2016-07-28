@@ -1,0 +1,44 @@
+body { max-width: 640px; margin: 0 auto; }
+.content { background-color: #000; }
+.content .content-top { width: 100%; }
+
+.content .content-middle { width: 100%; padding-bottom: 30px; }
+.content-middle .banner { width: 100%; }
+.content-middle .text { width: 100%; }
+.content-middle .text p { font-size: 12px; line-height: 30px; color: #fff; text-align: center; }
+.content-middle .tip { width: 100%; padding: 15px 0; }
+.content-middle .tip p { font-size: 14px; line-height: 30px; color: #c2a385; text-align: center; }
+.content-middle .img { width: 70%; margin: 0 auto; }
+
+.content .content-bottom { width: 100%; border-top: 4px solid #caaa8b; padding-bottom: 30px; }
+.content-bottom .form-apply { width: 86.25%; margin: 0 auto; color: #c2a385; font-size: 12px; padding-bottom: 20px; }
+.content-bottom .form-apply h2 { font-size: 16px; line-height: 60px; color: #c2a385; text-align: center; }
+.content-bottom .form-apply ul,.content-bottom .form-apply li { width: 100%; }
+.content-bottom .form-apply ul { padding-bottom: 20px; }
+.content-bottom .form-apply li { padding-bottom: 15px; }
+.content-bottom .form-apply .title { float: left; width: 24%; line-height: 30px; text-align: right; }
+.content-bottom .form-apply .attrs { float: right; width: 74%; line-height: 30px; }
+.content-bottom .form-apply .attrs select,
+.content-bottom .form-apply .attrs textarea,
+.content-bottom .form-apply .attrs input { border: none; background-color: #dfc9ad; outline: none; }
+.content-bottom .form-apply .attrs select { width: 60%; height: 24px; }
+.content-bottom .form-apply .attrs textarea { width: 94%; height: 92px; padding: 1% 3%; line-height: 24px; -webkit-appearance: none; }
+.content-bottom .form-apply .attrs p { text-align: right; font-size: 12px; line-height: 18px; }
+.content-bottom .form-apply .attrs p span { font-size: 14px; }
+.content-bottom .form-apply .attrs input { width: 70%; height: 24px; line-height: 24px; padding-left: 5px; -webkit-appearance: none; }
+.content-bottom .form-apply .btn-submit { display: block; width: 66%; height: 32px; margin: 0 auto; font-size: 14px; line-height: 32px; text-align: center; background-color: #5e2322; color: #e8ceac; border-radius: 16px; }
+.content-bottom .banner { width: 84.375%; margin: 0 auto; }
+
+.mask-categoryPop { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); }
+.mask-categoryPop .categoryPop { position: absolute; top: 50%; left: 50%; width: 50%; padding: 30px; background-color: #fff; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.mask-categoryPop .categoryPop .mask-close { display: block; position: absolute; top: 10px; right: 10px; width: 7%; }
+.mask-categoryPop .categoryPop p { font-size: 16px; line-height: 34px; color: #959595; }
+.mask-categoryPop .categoryPop input { width: 100%; font-size: 16px; line-height: 24px; text-align: center; border: none; border-bottom: 1px solid #666; color: #505050; margin: 10px 0 20px; }
+.mask-categoryPop .categoryPop .btn-sure { display: block; width: 70%; height: 34px; margin: 0 auto; line-height: 34px; text-align: center; font-size: 16px; color: #fff; background-color: #5a1e1e; border-radius: 17px; }
+
+.mask-colorPop { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); }
+.mask-colorPop .colorPop { position: absolute; top: 50%; left: 50%; width: 50%; padding: 30px; background-color: #fff; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.mask-colorPop .colorPop .mask-close { display: block; position: absolute; top: 10px; right: 10px; width: 7%; }
+.mask-colorPop .colorPop p { font-size: 16px; line-height: 34px; color: #959595; }
+.mask-colorPop .colorPop input { width: 100%; font-size: 16px; line-height: 24px; text-align: center; border: none; border-bottom: 1px solid #666; color: #505050; margin: 10px 0 20px; }
+.mask-colorPop .colorPop .btn-sure { display: block; width: 70%; height: 34px; margin: 0 auto; line-height: 34px; text-align: center; font-size: 16px; color: #fff; background-color: #5a1e1e; border-radius: 17px; }
