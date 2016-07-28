@@ -4,7 +4,9 @@
 		
 		// 图片懒加载
 		new LazyLoad();
-
+		
+		var $oBtnReturn = $('.icon-return'),
+			clientH = $(window).height();
 		var containerWidth = $('#index-swiper').width();
 		var $aImg = $('#index-swiper').find('img');
 		$aImg.css({
@@ -46,6 +48,18 @@
 				lazyLoading: true
 			});
 		});
+		
+		$(window).on('scroll', function() {
+
+            var scrollT = document.documentElement.scrollTop || document.body.scrollTop;
+
+            if (scrollT >= clientH/3) {
+                $oBtnReturn.show();
+            } else {
+                $oBtnReturn.hide();
+            }
+
+        });
 
 		// 主要对安卓微信内置浏览器做兼容
 		function fnFitAndroidLayout() {

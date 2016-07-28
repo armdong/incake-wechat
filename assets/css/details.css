@@ -38,6 +38,15 @@ img {
 .hide {
 	display: none !important;
 }
+.container .icon-return {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	display: none;
+	width: 14%;
+	z-index: 9999;
+	opacity: .8;
+}
 .container .inner-box {
 	margin: .5rem 1rem;
 }
