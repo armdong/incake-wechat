@@ -1,0 +1,34 @@
+.content { background-color: #aabbcc; }
+.content .banners { height: 888px; }
+
+#frm-register.section { width: 100%; padding: 10px 0 40px; background-color: #425670; }
+#frm-register .sec-header { width: 100%; }
+#frm-register .sec-header .sec-title { position: relative; width: 98%; height: 40px; margin: 0 auto 10px; background: #425670 url(../img/qixi-festival/title_bg.png) repeat-x; }
+#frm-register .sec-header .sec-title span { display: inline-block; position: absolute; left: 50%; padding: 0 20px; line-height: 40px; color: #fff; font-size: 16px; background-color: #425670; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+
+#frm-register .sec-body { width: 75%; margin: 0 auto; }
+#frm-register .sec-body li { margin-bottom: 10px; position: relative; }
+#frm-register .sec-body li input { display: block; height: 40px; background-color: #425670; line-height: 40px; text-indent: 3em; -webkit-appearance: none; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 12px; color: #f1f0ef; }
+#frm-register .sec-body li .txt-mobile { float: left; width: 60%; border-radius: 5px 0 0 5px; }
+#frm-register .sec-body li #btn-vcode { float: left; width: 40%; height: 40px; line-height: 40px; margin-left: -4px; text-align: center; border: 1px solid #ddd; border-radius: 0 5px 5px 0; color: #425670; background-color: #fff; }
+#frm-register .sec-body li a { font-size: 12px; }
+#frm-register .sec-body li .txt-vcode { width: 100%; }
+#frm-register .sec-body li .icon-mobile { position: absolute; width: 6%; height: 100%; margin-left: 3%; background: url(../img/qixi-festival/icon_mobile.png) no-repeat; background-size: contain; background-position: left center;  }
+#frm-register .sec-body li .icon-vcode { position: absolute; width: 6%; height: 100%; margin-left: 3%; background: url(../img/qixi-festival/icon_vcode.png) no-repeat; background-size: contain; background-position: left center;  }
+#frm-register #btn-register { display: block; width: 100%; height: 42px; line-height: 42px; text-align: center; border-radius: 5px; background-color: #e4555f; font-size: 14px; color: #fff; }
+
+#float-footer { position: fixed; bottom: 0; left: 0; z-index: 9999; width: 100%; }
+#float-footer img { width: 100%; }
+
+::-webkit-input-placeholder{
+   color: #fff;
+}
+::-ms-input-placeholder{
+   color: #fff;
+}
+::-moz-placeholder{
+   color: #fff;
+}
+::-moz-placeholder{
+   color: #fff;
+}
