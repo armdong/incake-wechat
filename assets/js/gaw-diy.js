@@ -11,6 +11,11 @@
 			$oMaskColorClose = $oMaskColor.find('.mask-close'),
 			$oTextarea = $oForm.find('#txtSummary'),
 			$oLastWord = $oForm.find('#lastWord'),
+			$aPhoto = $oForm.find('.photo'),
+			$aBtnClose = $oForm.find('.btn-close'),
+			$oLastPhoto = $oForm.find('#lastPhoto'),
+			$oMaskPhoto = $oForm.find('.mask-photoPop'),
+			$oPhotoPop = $oForm.find('.photoPop'),
 			iMaxLen = 800;
 
 		// 种类下拉框改变事件
@@ -50,6 +55,25 @@
         		iLen = iMaxLen;
         	}
         	$oLastWord.html(iMaxLen - iLen);
+		});
+		
+		//预览选择图片
+		$aPhoto.on('click',function(e){
+			//var src = $(this).children().attr("src"); //此处获得选中图片的预览图地址
+			//$oPhotoPop.children().attr('src',src);
+			$oMaskPhoto.fadeIn();
+		});
+		
+		//取消预览
+		$oPhotoPop.on('click',function(e){
+			$oMaskPhoto.fadeOut();
+		});
+		
+		//删除选择图片
+		$aBtnClose.on('click',function(e){
+			$(this).closest('.photos').remove();
+			var number = parseInt($oLastPhoto.text())+1;//更改可上传图片数量
+			$oLastPhoto.text(number);
 		});
 
 	});
