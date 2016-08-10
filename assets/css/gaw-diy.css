@@ -26,11 +26,11 @@ body { max-width: 640px; margin: 0 auto; }
 .content-bottom .form-apply .attrs p { text-align: right; font-size: 12px; line-height: 18px; }
 .content-bottom .form-apply .attrs p span { font-size: 14px; }
 .content-bottom .form-apply .attrs input { width: 70%; height: 24px; line-height: 24px; padding-left: 5px; -webkit-appearance: none; }
-.content-bottom .form-apply .attrs .upload .photos { position: relative; float: left; width: 26%; border: 1px solid #fff; border-radius: 6px; margin-right: 10%; }
+.content-bottom .form-apply .attrs .upload .photos { position: relative; float: left; width: 26%; border: 1px solid #fff; border-radius: 6px; margin-right: 6%; }
 .content-bottom .form-apply .attrs .upload .photo { display: inline-block; width: 100%; }
 .content-bottom .form-apply .attrs .upload .btn-close  { position: absolute; top: -10%; right: -17%; width: 34%; }
 .content-bottom .form-apply .attrs .upload .btn-add { float: left; display: inline-block; width: 26%; }
-.content-bottom .form-apply .attrs .upload-tip { margin-top: 10px; font-size: 12px; line-height: 12px; text-align: left; color: #969696; }
+.content-bottom .form-apply .attrs .upload-tip { margin-top: 10px; font-size: 12px; line-height: 16px; text-align: left; color: #969696; }
 .content-bottom .form-apply .attrs .upload-tip #lastPhoto { color: #f17b7b; }
 .content-bottom .form-apply .btn-submit { display: block; width: 66%; height: 32px; margin: 0 auto; font-size: 14px; line-height: 32px; text-align: center; background-color: #5e2322; color: #e8ceac; border-radius: 16px; }
 .content-bottom .banner { width: 84.375%; margin: 0 auto; }

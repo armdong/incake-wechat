@@ -88,17 +88,14 @@
                             <div class="title">上传图片：</div>
                             <div class="attrs">
                                 <div class="upload clearfix">
-                                	<div class="photos">
+                                	<!-- <div class="photos">
                                 		<a href="javascript:;" class="photo"><img src="assets/imgs/gaw-diy/photo.jpg" /></a>
                                 		<a href="javascript:;" class="btn-close"><img src="assets/imgs/gaw-diy/btn_close.png"/></a>
-                                	</div>
-                                	<div class="photos">
-                                		<a href="javascript:;" class="photo"><img src="assets/imgs/gaw-diy/photo.jpg" /></a>
-                                		<a href="javascript:;" class="btn-close"><img src="assets/imgs/gaw-diy/btn_close.png"/></a>
-                                	</div>
+                                	</div> -->
+                                	<input type="file" id="uploadimg" hidden>
                             		<a href="javascript:;" class="btn-add"><img src="assets/imgs/gaw-diy/btn_add.png"/></a>
                                 </div>
-                                <p class="upload-tip">您还能上传 <span id="lastPhoto">1</span> 张照片</p>
+                                <p class="upload-tip">您还能上传 <span id="lastPhoto">1</span> 张照片，如果您有喜欢的个性样式，请上传图片，INCAKE为您独家定制</p>
                             </div>
                         </li>
                         <li class="clearfix">
@@ -169,6 +166,9 @@
 
 		<!-- javascript begin -->
 		<script src="assets/js/jquery-2.1.4.min.js"></script>
+		<script src="assets/js/underscore.js"></script>
+		<script src="assets/js/exif.min.js"></script>
+		<script src="assets/js/processImg.js"></script>
 		<script src="assets/js/gaw-diy.js"></script>
 		<!-- javascript end -->
 	</body>
