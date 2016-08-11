@@ -14,9 +14,9 @@
             $oLastPhoto = $oForm.find('#lastPhoto'),
             $oMaskPhoto = $oForm.find('.mask-photoPop'),
             $oPhotoPop = $oForm.find('.photoPop'),
-            iMaxLen = 800;
-
-        var $oUpload = $oForm.find('.upload'),
+            iMaxLen = 800,
+            iMaxCount = 3,
+            $oUpload = $oForm.find('.upload'),
             $oBtnAdd = $oUpload.find('.btn-add');
 
         // 种类下拉框改变事件
@@ -59,8 +59,8 @@
         });
 
         //预览选择图片
-        $oUpload.on('click', '.photo', function(){
-        	$oMaskPhoto.fadeIn();
+        $oUpload.on('click', '.photo', function() {
+            $oMaskPhoto.fadeIn();
         });
 
         //取消预览
@@ -69,24 +69,26 @@
         });
 
         //删除选择图片
-        $oUpload.on('click', '.btn-close', function(){
-        	$(this).closest('.photos').remove();
-            var number = parseInt($oLastPhoto.text()) + 1; //更改可上传图片数量
-            $oLastPhoto.text(number);
-            if($oUpload.find('.photo').length < 3){
-        		$oBtnAdd.show();
-        	}
+        $oUpload.on('click', '.btn-close', function() {
+            $(this).closest('.photos').remove();
+            if ($oUpload.find('.photo').length < 3) {
+                $oBtnAdd.show();
+            }
+            // 更新可上传图片张数
+            updateUploadCount();
         });
 
         $oBtnAdd.on('click', function() {
 
             // 拼接photo模块
-            var id = _.uniqueId('photo_');
+            var photoId = _.uniqueId('photo_');
+            var fileInputId = _.uniqueId('fileInput_');
 
             var html = '';
             html += '<div class="photos">';
-            html += '<a href="javascript:;" class="photo"><img src="" id="' + id + '" /></a>';
+            html += '<a href="javascript:;" class="photo"><img src="" id="' + photoId + '" /></a>';
             html += '<a href="javascript:;" class="btn-close"><img src="assets/imgs/gaw-diy/btn_close.png"/></a>';
+            html += '<input type="file" id="' + fileInputId + '" hidden>';
             html += '</div>';
 
             var $html = $(html);
@@ -95,15 +97,26 @@
             // 追加到当前元素前面
             $(this).before($html);
 
-            $('#uploadimg').click();
-            compressImg('uploadimg', id, 480, function(){
-            	if($oUpload.find('.photo').length >= 3){
-            		$oBtnAdd.hide();
-            	}
-            	$html.show();
+            // 触发input[type=file] 的点击事件
+            $('#' + fileInputId + '').click();
+
+            compressImg(fileInputId, photoId, 480, function() {
+                if ($oUpload.find('.photo').length >= 3) {
+                    $oBtnAdd.hide();
+                }
+                $html.show();
+
+                // 更新可上传图片张数
+                updateUploadCount();
             });
 
         });
+
+        // 更新还可上传图片张数
+        function updateUploadCount() {
+            var count = $oUpload.find('.photo').length;
+            $oLastPhoto.text(iMaxCount - count);
+        }
 
     });
 
