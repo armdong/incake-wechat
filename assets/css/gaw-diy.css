@@ -21,11 +21,13 @@ body { max-width: 640px; margin: 0 auto; }
 .content-bottom .form-apply .attrs select,
 .content-bottom .form-apply .attrs textarea,
 .content-bottom .form-apply .attrs input { border: none; background-color: #dfc9ad; outline: none; }
-.content-bottom .form-apply .attrs select { width: 60%; height: 24px; }
+.content-bottom .form-apply .attrs select { width: 60%; height: 30px; }
 .content-bottom .form-apply .attrs textarea { width: 94%; height: 92px; padding: 1% 3%; line-height: 24px; -webkit-appearance: none; }
 .content-bottom .form-apply .attrs p { text-align: right; font-size: 12px; line-height: 18px; }
 .content-bottom .form-apply .attrs p span { font-size: 14px; }
-.content-bottom .form-apply .attrs input { width: 70%; height: 24px; line-height: 24px; padding-left: 5px; -webkit-appearance: none; }
+.content-bottom .form-apply .attrs input { width: 80%; height: 30px; line-height: 30px; text-indent: 5px; -webkit-appearance: none; }
+.content-bottom .form-apply .attrs #txtMobile { float: left; width: 45%; }
+.content-bottom .form-apply .attrs #btnVcode { display: block; float: left; width: 35%; height: 30px; line-height: 30px; background: #8a2b33; text-align: center; color: #dfc9ad; }
 .content-bottom .form-apply .attrs .upload .photos { position: relative; float: left; width: 26%; border: 1px solid #fff; border-radius: 6px; margin-right: 6%; }
 .content-bottom .form-apply .attrs .upload .photo { display: inline-block; width: 100%; }
 .content-bottom .form-apply .attrs .upload .photo img { border-radius: 5px; }
