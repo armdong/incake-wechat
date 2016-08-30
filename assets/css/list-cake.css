@@ -403,40 +403,20 @@ header .send-hide button {
 .container .inner-box.theme-cake .link { position: relative; }
 .container .inner-box.theme-cake .link:after { position: absolute; left: 1rem; top: .25rem; width: 25%; content: url(../imgs/list/theme_cake_mark.png); }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 规格数量弹窗新增样式 */
+.buy-hide .buyTop p span { font-size: 1.2rem; }
+.buy-hide .buyMde2 { margin: .5rem; border-bottom: 1px #ccc dotted; }
+.buy-hide .buyMde2 .spec2 { float: left; width: 16%; line-height: 36px; color: #515151; }
+.buy-hide .buyMde2 .buyMde-list2 { float: left; width: 84%; }
+.buy-hide .buyMde2 .type2 { float: left; width: 30%; margin: 0 2% 2% 0; }
+.buy-hide .buyMde2 .type2 a { display: block; border: 1px solid #ccc; line-height: 36px; border-radius: 50px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; }
+.buy-hide .buyMde2 .cur2 a { color: #e74566; border-color: #e74566; }
+.buy-hide .buyBtm2 { margin: .5rem; height: 38px; }
+.buy-hide .buyBtm2 .count { width: 16%; }
+.buy-hide .buyBtm2 span { line-height: 38px; }
+.buy-hide .buyBtm2 .count { float: left; color: #515151; }
+.buy-hide .buyBtm2 .countR { float: right; width: 50%; margin-right: 0; }
+.buy-hide .buyBtm2 .countR button { float: left; width: 24%; height: 38px; padding: 0; background-color: #f0f0f0; border: 1px solid #e6e6e6; border-radius: 6px; color: #d2d2d2; line-height: 36px; text-align: center; font-weight: bold; }
+.buy-hide .buyBtm2 .countR .number { float: left; width: 50%; border: 1px solid #e6e6e6; border-left: 0; border-right: 0; border-radius: 0; color: #515151; line-height: 36px; text-align: center;	}
+.buy-hide .buyBtm2 .countR .subtract { border-radius: 6px 0 0 6px; }
+.buy-hide .buyBtm2 .countR .add { background-color: #f0f0f0; border-radius: 0 6px 6px 0; color: #4f4f4f; }
