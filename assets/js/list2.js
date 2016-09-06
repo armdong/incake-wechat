@@ -10,8 +10,12 @@ function btmClick() {
 
 /* 页面蛋糕点击事件 */
 function pageAdd() {
-	$(".buy-hide").removeClass("hide");
-	$(".mask").removeClass("hide");
+	
+	$(".mask").fadeIn(500);
+	$(".buy-hide").show().animate({
+			bottom:0
+	},500);
+	
 	$('body').css({
 		"overflow": "hidden",
 		'z-index': '-1'
@@ -23,8 +27,12 @@ function pageAdd() {
 	document.getElementById('header').style.zIndex = 99;
 	//关闭
 	$(".close").click(function() {
-		$(".buy-hide").addClass("hide");
-		$(".mask").addClass("hide");
+
+		$(".buy-hide").fadeOut(500,function(){
+			$(this).css('bottom','-50%');
+		});
+		$(".mask").fadeOut(500);
+		
 		$('body').css("overflow", "auto");
 		$('body').unbind('touchmove');
 		document.getElementById('header').style.zIndex = 599;
