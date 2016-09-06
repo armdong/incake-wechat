@@ -1,0 +1,46 @@
+html, body { width: 100%; max-width: 640px; margin: 0 auto; }
+.content .questionnaire-container { width: 100%; background-color: #f2f2f2; }
+.questionnaire-container img { width: 100%; }
+.questionnaire-container .banner { width: 100%; }
+.questionnaire-container .desc { width: 90%; margin: 0 auto; padding-bottom: 10px; border-bottom: 1px solid #c67272; }
+.questionnaire-container .desc p { font-size: 14px; line-height: 24px; text-align: center; color: #485969; }
+.questionnaire-container .desc .ps { color: #c67272; }
+
+.questionnaire-container .form { width: 100%; }
+.questionnaire-container .form > h2 { font-size: 14px; line-height: 30px; text-align: center; color: #c67272; }
+.questionnaire-container .form .questions { width: 100%; border-bottom: 2px solid #485969; }
+.form .questions .question { width: 94%; margin: 0 auto; padding-bottom: 20px; }
+.form .questions .question h3 { font-size: 12px; line-height: 24px; color: #485969; }
+.form .questions .question ul { width: 100%; }
+.form .questions .question li { float: left; width: 46%; margin: 2%; }
+.form .questions .question .imgs li { width: 46%; margin: 2%; }
+.form .questions .question .btns li { width: 50%; margin: 2% 0; }
+.form .questions .question .imgs li .img { width: 100%; border: none; vertical-align: top; }
+.form .questions .question .imgs li p { padding: 5px 0; font-size: 12px; color: #485969; text-align: center; }
+.form .questions .question .imgs li.active .img { position: relative; }
+.form .questions .question .imgs li.active .img:after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; content: ''; background: url('../imgs/cakes-questionnaire/q_a_active.png') no-repeat; background-size: cover; }
+.form .questions .question .imgs li.active p { color: #c67272; }
+.form .questions .question .btns li a { display: block; width: 92%; height: 30px; margin:  0 auto; line-height: 30px; text-align: center; color: #485969; border: 1px solid #485969; border-radius: 16px; overflow: hidden; background-color: #fff; }
+.form .questions .question .btns li.active a { color: #c97c7c; border-color: #c97c7c; background-image: url('../imgs/cakes-questionnaire/btn_active.png'); background-repeat: no-repeat; background-position: 6% center; background-size: 15px 14px; }
+
+.form .questions .question.q2 .other-tast { display: none; width: 96%; margin: 0 auto; border: 1px solid #b4b4b4; background-color: #fff; }
+.form .questions .question.q2 .other-tast textarea { width: 96%; height: 36px; padding: 2%; border: none; font-size: 12px; line-height: 18px; resize: none; color: #485969; outline: none; }
+.form .questions .question.q2 .other-tast p { color: #b4b4b4; text-align: right; line-height: 20px; padding-right: 5px; }
+
+.questionnaire-container .form .summary { width: 90%; margin: 0 auto; padding: 10px 0; }
+.questionnaire-container .form .summary p { font-size: 12px; line-height: 24px; text-align: center; color: #485969; }
+.questionnaire-container .form .summary p.ps { color: #c67272; }
+.questionnaire-container .form .summary .btn-submit { display: block; width: 70%; height: 38px; line-height: 38px; margin: 10px auto; text-align: center; font-size: 16px; color: #fff; background-color: #485969; border-radius: 19px; overflow: hidden; }
+
+
+.content .mask-tip { display: none; position: fixed; top: 0; left: 0; z-index: 9999999; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .6); }
+.mask-tip img { width: 100%; }
+.mask-tip .tip { position: absolute; top: 50%; left: 50%; width: 70%; padding-top: 10px; background-color: #fff; border-radius: 10px 10px 0 0; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); overflow: hidden; }
+.mask-tip .tip .tip-close { display: block; position: absolute; top: 10px; right: 10px; width: 5%; }
+.mask-tip .tip .tip-content { width: 100%; padding: 30px 0; }
+.mask-tip .tip .tip-content p { font-size: 12px; line-height: 24px; text-align: center; color: #4b5869; }
+.mask-tip .tip .tip-content p span { font-size: 14px; color: #cc7176; }
+.mask-tip .tip .tip-btns { width: 100%; height: 38px; }
+.mask-tip .tip .tip-btns a { display: block; float: left; width: 50%; height: 38px; line-height: 38px; color: #fff; background-color: #4b5869; text-align: center; font-size: 14px; }
+.mask-tip .tip .tip-btns a.btn-reg,
+.mask-tip .tip .tip-btns a.btn-leave { border-right: 2px solid #fff; margin-left: -2px; }
