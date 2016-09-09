@@ -545,6 +545,10 @@ footer ul .buyNow {
 .footer-no-product .addCart { background-color: #c8c8c8 !important; }
 
 
+/* 加入购物车动画 */
+.flyEle { position: fixed; z-index: 999999999; width: 1rem; height: 1rem; border-radius: 50%; background-color: #E74566; }
+
+
 
 
 
