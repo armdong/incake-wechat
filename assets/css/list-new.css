@@ -1,0 +1,81 @@
+body { background-color: #f0f0f0; }
+
+/* header begin */
+#header { width: 100%; height: 46px; position: relative; background: #fff; border-bottom: 1px solid #dcdcdc; overflow: hidden; }
+#header .logo { display: block; position: absolute; width: 94px; left: 50%; margin-left: -47px; top: 8px;  }
+#header .logo img { width: 94px; }
+#header .location { display: block; height: 50px; line-height: 50px; position: absolute; top: 50%; margin-top: -25px; padding: 0 6px; }
+#header .location i:nth-of-type(1) { padding: 0 6px; display: inline-block; width: 13px; height: 14px; background: url(../imgs/location_bg.png) no-repeat; position: relative; top: 2px; left: 10px; }
+#header .location i:nth-of-type(2) { width: 10px; height: 9px; display: inline-block; background: url(../imgs/arrow_down.png) no-repeat; position: relative; left: 4px; top: 0; }
+nav { width: 100%; }
+/* header end */
+
+/* swiper begin */
+#listSwiper { width: 100%; }
+#listSwiper .swiper-pagination { position: absolute; z-index: 10; bottom: 5px; width: 100%;  text-align: center; }
+#listSwiper .swiper-pagination-bullet { background: #fff; box-shadow: 0 0 2px rgba(0,0,0,0.3); opacity: 1; }
+#listSwiper .swiper-pagination-bullet-active { background: #ea545d; }
+/* swiper end */
+
+/* list begin */
+#cakeList { width: 100%; margin: 10px 0; padding: 20px 0; background-color: #fff; }
+#cakeList ul { width: 93.75%; margin: 0 auto; }
+#cakeList ul li { position: relative; width: 100%; padding: 15px 0; border-bottom: 1px solid #dcdcdc; }
+#cakeList ul li:first-of-type { padding-top: 0; }
+#cakeList ul li:last-of-type { padding-bottom: 0; border-bottom: none; }
+#cakeList ul li .img { display: block; float: left; width: 34%; }
+#cakeList ul li .img img { width: 100%; border: none; vertical-align: top; }
+#cakeList ul li .text { float: right; width: 62%; height: 100%; }
+#cakeList ul li .text .title { font-size: 14px; line-height: 30px; color: #323232; }
+#cakeList ul li .text .desc { font-size: 12px; line-height: 20px; color: #979797; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+#cakeList ul li .attr { position: absolute; right: 10px; bottom: 15px; line-height: 30px; }
+#cakeList ul li:last-of-type .attr { bottom: 0; }
+#cakeList ul li .attr span { display: inline-block; float: left; color: #313131; font-size: 12px; }
+#cakeList ul li .attr .price { font-size: 14px; }
+/* list end */
+
+/* status-bar begin */
+#status-bar { width: 100%; height: 38px; background: #e6e6e6; }
+#status-bar p, #status-bar .backTop { height: 38px;  font: 12px/38px "微软雅黑",arial; color: #505050; }
+#status-bar p { float: left; margin-left: 10px; }
+#status-bar p em { font-style:normal; padding: 0 10px; color: #b4b4b4; }
+#status-bar .backTop { float: right; margin-right: 10px; display: inline-block; }
+#status-bar .backTop i { width: 10px; height: 9px; line-height: 38px; margin-left: 5px; display: inline-block; background: url(../imgs/arrow_up.png) no-repeat; background-size: 10px 9px; opacity: 0.6; }
+/* status-bar end */
+
+/* footer begin */
+#footer { width: 100%; background: #f5f5f5; padding-bottom: 40px; }
+#footer .text { width: 100%; padding: 10px 0; }
+#footer .text p { text-align: center; font: 12px/28px "微软雅黑",arial; color: #505050; }
+#footer .text p a { height: 24px; line-height: 24px; display: inline-block; margin-left: 5px; padding: 0 10px; border: 1px solid #bebebe; border-radius: 5px; color: #515151; background:-webkit-linear-gradient(#fff, #e7e7e7);
+background:-webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e7e7e7)); 
+background:linear-gradient(#fff, #e7e7e7);
+}
+#footer .text p a i { display: inline-block; width: 14px; height: 14px; background: url(../imgs/tel_bg.png) no-repeat; background-size: 14px 14px; position: relative; left: -4px; top: 3px; }
+#footer .text .platform { line-height: 34px; }
+#footer .text .platform a { margin-left: 0; border: none; background: transparent; }
+#footer .text .platform em { font-style: normal; padding: 0; color: #b4b4b4; }
+#footer .link { width: 100%; height: 38px; position: relative; border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; }
+#footer .link a { width: 60px; position: absolute; height: 14px; top: 45%; margin-top: -7px; font-size: 12px; }
+#footer .link a:nth-of-type(1) { left: 20px; }
+#footer .link a:nth-of-type(2) { left: 50%; margin-left: -30px; }
+#footer .link a:nth-of-type(3) { right: 20px; }
+#footer .addr { width: 100%; padding: 10px 0; margin-bottom: 10px; }
+#footer .addr p { font: 12px/22px "微软雅黑",arial; text-align: center; color: #505050; word-spacing: -1px; }
+#footer .addr p span { color: #0f3677; }
+/* footer end */
+
+/* mask begin */
+#mask { width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: fixed; top: 0; left: 0; z-index: 999; }
+#mask .locate { width: 90%; border-radius: 5px; max-width: 500px; background: #fff; margin: auto; position: absolute; top: 40%; margin-top: -50px; left: 0; right: 0; z-index: 9999; overflow: hidden; }
+#mask .locate-title { width: 100%; height: 40px; line-height: 40px; text-align: center; background: #e6e6e6; }
+#mask .locate-title .icon-locate{ display: inline-block; width: 13px; height: 14px; background: url(../imgs/location_bg.png) no-repeat; position: relative; margin-right: 6px; top: 2px; }
+#mask .locate-content { width: 100%; height: 250px; position: relative; }
+#mask .locate-content .desc { width: 100%; margin: 20px 0; }
+#mask .locate-content .desc p { text-align: center; line-height: 20px; color: #515151; }
+#mask .locate-content .city { width: 90%; margin-top: 10px; margin: 0 auto; }
+#mask .locate-content .city span { display: inline-block; width: 22%; margin:5px auto; line-height: 26px; height: 26px; /*margin: 0 1%;*/ border: 1px solid #e6e6e6; border-radius: 14px; font-size: 12px; text-align: center; }
+#mask .locate-content .city span.active { border-color: #e74566; color: #e74566; }
+#mask .locate-content .btn { height: 40px; width: 100%; position: absolute; bottom: 14px; }
+#mask .locate-content .btn a { display: block; width: 60%; height: 100%; background: #0055A2; margin: 0 auto; text-align: center; line-height: 40px; font-size: 14px; color: #fff; border-radius: 10px; }
+/* mask end */
