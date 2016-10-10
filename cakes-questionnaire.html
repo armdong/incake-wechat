@@ -145,39 +145,43 @@
                     <p>双喜临门！INCAKE祝福你！</p>
                     <a href="javascript:;" class="btn-submit">提 交</a>
                 </div>
-                <!-- 未登录状态提交 begin -->
-                <div class="mask-tip unlogined">
-                    <div class="tip">
-                        <a href="javascript:;" class="tip-close">
-                            <img src="assets/imgs/cakes-questionnaire/tip_close.png" alt="">
-                        </a>
-                        <div class="tip-content">
-                            <p>完善个人信息并完成问卷，</p>
-                            <p>即<span>可获得80元的蛋糕优惠券</span>哦！</p>
-                        </div>
-                        <div class="tip-btns clearfix">
-                            <a href="javascript:;" class="btn-reg">注册</a>
-                            <a href="javascript:;" class="btn-login">登录</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 未登录状态提交 end -->
-                <!-- 登录状态提交 begin -->
-                <div class="mask-tip logined">
-                    <div class="tip">
-                        <a href="javascript:;" class="tip-close">
-                            <img src="assets/imgs/cakes-questionnaire/tip_close.png" alt="">
-                        </a>
-                        <div class="tip-content">
-                            <p><span>您已获得80元的蛋糕优惠券</span></p>
-                        </div>
-                        <div class="tip-btns clearfix">
-                            <a href="javascript:;" class="btn-leave">去INCAKE逛逛</a>
-                            <a href="javascript:;" class="btn-check">查看优惠券</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 登录状态提交 end -->
+               
+                <!-- 提交结果 begin -->
+		        <div id="mask-result">
+		            <div class="result">
+		                <a href="javascript:;" class="btn-result-close">
+		                    <img src="assets/imgs/cakes-questionnaire/btn_close.png" alt="">
+		                </a>
+		                <div class="result-content">
+		                	<div class="result-info result-login">
+				                <p class="register-title">登录领取50元蛋糕券</p>
+				                <ul class="frm">
+				                    <li class="clearfix">
+				                        <i class="icon-mobile"></i>
+				                        <input type="text" class="txt-mobile" placeholder="请输入手机号">
+				                    </li>
+				                    <li class="clearfix">
+				                        <i class="icon-vcode"></i>
+				                        <input type="text" class="txt-vcode" placeholder="请输入验证码">
+				                        <a href="javascript:;" id="btn-vcode">获取验证码</a>
+				                    </li>
+				                </ul>
+				                <a href="javascript:;" id="btn-register">完成</a>
+		                    </div>
+		                    <div class="result-info result-true">
+		                        <img src="assets/imgs/cakes-questionnaire/result_true.jpg" alt="">
+		                        <a href="javascript:;" class="btn-used">立即使用</a>
+		                    </div>
+		                    <div class="result-info result-false">
+		                        <img src="assets/imgs/cakes-questionnaire/result_false.jpg" alt="">
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <div id="result-reg">
+	            	<p class="tips">请完成所有题目！</p>
+	            </div>
+		        <!-- 提交结果 end -->
             </div>
         </div>
     </div>
