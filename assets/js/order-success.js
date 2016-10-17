@@ -10,6 +10,9 @@
         var $oContainer = $('.container-wrapper'),
             $oBtnShare = $oContainer.find('.btn-share'),
             $oMask = $oContainer.find('.mask-share'),
+            $oAct = $oContainer.find('#maskAct'),
+            $oBtnOk = $oAct.find('.btn-ok'),
+            $oBtnCancel = $oAct.find('.btn-cancel'),
             tl = new TimelineLite();
 
         $oBtnShare.on('click', function(event) {
@@ -35,6 +38,23 @@
                 ease: Power2.easeOut
             });
         });
+        
+        //此处添加判断是否符合优惠条件的逻辑，更改status状态
+		var status = true;
+		
+		if(status){
+			$oAct.fadeIn();
+		}
+		
+		$oBtnCancel.on('click',function(){
+			$oAct.fadeOut();
+		});
+		
+		$oBtnOk.on('click',function(){
+			//此处跳转至活动分享
+			alert('此处跳转至活动分享！');
+		});
+        
     }
 
 })();
