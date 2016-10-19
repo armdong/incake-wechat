@@ -51,8 +51,8 @@
 		});
 		
 		$oBtnOk.on('click',function(){
-			//此处跳转至活动分享
-			alert('此处跳转至活动分享！');
+			//此处跳转至活动分享页
+			location.href = "http://192.168.1.188:8020/incake-act-wechat/queen-cheese-all.html?status=true";
 		});
         
     }
