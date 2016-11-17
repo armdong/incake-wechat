@@ -373,9 +373,17 @@
 		});
 		
 		$oBtnAddressListCancel.on('click',function(){
+
+			// 将document的scrollTop设置为0
+			$('html,body').scrollTop(0);
+
 			$oAddressWrapper.slideUp();
 		});
 		$oBtnAddrListCancel.on('click',function(){
+
+			// 将document的scrollTop设置为0
+			$('html,body').scrollTop(0);
+
 			$oAddressWrapper.slideUp();
 		});
 		
