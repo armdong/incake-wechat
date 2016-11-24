@@ -1,8 +1,11 @@
 .container-wrapper { width: 100%; background: #fff; font: 12px "微软雅黑",arial; color: #505050; position: relative; }
 .container-wrapper input, .container-wrapper select { overflow: hidden; }
 
+.container-wrapper { background-color: #f5f5f5; }
+.receive-info, .receive-time, .transport-type, .product-list, .setting-list { background-color: #fff; margin-bottom: 10px; }
+
 /* receive-info begin */
-.receive-info { width: 100%; padding: 10px 0; border-bottom: 1px solid #e6e6e6; }
+.receive-info { width: 100%; padding: 10px 0; border-bottom: 3px solid #ea545d; }
 .receive-info a { width: 94%; display: block; margin: 0 auto; position: relative; }
 .receive-info p { width: 96%; line-height: 22px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .receive-info p .empty { color: #b8b8b8; }
