@@ -17,6 +17,8 @@
         fnInitCity();
         fnAdoptNav();
         fnAdoptFavours();
+         // 首页公告模块
+        fnInitNotice();
 
         $(window).on('resize', function() {
             fnInitSwiper();
@@ -47,7 +49,7 @@
         $oSearchInput.on('focus', function() {
             window.location.href = 'search.html';
         });
-
+		
         function fnInitSwiper() {
             containerWidth = $('#index-swiper').width();
             $aImg.css({
@@ -151,6 +153,37 @@
                 });
             });
         }
+        
+        /**
+	     * [fnInitNotice 首页公告模块]
+	     * @return {[type]} [description]
+	     */
+	    function fnInitNotice() {
+	        var $oNotice = $('#idxNotice'),
+	            $oNoticeMsg = $oNotice.find('.notice-msg'),
+	            $oNoticeClose = $oNotice.find('.notice-close'),
+	            tl = new TimelineLite();
+	
+	        // 关闭公告
+	        $oNoticeClose.on('click', function() {
+	            tl.clear();
+	            tl.to($oNotice, 0.5, {
+	                opacity: 0,
+	                ease: Linear.easeOut,
+	                useFrames: true,
+	                onComplete: function() {
+	                    $oNotice.remove();
+	                    $('#index-swiper').css("margin-top","47px");
+	                }
+	            });
+	        });
+	
+	        // 公告轮播
+	        var marqueeText = '非真正内容';
+	        $oNoticeMsg.text(marqueeText);
+	
+	    	$oNoticeMsg.liMarquee();
+	    }
 
     });
 
