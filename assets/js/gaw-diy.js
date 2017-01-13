@@ -5,6 +5,7 @@
         var $oForm = $('#frmApply'),
             $oSelCategory = $oForm.find('#selCategories'),
             $oSelColor = $oForm.find('#selColors'),
+            $oBtnSubmit = $oForm.find('.btn-submit'),
             $oMaskCategory = $oForm.find('.mask-categoryPop'),
             $oMaskCategoryClose = $oMaskCategory.find('.mask-close'),
             $oMaskColor = $oForm.find('.mask-colorPop'),
@@ -17,7 +18,9 @@
             iMaxLen = 800,
             iMaxCount = 3,
             $oUpload = $oForm.find('.upload'),
-            $oBtnAdd = $oUpload.find('.btn-add');
+            $oBtnAdd = $oUpload.find('.btn-add'),
+            $oMaskTip = $('#mask-tip'),
+            $oBtnClose = $oMaskTip.find('.btn-close');
 
         // 种类下拉框改变事件
         $oSelCategory.on('change', function(e) {
@@ -117,6 +120,14 @@
             var count = $oUpload.find('.photo').length;
             $oLastPhoto.text(iMaxCount - count);
         }
+        
+        $oBtnSubmit.on('click',function(){
+        	$oMaskTip.fadeIn();
+        });
+        
+        $oBtnClose.on('click',function(){
+        	$oMaskTip.fadeOut();
+        });
 
     });
 
