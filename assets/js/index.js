@@ -34,7 +34,7 @@
             $oSearch = $oHeader.find('.search'),
             $oSearchInput = $oSearch.find('.txt-search');
 
-        $(window).on('scroll', function() {
+        /*$(window).on('scroll', function() {
             var scrollT = document.documentElement.scrollTop || document.body.scrollTop;
             if (scrollT >= iHearderH) {
                 $oLogo.hide();
@@ -43,7 +43,7 @@
                 $oLogo.show();
                 $oSearch.hide();
             }
-        });
+        });*/
 
         // 搜索框获取焦点跳转
         $oSearchInput.on('focus', function() {
