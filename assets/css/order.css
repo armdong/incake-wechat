@@ -55,6 +55,7 @@
 .product-list .list-item dl { width: 70%; float: right; margin-top: 3%; }
 .product-list .list-item dt { color: #737373; line-height: 28px; }
 .product-list .list-item dd { color: #b5b5b5; line-height: 18px; }
+.product-list .list-item dt .dt-tip { display: inline-block; padding: 0 6px; border: 1px solid #ea545d; margin-left: 10px; font-size: 10px; line-height: 14px; color: #ea545d; }
 .product-list .list-item .total { float: right; margin-right: 3%; line-height: 18px; color: #b5b5b5; }
 .product-list .list-item .total strong { font-weight: normal; color: #ea545d; font-size: 14px; }
 /* product-list end */

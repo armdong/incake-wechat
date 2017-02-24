@@ -90,7 +90,20 @@ body {
 	float: right;
 }
 .container .content .box .cont .spec {
+	position: relative;
 	color: #c5c5c5;
+}
+.container .content .box .cont .spec.spec-tip:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    content: '买2赠1';
+    padding: 0 4px;
+    border: 1px solid #e69b4f;
+    font-size: 10px;
+    line-height: 14px;
+    color: #e69b4f;
 }
 .container .content .box .cont .cont-btm {
 	float: left;
