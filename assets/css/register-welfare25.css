@@ -1,0 +1,70 @@
+#container { width: 100%; background-color: #f0ece0; }
+#container img { width: 100%; }
+
+#container #logo { position: relative; width: 100%; }
+#logo > a { position: absolute; top: 50%; right: 4%; display: block; width: 28%; line-height: 30px; background-color: #ff6464; border-radius: 4px; margin-top: -15px; font-size: 14px; text-align: center; color: #fff; }
+
+#container #cakes { position: relative; width: 100%; }
+#cakes > a.btn-buy { position: absolute; display: block; width: 36.8%; -webkit-animation: 1.75s smooth infinite; animation: 1.75s smooth infinite; }
+#cakes > a.btnBuy01 { top: 25.4%; right: 2%; }
+#cakes > a.btnBuy02 { top: 61.4%; left: 10%; }
+#cakes > a.btnBuy03 { bottom: 3%; right: 9%; }
+#cakes > a.btn-balloon { position: absolute; display: block; width: 20.6%; -webkit-transform-origin: bottom left; transform-origin: bottom left; -webkit-animation: aniTick 2.5s infinite; animation: aniTick 2.5s infinite; }
+#cakes > a.balloon01 { top: 12%; right: 30%; -webkit-transform-origin: bottom right; transform-origin: bottom right; }
+#cakes > a.balloon02 { top: 44%; left: 31.5%; }
+#cakes > a.balloon03 { top: 76.9%; right: 11.4%; }
+
+#container #rules { width: 100%; }
+#rules ul { width: 100%; padding: 20px 0; z-index: 999; }
+#rules ul li { position: relative; width: 84%; padding-left: 3%; margin-left: 5%; font-size: 12px; line-height: 20px; color: #5d5d5d; text-align: justify; }
+#rules li.rule-title { margin-left: 2%; font-size: 14px; line-height: 22px; }
+#rules li:after { position: absolute; top: 0; left: 0; display: inline-block; width: 2%; content: '♦'; font-size: 10px;}
+#rules li.no-icon:after { width: 0; content: ''; }
+
+#frm-register { background-color: #ff6464; padding: 30px 0; }
+#frm-register .sec-header .sec-title { padding-bottom: 16px; font-size: 16px; color: #fff; text-align: center; }
+#frm-register .sec-body { width: 75%; margin: 0 auto; }
+#frm-register .sec-body li { margin-bottom: 10px; }
+#frm-register .sec-body li input { display: block; height: 40px; line-height: 40px; text-indent: 1em; -webkit-appearance: none; border: 1px solid #f2aaa2; border-radius: 5px; outline: none; font-size: 14px; }
+#frm-register .sec-body li .txt-mobile { float: left; width: 60%; border-radius: 5px 0 0 5px; }
+#frm-register .sec-body li #btn-vcode { float: left; width: 40%; height: 40px; line-height: 40px; margin-left: -4px; text-align: center; border: 1px solid #de6d5f; border-radius: 0 5px 5px 0; color: #fff; background-color: #c34637; }
+#frm-register .sec-body li #btn-vcode.active{ background-color: #99807f; border-color: #99807f; }
+#frm-register .sec-body li .txt-vcode { width: 100%; }
+#frm-register #btn-register { display: block; width: 100%; height: 42px; line-height: 42px; text-align: center; border-radius: 5px; background-color: #c34637; font-size: 16px; color: #fff; }
+
+#float-footer { position: fixed; bottom: 0; left: 0; z-index: 9999; width: 100%; }
+#float-footer img { width: 100%; }
+
+/* 注册结果 */
+#mask-result { display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; z-index: 999; }
+#mask-result img { width: 100%; }
+#mask-result .result { width: 73.4375%; max-width: 500px; background: #fff; margin: auto; position: absolute; top: 50%; left: 0; right: 0; z-index: 9999; overflow: hidden; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+#mask-result .result .btn-result-close { display: block; position: absolute; top: 5%; right: 5%; width: 10.6%; z-index: 9999; }
+#mask-result .result .result-content { width: 100%; }
+#mask-result .result .result-content .result-info { position: relative; display: none; width: 100%; }
+#mask-result .result .result-content .result-info a.btn-web { position: absolute; top: 58%; left: 14.5%; display: block; width: 71%; height: 15%; }
+#mask-result .result .result-content .result-info.result-website>a { position: absolute; top: 53%; left: 53%; display: block; width: 36%; height: 13%; }
+#mask-result .result .result-content .result-info.result-website>a.btn-web { left: 11%; }
+
+@-webkit-keyframes aniTick {
+	0% { -webkit-transform: rotate(10deg); }
+	50% { -webkit-transform: rotate(-10deg); }
+	100% { -webkit-transform: rotate(10deg); }
+}
+@keyframes aniTick {
+	0% { transform: rotate(10deg); }
+	50% { transform: rotate(-10deg); }
+	100% { transform: rotate(10deg); }
+}
+
+/* 呼吸灯样式  */
+@-webkit-keyframes smooth {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.1); }
+	100% { -webkit-transform: scale(1); }
+}
+@keyframes smooth {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.1); }
+	100% { transform: scale(1); }
+}
