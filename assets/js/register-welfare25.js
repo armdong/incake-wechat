@@ -37,12 +37,11 @@
 		
 
         function fnNav() {
-            $oBtnBottom.on('click', function() {
-                fnScrollTop($oFrmRegister);
-            });
+        	
             $oBtnFooter.on('click', function() {
                 fnScrollTop($oFrmRegister);
             });
+            
             $oBtnVcode.on('click', function() {
                 // 验证重复获取验证码
 	    		if(count == 0){
@@ -59,6 +58,7 @@
 			    	},1000);
 		    	}
             });
+            
         }
 
         // 滑倒指定位置
@@ -71,10 +71,16 @@
             var $oBtnWebsite = $(".btn-website"),
             	$oMaskResult = $('#mask-result'),
                 $oMaskClose = $oMaskResult.find('.btn-result-close'),
+                $oResultLogin = $oMaskResult.find('.result-login'),
+            	$oBtnVcode2 = $oResultLogin.find('#btn-vcode2'),
+            	$aInput = $oResultLogin.find('input'),
                 $oResultWebsite = $oMaskResult.find('.result-website'),
                 $oResultOk = $oMaskResult.find('.result-ok'),
                 $oResultFail = $oMaskResult.find('.result-fail'),
-                $oBtnRegister = $('#btn-register');
+                $oBtnRegister = $('#btn-register'),
+                $oBtnRegister2 = $oMaskResult.find('#btn-register2'),
+                isLogin = false,
+				isUserExists = false;   // 用户是否存在 存在：true，不存在：false
 			
 			$oBtnWebsite.on('click', function(event) {
 				event.preventDefault();
@@ -90,8 +96,6 @@
 
                 // TODO 处理新老用户检测及登录注册逻辑
 
-                var isUserExists = true;   // 用户是否存在 存在：true，不存在：false
-
                 if (isUserExists) {
                     $oResultFail.show(function(){
                         $oMaskResult.show();
@@ -100,6 +104,69 @@
                     $oResultOk.show(function(){
                         $oMaskResult.show();
                     });
+                }
+            });
+            
+            $oBtnBottom.on('click', function(event) {
+                event.preventDefault();
+                $("body").css({overflow:"hidden"});
+
+                // TODO 处理新老用户检测及登录注册逻辑
+                
+				if(isLogin){
+					if (isUserExists) {
+	                    $oResultFail.show(function(){
+	                        $oMaskResult.show();
+	                    });
+	                }else{
+	                    $oResultOk.show(function(){
+	                        $oMaskResult.show();
+	                    });
+	                }
+				}else{
+					$oResultLogin.show(function(){
+                        $oMaskResult.show();
+                    });
+				}
+                
+            });
+            
+            $aInput.on('focus',function() {
+				$(this).closest('li').css({'border-bottom':'1px solid #e9546b'});
+			});
+			
+			$aInput.on('blur',function() {
+				$(this).closest('li').css({'border-bottom':'1px solid #ddd'});
+			});
+			
+			$oBtnVcode2.on('click', function() {
+                // 验证重复获取验证码
+	    		if(count == 0){
+		    		count = 1;
+			    	$oBtnVcode2.css({'background-color':'#99807f'}).text('59" 后重新发送');
+			    	var interval2 = setInterval(function(){
+			    		$oBtnVcode2.text(time-- +'" 后重新发送');
+			    		if(time==-1){
+			    			count = 0;
+			    			clearInterval(interval2);
+			    			time = 58;
+			    			$oBtnVcode2.css({'background-color':'#e9546b'}).text('获取验证码');
+			    		}
+			    	},1000);
+		    	}
+            });
+			
+            $oBtnRegister2.on('click', function(event) {
+                event.preventDefault();
+                $("body").css({overflow:"hidden"});
+
+                // TODO 处理新老用户检测
+				
+				$oResultLogin.hide();
+                if (isUserExists) {
+                    $oResultFail.fadeIn(500);
+                }else{
+                    $oResultOk.fadeIn(500);
                 }
             });
 
