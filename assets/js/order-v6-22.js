@@ -21,7 +21,10 @@
 		// 地址管理
 		fnReceiverAddress();
 		// 提交订单
-		fnOrderSubmit();
+        fnOrderSubmit();
+
+        // 推荐时间
+        fnInitRecReceiveTime();
 	});
 
 	function initDateInput() {
@@ -430,6 +433,40 @@
 			$oMaskOrder.hide();
 		});
 	}
+
+    function fnInitRecReceiveTime() {
+        var $pop = $('#recReceiveTimePop'),
+            tl = new TimelineLite();
+
+        // 模拟推荐，需要改成后台判断
+        setTimeout(function () {
+            tl.clear();
+            tl.to($pop, 1, {
+                top: 0
+            });
+        }, 3000);
+
+        // 关闭推荐窗口
+        $pop.on('click', '.cancel-pop', function () {
+            tl.clear();
+            tl.to($pop, 1, {
+                top: '-100%'
+            });
+
+            // 使scrollTop设置为0，回到顶端
+            $('body').scrollTop(0);
+        });
+
+        // 选中推荐并且使用推荐时间
+        $pop.on('click', '.btn-submit', function () {
+            // TODO 处理选中逻辑
+
+            tl.clear();
+            tl.to($pop, 1, {
+                top: '-100%'
+            });            
+        });
+    }
 
 })();
 
